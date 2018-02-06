@@ -88,8 +88,8 @@
                 <h2>Вход</h2>
                 <p>Если у вас нет аккаунта, вы можете &nbsp;<a class="decorated-link js-get-modal" href="#reg" data-target=".js-registration-modal">зарегистрироваться</a></p>
                 <form class="form">
-                    <div class="form-group required"><input class="form-control" type="text" name="login" placeholder="Email"></div>
-                    <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Пароль"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="text" name="login" placeholder="Email"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="password" name="password" placeholder="Пароль"></div>
                     <div class="form-group row">
                         <div class="col-6"><input class="checkbox" type="checkbox" name="remember" id="remember"><label for="remember">Запомнить меня</label></div>
                         <div class="col-6 text-right"><a class="decorated-link" href="#">Забыли пароль?</a></div>
@@ -106,9 +106,9 @@
                 <h2>Покупка в 1 клик</h2>
                 <p>Не тратьте свое время на оформление заказа! Оставьте свой email и телефон — и наш менеджер свяжется с Вами кратчайшие сроки<span class="d-block light sure">Все поля обязательны для заполнения</span></p>
                 <form class="form">
-                    <div class="form-group required"><input class="form-control" type="text" name="name" placeholder="Имя"></div>
-                    <div class="form-group required"><input class="form-control" type="email" name="mail" placeholder="Email"></div>
-                    <div class="form-group required"><input class="form-control" type="tel" name="tel" placeholder="Телефон"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="text" name="name" placeholder="Имя"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="email" name="mail" placeholder="Email"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="tel" name="tel" placeholder="Телефон"></div>
                     <div class="form-group"><button class="btn btn-block btn-outline-success">Оформить заказ</button></div>
                 </form>
             </div>
@@ -116,7 +116,7 @@
         <div class="b-modal js-express-modal"><a class="modal-close js-modal-close" href="#"></a>
             <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
                 <h2>Экспресс-регистрация</h2>
-                <p>Если у вас есть аккаунт, <a href="" data-target=".js-login-modal" class="js-get-modal">войдите</span></p><form class="form"><div class="form-group required"><input class="form-control" type="text" name="name" placeholder="Ваше полное имя"></div><div class="form-group required"><input class="form-control" type="email" name="mail" placeholder="Email"></div><div class="form-group required"><input class="form-control js-tel" type="tel" name="tel" placeholder="Телефон"></div><div class="form-group agree"><input class="checkbox" type="checkbox" name="a_exp" id="a_exp"><label for="a_exp">Cогласен на получение информации  об акциях и спецпредложениях</label></div><div class="form-group"><button class="btn btn-block btn-outline-success">Зарегистрироваться</button></div></form></div></div><div class="b-modal big js-accessories"><a class="modal-close js-modal-close" href="#"></a>
+                <p>Если у вас есть аккаунт, <a href="" data-target=".js-login-modal" class="js-get-modal">войдите</span></p><form class="form"><div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="text" name="name" placeholder="Ваше полное имя"></div><div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="email" name="mail" placeholder="Email"></div><div class="form-group required" data-error-text="Обязательное поле"><input class="form-control js-tel" type="tel" name="tel" placeholder="Телефон"></div><div class="form-group agree"><input class="checkbox" type="checkbox" name="a_exp" id="a_exp"><label for="a_exp">Cогласен на получение информации  об акциях и спецпредложениях</label></div><div class="form-group"><button class="btn btn-block btn-outline-success">Зарегистрироваться</button></div></form></div></div><div class="b-modal big js-accessories"><a class="modal-close js-modal-close" href="#"></a>
                     <div
                         class="body container">
                         <h2>Аксессуары к данному товару</h2>
@@ -237,9 +237,9 @@
                 <h4>Пожалуйста, заполните форму</h4>
                 <p class="light sure">Поля, отмеченные звёздочкой, обязательны для заполнения</p>
                 <form class="form">
-                    <div class="form-group required"><input class="form-control" type="text" placeholder="Ваше имя"></div>
-                    <div class="form-group required"><input class="form-control" type="email" placeholder="Email"></div>
-                    <div class="form-group required"><input class="form-control js-tel" type="text" placeholder="Телефон"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="text" placeholder="Ваше имя"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="email" placeholder="Email"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control js-tel" type="text" placeholder="Телефон"></div>
                     <div class="form-group agree required form-check" data-error-text="Согласие обязательно"><input class="checkbox" type="checkbox" name="a2" id="a2"><label for="a2">Согласен на получение информации об акциях и спецпредложениях</label></div>
                     <div class="form-group text-center"><button class="btn btn-outline-success btn-reg">Зарегистрироваться</button></div>
                     <!--.form-groupbutton(data-target=".js-registration-modal-opt").btn.btn-reg.btn-bottom.btn-block.js-get-modal ИП-->
@@ -393,20 +393,20 @@
                 <h4>Пожалуйста, заполните форму</h4>
                 <p class="light sure">Поля, отмеченные звёздочкой, обязательны для заполнения</p>
                 <form class="form">
-                    <div class="form-group required"><input class="form-control" type="text" placeholder="ФИО"></div>
-                    <div class="form-group required"><input class="form-control" type="text" placeholder="Адрес покупателя"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="text" placeholder="ФИО"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="text" placeholder="Адрес покупателя"></div>
                     <div class="pasport-date">
-                        <div class="form-group required">
+                        <div class="form-group required" data-error-text="Обязательное поле">
                             <div class="form-caption">Паспортные данные</div><input class="form-control" type="number" placeholder="Серия"></div>
-                        <div class="form-group required"><input class="form-control" type="number" placeholder="Номер"></div>
-                        <div class="form-group required"><input class="form-control" type="text" placeholder="Кем и когда выдан"></div>
+                        <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="number" placeholder="Номер"></div>
+                        <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="text" placeholder="Кем и когда выдан"></div>
                     </div>
-                    <div class="form-group required"><input class="form-control js-tel" type="text" placeholder="Контактный телефон"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control js-tel" type="text" placeholder="Контактный телефон"></div>
                     <div class="form-group"><span class="form-control">Водонагреватель электрический Thermex Flat Plus IF 30V, 1шт. 12 150 ₽</span></div>
-                    <div class="form-group required"><input class="form-control" type="text" placeholder="Срок гарантии"></div>
-                    <div class="form-group required"><input class="form-control" type="number" placeholder="№ кассового чека"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="text" placeholder="Срок гарантии"></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><input class="form-control" type="number" placeholder="№ кассового чека"></div>
                     <div class="form-group"><input class="form-control" type="date" placeholder="Дата совершения покупки" name="calendar"></div>
-                    <div class="form-group required"><textarea class="form-control" placeholder="Подробное описание причины возврата"></textarea></div>
+                    <div class="form-group required" data-error-text="Обязательное поле"><textarea class="form-control" placeholder="Подробное описание причины возврата"></textarea></div>
                     <div class="form-group form-send"><button class="btn btn-outline-success btn-reg js-get-modal" data-target=".js-thanks">Отправить</button></div>
                     <div class="form-link text-center"><a href="#">Ознакомьтесь с условиями возврата</a></div>
                 </form>
