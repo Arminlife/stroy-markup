@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Components of Likee.template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../../template_styles.css" rel="stylesheet">
+    <link href="../../components.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="b-site" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+        <div class="b-description">
+            <div class="container">
+                <!-- Nav tabs-->
+                <!--ul.nav.nav-tabs(role='tablist').hidden-sm-downli.nav-item
+    a.nav-link.active(data-toggle='tab', href='#tab-decs', role='tab') Описание
+li.nav-item
+    a.nav-link(data-toggle='tab', href='#tab-doc', role='tab') Документация
+li.nav-item
+    a.nav-link(data-toggle='tab', href='#tab-review', role='tab') Отзывы <span>2</span>
+li.nav-item
+    a.nav-link(data-toggle='tab', href='#tab-deliver', role='tab') О доставке-->
+                <!-- Tab panes-->
+                <ul class="nav nav-tabs hidden-sm-down" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-decs" role="tab"><span class="tab-span">Описание</span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-doc" role="tab"><span class="tab-span">Документация</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-review-tab" data-toggle="tab" href="#tab-review" role="tab"><span class="tab-span">Отзывы</span><span class="tab-sum">2</span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-deliver" role="tab"><span class="tab-span">О доставке</span></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab-decs" role="tabpanel"><a class="nav-collapse hidden-md-up" data-toggle="collapse" href="#collapse-desc" aria-expanded="false" aria-controls="collapse-desc"><span class="tab-span">Описание</span></a>
+                        <div class="collapse-sm" id="collapse-desc">
+                            <div class="wrapper">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="item">
+                                            <div class="size point"><span class="key">Габариты:</span><span>200 х 340 х 150 см</span></div>
+                                            <div class="weight point"><span class="key">Вес:</span><span>1кг</span></div>
+                                            <div class="produced point"><span class="made key">Производитель:</span><a href="#">KIMTEC</a>
+                                                <sapn>(Испания)</sapn>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 hidden-sm-down">
+                                        <div class="item">
+                                            <div class="size point"><span class="key">Габариты:</span><span>200 х 340 х 150 см</span></div>
+                                            <div class="weight point"><span class="key">Вес:</span><span>1кг</span></div>
+                                            <div class="size point"><span class="key">Габариты:</span><span>200 х 340 х 150 см</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 hidden-md-down">
+                                        <div class="item">
+                                            <div class="size point"><span class="key">Габариты:</span><span>200 х 340 х 150 см</span></div>
+                                            <div class="weight point"><span class="key">Вес:</span><span>1кг</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <p>KIM TEC уплотнитель самоклеящийся с D-образным профилем для окон и дверей. Прост в использовании. Снижает энергозатраты на отопление, а также обладает высокой адгезией к поверхности из дерева, металла, пластика. Подходит
+                                    для уплотнения всех типов дверей и окон.э</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-doc" role="tabpanel"><a class="nav-collapse hidden-md-up" data-toggle="collapse" href="#collapse-doc" aria-expanded="false" aria-controls="collapse-doc"><span class="tab-span">Документация</span></a>
+                        <div class="collapse-sm" id="collapse-doc">
+                            <div class="doc"><a href="#"><svg class="icon icon_description-manual-3"><use xlink:href="./../../images/sprite.svg#description-manual-3"></use></svg><span>Инструкция по применению 1</span></a><a href="#"><svg class="icon icon_description-manual-3"><use xlink:href="./../../images/sprite.svg#description-manual-3"></use></svg><span>Инструкция по применению 2</span></a>
+                                <a
+                                    href="#"><svg class="icon icon_description-manual-3"><use xlink:href="./../../images/sprite.svg#description-manual-3"></use></svg><span>Инструкция по применению 3</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-review" role="tabpanel"><a class="nav-collapse hidden-md-up" data-toggle="collapse" href="#collapse-review" aria-expanded="false" aria-controls="collapse-review"><span class="tab-span">Отзывы <span>2</span></span></a>
+                        <div class="collapse-sm" id="collapse-review">
+                            <div class="add">
+                                <div class="stars"><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                    <a
+                                        class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                        <a
+                                            class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                </div><span class="review-sum">5 отзывов</span><button class="btn add-review" data-toggle="collapse" href="#collapseReview" aria-expanded="false" aria-controls="collapseReview">Оставить отзыв</button>
+                                <div class="collapse" id="collapseReview">
+                                    <div class="wrapper-form-review">
+                                        <div class="clearfix"><a class="float-right cancel js-cancel" href="#">Отмена<svg class="icon icon_description-close"><use xlink:href="./../../images/sprite.svg#description-close"></use></svg></a>
+                                            <p class="float-left">Авторизация (если у Вас нет аккаунта,&nbsp;<a href="#" data-target=".js-registration-modal" class="decorated-link js-get-modal">зарегистрируйтесь</a>)</p>
+                                        </div>
+                                        <form class="form">
+                                            <div class="form-group"><input class="form-control" type="text" name="login" placeholder="Email" /></div>
+                                            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Пароль" /></div>
+                                            <div class="form-group">
+                                                <!--button.btn.btn-outline-primary Войти--><button class="btn btn-outline-primary" data-toggle="collapse" href="#collapseReviewFrom" aria-expanded="false" aria-controls="collapseReviewFrom">Войти</button></div>
+                                        </form>
+                                    </div>
+                                    <div class="wrapper-authorized wrapper-form-review collapse" id="collapseReviewFrom">
+                                        <div class="clearfix bordered"><a class="float-right cancel js-cancel" href="#">Отмена<svg class="icon icon_description-close"><use xlink:href="./../../images/sprite.svg#description-close"></use></svg></a>
+                                            <p class="float-left">Вы авторизованы как<span class="strong name">Иван Иванов</span></p>
+                                        </div>
+                                        <div class="wrapper-add-review"><img class="ava" src="../../images/description-ava-1.png" />
+                                            <form class="add-rev">
+                                                <div class="form-group"><textarea class="form-control" placeholder="Ваш отзыв"></textarea></div>
+                                                <div class="form-group draw-photo"><a class="hidden-sm-down" href="#">Перетяните сюда фотографии или нажмите для поиска на жестком диске</a><a class="hidden-md-up" href="#">Загрузить фото</a><input type="file" /></div>
+                                                <div class="form-group wrapper-link-video"><input class="form-control" type="text" name="videoLink" placeholder="Ссылка на видео" /></div>
+                                                <div class="wrapper-stars">Ваша оценка
+                                                    <div class="stars js-add-review"><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                                        <a
+                                                            class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                                            <a
+                                                                class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group"><input class="checkbox" type="checkbox" name="anonim" id="anonim" /><label for="anonim">Анонимный отзыв</label></div>
+                                                <div class="form-group"><button class="btn btn-outline-primary">Оставить отзыв</button></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-list">
+                                <div class="wrapper-reviews">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-12">
+                                            <div class="wrapper-review clearfix"><img class="ava" src="../../images/description-ava-1.png" />
+                                                <div class="auter"><span>Иван Иванов</span></div>
+                                                <div class="rating"><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                                        <a
+                                                            class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                                </div>
+                                                <div class="wrapper-date hidden-lg-up float-right">
+                                                    <div class="wrapper-flex"><span>27  ноября 2016</span>
+                                                        <div class="likes clearfix"><a class="like js-like float-left" href="#"><svg class="icon icon_description-like"><use xlink:href="./../../images/sprite.svg#description-like"></use></svg><span>5</span></a><a class="dislike js-like float-left"
+                                                                href="#"><svg class="icon icon_description-dislike"><use xlink:href="./../../images/sprite.svg#description-dislike"></use></svg><span>1</span></a></div><a class="dashed" href="#">Ответить</a></div>
+                                                </div>
+                                                <div class="review">
+                                                    <p>KIM TEC уплотнитель самоклеящийся с D-образным профилем для окон и дверей. Прост в использовании. Снижает энергозатраты на отопление, а также обладает высокой адгезией к поверхности из дерева, металла,
+                                                        пластика. Подходит для уплотнения всех типов дверей и окон.</p>
+                                                </div>
+                                                <div class="wrapper-img"><img class="img-review" src="../../images/description-review-img.jpg" /><img class="img-review" src="../../images/description-review-img.jpg" /><img class="img-review" src="../../images/description-review-img.jpg" /><img
+                                                        class="img-review" src="../../images/description-review-img.jpg" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 hidden-md-down">
+                                            <div class="wrapper-date"><span>27  ноября 2016</span>
+                                                <div class="likes clearfix"><a class="like js-like float-left"><svg class="icon icon_description-like"><use xlink:href="./../../images/sprite.svg#description-like"></use></svg><span>5</span></a><a class="dislike js-like float-left"><svg class="icon icon_description-dislike"><use xlink:href="./../../images/sprite.svg#description-dislike"></use></svg><span>1</span></a></div>
+                                                <a
+                                                    class="dashed collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-answer-3809" aria-expanded="false" aria-controls="collapse-answer-3809">Ответить на отзыв</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="reply-to-review collapse" id="collapse-answer-3809" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="wrapper-add-answer"><img class="ava" src="../../images/description-ava-1.png" />
+                                                    <form class="add-rev">
+                                                        <div class="form-group"><textarea class="form-control" placeholder="Ваш отзыв"></textarea></div>
+                                                        <div class="form-group"><button class="btn btn-outline-primary">Ответить на отзыв</button></div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10 col-12">
+                                            <div class="wrapper-review-answer answer-bg clearfix"><img class="ava" src="../../images/description-ava-answer-1.png" />
+                                                <div class="auter"><span>Администрация</span></div>
+                                                <div class="wrapper-date hidden-lg-up float-right">
+                                                    <div class="wrapper-flex"><span>27  ноября 2016</span>
+                                                        <div class="likes clearfix"><a class="like js-like float-left"><svg class="icon icon_description-like"><use xlink:href="./../../images/sprite.svg#description-like"></use></svg><span>5</span></a><a class="dislike js-like float-left"><svg class="icon icon_description-dislike"><use xlink:href="./../../images/sprite.svg#description-dislike"></use></svg><span>1</span></a></div>
+                                                        <a
+                                                            class="dashed" href="#">Ответить</a>
+                                                    </div>
+                                                </div>
+                                                <div class="review">
+                                                    <p>Благодарим за Ваш отзыв!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 hidden-md-down">
+                                            <div class="wrapper-date wrapper-date-answer answer-bg"><span>27  ноября 2016</span>
+                                                <div class="likes clearfix"><a class="like js-like float-left"><svg class="icon icon_description-like"><use xlink:href="./../../images/sprite.svg#description-like"></use></svg><span>5</span></a><a class="dislike js-like float-left"><svg class="icon icon_description-dislike"><use xlink:href="./../../images/sprite.svg#description-dislike"></use></svg><span>1</span></a></div>
+                                                <a
+                                                    class="dashed" href="#">Ответить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrapper-reviews">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-12">
+                                            <div class="wrapper-review clearfix"><img class="ava" src="../../images/description-ava-1.png" />
+                                                <div class="auter"><span>Иван Иванов</span></div>
+                                                <div class="rating"><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                                        <a
+                                                            class="star filled"><svg class="icon icon_description-star"><use xlink:href="./../../images/sprite.svg#description-star"></use></svg></a>
+                                                </div>
+                                                <div class="wrapper-date hidden-lg-up float-right">
+                                                    <div class="wrapper-flex"><span>27  ноября 2016</span>
+                                                        <div class="likes clearfix"><a class="like js-like float-left" href="#"><svg class="icon icon_description-like"><use xlink:href="./../../images/sprite.svg#description-like"></use></svg><span>5</span></a><a class="dislike js-like float-left"
+                                                                href="#"><svg class="icon icon_description-dislike"><use xlink:href="./../../images/sprite.svg#description-dislike"></use></svg><span>1</span></a></div><a class="dashed" href="#">Ответить</a></div>
+                                                </div>
+                                                <div class="review">
+                                                    <p>KIM TEC уплотнитель самоклеящийся с D-образным профилем для окон и дверей. Прост в использовании. Снижает энергозатраты на отопление, а также обладает высокой адгезией к поверхности из дерева, металла,
+                                                        пластика. Подходит для уплотнения всех типов дверей и окон.</p>
+                                                </div>
+                                                <div class="wrapper-img"><img class="img-review" src="../../images/description-review-img.jpg" /><img class="img-review" src="../../images/description-review-img.jpg" /><img class="img-review" src="../../images/description-review-img.jpg" /><img
+                                                        class="img-review" src="../../images/description-review-img.jpg" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 hidden-md-down">
+                                            <div class="wrapper-date"><span>27  ноября 2016</span>
+                                                <div class="likes clearfix"><a class="like js-like float-left"><svg class="icon icon_description-like"><use xlink:href="./../../images/sprite.svg#description-like"></use></svg><span>5</span></a><a class="dislike js-like float-left"><svg class="icon icon_description-dislike"><use xlink:href="./../../images/sprite.svg#description-dislike"></use></svg><span>1</span></a></div>
+                                                <a
+                                                    class="dashed collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-answer-975" aria-expanded="false" aria-controls="collapse-answer-975">Ответить на отзыв</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="reply-to-review collapse" id="collapse-answer-975" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="wrapper-add-answer"><img class="ava" src="../../images/description-ava-1.png" />
+                                                    <form class="add-rev">
+                                                        <div class="form-group"><textarea class="form-control" placeholder="Ваш отзыв"></textarea></div>
+                                                        <div class="form-group"><button class="btn btn-outline-primary">Ответить на отзыв</button></div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10 col-12">
+                                            <div class="wrapper-review-answer answer-bg clearfix"><img class="ava" src="../../images/description-ava-answer-1.png" />
+                                                <div class="auter"><span>Администрация</span></div>
+                                                <div class="wrapper-date hidden-lg-up float-right">
+                                                    <div class="wrapper-flex"><span>27  ноября 2016</span>
+                                                        <div class="likes clearfix"><a class="like js-like float-left"><svg class="icon icon_description-like"><use xlink:href="./../../images/sprite.svg#description-like"></use></svg><span>5</span></a><a class="dislike js-like float-left"><svg class="icon icon_description-dislike"><use xlink:href="./../../images/sprite.svg#description-dislike"></use></svg><span>1</span></a></div>
+                                                        <a
+                                                            class="dashed" href="#">Ответить</a>
+                                                    </div>
+                                                </div>
+                                                <div class="review">
+                                                    <p>Благодарим за Ваш отзыв!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 hidden-md-down">
+                                            <div class="wrapper-date wrapper-date-answer answer-bg"><span>27  ноября 2016</span>
+                                                <div class="likes clearfix"><a class="like js-like float-left"><svg class="icon icon_description-like"><use xlink:href="./../../images/sprite.svg#description-like"></use></svg><span>5</span></a><a class="dislike js-like float-left"><svg class="icon icon_description-dislike"><use xlink:href="./../../images/sprite.svg#description-dislike"></use></svg><span>1</span></a></div>
+                                                <a
+                                                    class="dashed" href="#">Ответить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-deliver" role="tabpanel"><a class="nav-collapse hidden-md-up" data-toggle="collapse" href="#collapse-deliver" aria-expanded="false" aria-controls="collapse-deliver"><span class="tab-span">О доставке</span></a>
+                        <div class="collapse-sm" id="collapse-deliver">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/main.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Components of Likee.template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../../template_styles.css" rel="stylesheet">
+    <link href="../../components.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="b-site" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+        <div class="b-contacts max-width">
+            <div class="container">
+                <h1 class="h2">Контакты</h1>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="sub-section">
+                            <h3>Адрес магазина</h3>
+                            <div class="form-group"><select class="form-control js-select"><option>Курск, База Строитель, Республиканская 9</option><option>Курск, Ленина 1, 1</option></select></div>
+                        </div>
+                        <div class="sub-section">
+                            <h3>Режим работы</h3>
+                            <p>Call-центр<br/>ежедневно с 9 до 22 часов</p>
+                            <p>Доставка заказов<br/>ежедневно с 16:00 до 23:00</p>
+                        </div>
+                        <div class="sub-section">
+                            <h3>Офис</h3>
+                            <div class="sub-item">Курск, Ленина 1, 1, 12030123</div>
+                            <div class="sub-item">(4712) 73-17-00</div><a href="mailto:info@sg.ru">info@sg.ru</a></div>
+                        <div class="sub-section sub-section-ava">
+                            <h3>Генеральный директор</h3>
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col-4"><img class="photo" src="../../images/contacts-ava.jpg" /></div>
+                                    <div class="col-12 col-md-2 name">Маслюкова Людмила Ивановна</div>
+                                </div>
+                            </div>
+                            <div class="text">(4712) 73-17-00</div><a href="mailto:direktor@sg.ru">direktor@sg.ru</a></div>
+                        <div class="sub-section">
+                            <h3 class="sub-h3">Личный девиз:</h3>
+                            <div class="text sub-text">По жизни с оптимизмом, и только вперед!"</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 right-block">
+                        <form class="sub-section" action="#">
+                            <h3>Обратная связь</h3>
+                            <div class="form-group required no-label"><input class="form-control" placeholder="Ваше имя" type="text" /></div>
+                            <div class="form-group required no-label"><input class="form-control" placeholder="Email" type="email" /></div>
+                            <div class="form-group required no-label"><input class="form-control js-tel" placeholder="Телефон" type="tel" /></div>
+                            <div class="form-group required no-label textarea-group"><textarea class="form-control" placeholder="Напишите сообщение..."></textarea></div>
+                            <h3 class="bottom-h3">Понравилась ли Вам наша компания?</h3>
+                            <div class="form-group form-group-label custom-radio-yes"><input class="radio" type="radio" name="like" id="l1" checked="checked" /><label for="l1">Да<svg class="icon icon_contacts-yes"><use xlink:href="./../../images/sprite.svg#contacts-yes"></use></svg></label></div>
+                            <div class="form-group form-group-label custom-radio-no"><input class="radio" type="radio" name="like" id="l2" /><label for="l2">Нет<svg class="icon icon_contacts-no"><use xlink:href="./../../images/sprite.svg#contacts-no"></use></svg></label></div>
+                            <div class="form-group"><button class="btn btn-outline-primary">Отправить сообщение</button></div>
+                        </form>
+                        <div class="success-text">
+                            <div class="sent-message">
+                                <h3>Спасибо!</h3><span>Ваше сообщение отправлено.</span></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+                        <div class="map js-map" id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/main.js"></script>
+    </div>
+</body>
+
+</html>

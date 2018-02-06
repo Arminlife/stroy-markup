@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Components of Likee.template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../../template_styles.css" rel="stylesheet">
+    <link href="../../components.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="b-site" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+        <div class="b-delivery max-width">
+            <div class="section">
+                <h2>Доставка и оплата</h2>
+                <h3>Войдите в свой аккаунт</h3>
+                <div class="text">Если у вас нет аккаунта, вы можете <a href="" data-target=".js-express-modal" class="decorated-link js-get-modal">пройти экспресс-регистрацию</a></div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <form>
+                            <div class="form-group required wh-label"><input class="form-control" type="email" placeholder="Email" /></div>
+                            <div class="form-group required wh-label"><input class="form-control" type="password" placeholder="Пароль" /></div>
+                            <div class="form-group clearfix">
+                                <div class="float-left"><input class="checkbox" type="checkbox" id="agree" name="agree" /><label class="text-small-label" for="agree">Запомнить меня</label></div>
+                                <div class="float-right"><a class="decorated-link" href="#">Забыли пароль?</a></div>
+                            </div>
+                            <div class="form-group button-cont"><button class="btn btn-outline-success">Войти</button>
+                                <div class="social-icons"><a href="#"><svg class="icon icon_delivery-vk"><use xlink:href="./../../images/sprite.svg#delivery-vk"></use></svg></a><a href="#"><svg class="icon icon_delivery-ok"><use xlink:href="./../../images/sprite.svg#delivery-ok"></use></svg></a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Выберите вариант получения товара</h3>
+                <div class="text light text-small">Стоимость доставки будет расчитана после ввода адреса доставки</div>
+                <div class="form-group"><input class="radio" type="radio" id="del1" name="delivery" checked="checked" /><label for="del1">Доставка курьером</label></div>
+                <div class="form-group"><input class="radio" type="radio" id="del2" name="delivery" /><label for="del2">Самовывоз<div class="hidden-md-up light">Бесплатно</div><div><input class="checkbox" type="checkbox" id="sm" name="sm"/><label for="sm">Собрать в одном магазине<div class="light">В вашем заказе товары из разных магазинов. Мы можем собрать их в одном из них. <br> Стоимость - 500 <span class='rouble'>₽</span>, время сбора заказа - до 3-х рабочих дней</div></label></div>
+                </label>
+            </div>
+        </div>
+        <div class="section m-bottom">
+            <h3>Адрес доставки и получатель</h3>
+            <div class="text light text-small">Ознакомьтесь с <a href="reglament.html" target="_blank" class="blank">регламентом доставки</a></div>
+            <div class="form-group form-group-custom-top"><label class="form-caption">Выберите адрес</label><select class="form-control js-select"><option>Курск, ул. Строителей, 25</option></select></div>
+            <div class="row">
+                <form class="col-12 col-md-6">
+                    <div class="form-group form-group-custom required"><label class="form-caption form-caption-address">Город</label><input class="form-control" type="text" placeholder="Заполненное неактивное поле" disabled="disabled" /></div>
+                    <div class="form-group form-group-custom form-caption-address required"><label class="form-caption">Улица</label><input class="form-control" type="text" placeholder="Заполненное неактивное поле" disabled="disabled" /></div>
+                    <div class="form-group form-group-custom form-caption-address">
+                        <div class="row">
+                            <div class="col-4"><label class="form-caption form-caption-address">Дом</label><input class="form-control" type="text" disabled="disabled" /></div>
+                            <div class="col-4"><label class="form-caption form-caption-address">Корпус</label><input class="form-control" type="text" disabled="disabled" /></div>
+                            <div class="col-4"><label class="form-caption form-caption-address">Квартира</label><input class="form-control" type="text" disabled="disabled" /></div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-custom wrapper-btn active"><a class="js-edit-form decorated-link bottom-link" href="#">Изменить адрес доставки</a></div>
+                    <div class="form-group form-group-custom wrapper-btn p-t-1"><button class="btn btn-primary">Сохранить</button></div>
+                </form>
+                <form class="col-12 col-md-6 right-block">
+                    <div class="form-group form-group-custom required"><label class="form-caption form-caption-address">Имя получателя</label><input class="form-control" type="text" value="Иванов Пётр Петрович" disabled="disabled" /></div>
+                    <div class="form-group form-group-custom required"><label class="form-caption form-caption-address">Email получателя</label><input class="form-control" type="email" value="ivanov@mail.com" disabled="disabled" /></div>
+                    <div class="form-group form-group-custom required"><label class="form-caption form-caption-address">Контактный телефон</label><input class="form-control js-tel" type="tel" value="+7 905 688-00-00" disabled="disabled" /></div>
+                    <div class="form-group form-group-custom wrapper-btn active"><a class="js-edit-form decorated-link bottom-link" href="#">Редактировать данные получателя</a></div>
+                    <div class="form-group form-group-custom wrapper-btn p-t-1"><button class="btn btn-primary">Сохранить</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="section colored">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="sub-section">
+                        <h3 class="custom-h">Время доставки</h3>
+                        <div class="form-group custom-group"><input class="radio" type="radio" id="time1" name="delivery" /><label class="custom-margin" for="time1">Доставить в определённое время<div class="wrapper-custom"><div class="row"><div class="col-7"><div class="form-group"><input class="form-control" type="date" placeholder="ДД/ММ/ГГГГ"/></div></div><div class="col-5 l-margin"><div class="form-group"><input class="form-control" type="time" placeholder="ЧЧ:ММ"/></div></div></div></div></label></div>
+                        <div
+                            class="form-group custom-group"><input class="radio" type="radio" id="time2" name="delivery" checked="checked" /><label for="time2">Плановая доставка<div class="row"><div class="col-12"><div class="form-group time-select"><select class="form-control js-select"><option>Выберите время</option></select></div></div></div></label></div>
+                </div>
+                <div class="sub-section custom-group">
+                    <h3 class="custom-h">Дополнительные услуги</h3>
+                    <div class="form-group form-custom-service"><input class="checkbox" type="checkbox" id="add" name="add" checked="checked" /><label for="add">Заказать услуги грузчиков</label></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 right-block">
+                <h3 class="custom-h">Расчётная стоимость доставки <br>(оплачивается отдельно)</h3><img class="loader" src="../../images/delivery-loader.png" width="50" /></div>
+        </div>
+    </div>
+    <div class="section section-pay">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3>Способы оплаты</h3>
+                <div class="text light text-small">Дополнительное примечаение об оплате</div>
+                <div class="form-group"><input class="radio" type="radio" id="pay1" name="pay" checked="checked" /><label for="pay1">Наличными курьеру</label></div>
+                <div class="form-group"><input class="radio" type="radio" id="pay2" name="pay" /><label for="pay2">Банковской картой курьеру</label></div>
+                <div class="form-group"><input class="radio" type="radio" id="pay3" name="pay" /><label for="pay3">Оплата онлайн на сайте</label></div>
+                <div class="form-group"><input class="radio" type="radio" id="pay4" name="pay" /><label for="pay4">Купить в кредит</label></div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="read-more colored">
+                    <div class="left"><a class="quick-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Дополнительная информация">?</a></div>
+                    <div class="right text-small">Подробнее о покупке в кредит и других способах оплаты в разделе<br><a class="blank" target="_blank" href="#">"Помощь в покупке"</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-you-can">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 class="you-can">Вы можите списать<span class="bonus">532 бонуса</span><a class="quick-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Дополнительная информация">?</a></h3>
+                <div class="form-group form-group-custom"><span>Списать</span><input class="form-control form-control-bonus" type="text" placeholder="0" /><span>бонусов</span><button class="apply first btn btn-outline-primary">Применить</button></div>
+                <h3 class="you-can prom-h3">Промкод<a class="quick-link quick-link-bottom" href="#" data-toggle="tooltip" data-placement="bottom" title="Дополнительная информация">?</a></h3>
+                <div class="form-group form-group-custom"><input class="form-control form-control-code" type="text" placeholder="Введите код..." /><button class="apply btn btn-outline-primary">Применить</button></div>
+            </div>
+            <div class="col-12 col-md-6 right-block">
+                <table class="sum-goods">
+                    <tr>
+                        <th>Всего товаров:</th>
+                        <td>3 шт.</td>
+                    </tr>
+                    <tr>
+                        <th>Общий вес:</th>
+                        <td>50 кг</td>
+                    </tr>
+                    <tr>
+                        <th>Общая сумма:</th>
+                        <td>12 150 <span class='rouble'>₽</span></td>
+                    </tr>
+                    <tr>
+                        <th>Скидка за оформление за 5 минут:</th>
+                        <td>5% &nbsp<span class="light-td">3259 <span class='rouble'>₽</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Скидка за сумму заказа<br><span class="light-td">порог суммы - 60 000 <span class='rouble'>₽</span></span>
+                        </th>
+                        <td>1% &nbsp<span class="light-td">650 <span class='rouble'>₽</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Скидка по промкоду</th>
+                        <td><span class="light-td">нет</span></td>
+                    </tr>
+                    <tr>
+                        <th>Использованные бонусы</th>
+                        <td><span class="light-td">нет</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="section section-you-can">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 class="you-can">Бонусная карта<a class="quick-link ib" href="#" data-toggle="tooltip" data-placement="bottom" title="Дополнительная информация">?</a></h3>
+                <div class="form-group form-group-custom"><a href="#auth" data-target=".js-login-modal" class="js-get-modal decorated-link">Войдите</a>, чтобы использовать бонусы</div>
+                <h3 class="you-can prom-h3">Промкод<a class="ib quick-link quick-link-bottom" href="#" data-toggle="tooltip" data-placement="bottom" title="Дополнительная информация">?</a></h3>
+                <div class="form-group form-group-custom"><input class="form-control form-control-code" type="text" placeholder="Введите код..." /><button class="apply btn btn-outline-primary">Применить</button></div>
+            </div>
+            <div class="col-12 col-md-6 right-block">
+                <table class="sum-goods">
+                    <tr>
+                        <th>Всего товаров:</th>
+                        <td>3 шт.</td>
+                    </tr>
+                    <tr>
+                        <th>Общий вес:</th>
+                        <td>50 кг</td>
+                    </tr>
+                    <tr>
+                        <th>Общая сумма:</th>
+                        <td>12 150 <span class='rouble'>₽</span></td>
+                    </tr>
+                    <tr>
+                        <th>Скидка за оформление за 5 минут:</th>
+                        <td>5% &nbsp<span class="light-td">3259 <span class='rouble'>₽</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Скидка за сумму заказа<br><span class="light-td">порог суммы - 60 000 <span class='rouble'>₽</span></span>
+                        </th>
+                        <td>1% &nbsp<span class="light-td">650 <span class='rouble'>₽</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Скидка по промкоду</th>
+                        <td><span class="light-td">нет</span></td>
+                    </tr>
+                    <tr>
+                        <th>Использованные бонусы</th>
+                        <td><span class="light-td">нет</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="section section-you-can">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 class="you-can">У вас нет привязанной карты<a class="quick-link ib" href="#" data-toggle="tooltip" data-placement="bottom" title="Дополнительная информация">?</a></h3>
+                <div class="form-group form-group-custom">
+                    <div class="form-group form-group-custom"><a href="#" data-target=".js-add-card" class="js-collapser decorated-link">Добавить карту</a></div>
+                    <div class="collapse js-add-card">
+                        <div class="form-group required no-label"><input class="form-control" type="text" placeholder="Номер карты" /></div>
+                    </div>
+                </div>
+                <h3 class="you-can prom-h3">Промкод<a class="quick-link quick-link-bottom" href="#" data-toggle="tooltip" data-placement="bottom" title="Дополнительная информация">?</a></h3>
+                <div class="form-group form-group-custom"><input class="form-control form-control-code" type="text" placeholder="Введите код..." /><button class="apply btn btn-outline-primary">Применить</button></div>
+            </div>
+            <div class="col-12 col-md-6 right-block">
+                <table class="sum-goods">
+                    <tr>
+                        <th>Всего товаров:</th>
+                        <td>3 шт.</td>
+                    </tr>
+                    <tr>
+                        <th>Общий вес:</th>
+                        <td>50 кг</td>
+                    </tr>
+                    <tr>
+                        <th>Общая сумма:</th>
+                        <td>12 150 <span class='rouble'>₽</span></td>
+                    </tr>
+                    <tr>
+                        <th>Скидка за оформление за 5 минут:</th>
+                        <td>5% &nbsp<span class="light-td">3259 <span class='rouble'>₽</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Скидка за сумму заказа<br><span class="light-td">порог суммы - 60 000 <span class='rouble'>₽</span></span>
+                        </th>
+                        <td>1% &nbsp<span class="light-td">650 <span class='rouble'>₽</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Скидка по промкоду</th>
+                        <td><span class="light-td">нет</span></td>
+                    </tr>
+                    <tr>
+                        <th>Использованные бонусы</th>
+                        <td><span class="light-td">нет</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="b-action">
+        <div class="container hidden-sm-down max-width">
+            <!--Время в минутах-->
+            <div class="timer js-timer" data-time="5">05:00</div>
+            <div class="title">при оформлении заказа <br> в течение 5&nbsp;минут - скидка 5%</div>
+            <div class="delivery"><span class="caption">Доставка<br></span><span class="value">1 500 ₽</span></div>
+            <div class="total">К оплате</div>
+            <div class="total-value js-total-value">50 150 <span class='rouble'>₽</span></div>
+        </div>
+        <div class="container hidden-md-up">
+            <table class="i-table">
+                <tr>
+                    <td>
+                        <div class="total">К оплате</div>
+                    </td>
+                    <td class="text-right">
+                        <div class="total-value js-total-value">50 150 <span class='rouble'>₽</span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="total">Доставка</div>
+                    </td>
+                    <td class="text-right">
+                        <div class="total-value js-total-value">1 500 <span class='rouble'>₽</span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="title">при оформлении заказа <br> в течение 5&nbsp;минут - скидка 5%</div>
+                    </td>
+                    <td class="text-right">
+                        <!--Время в минутах-->
+                        <div class="timer js-timer" data-time="5">05:00</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section text-md-right text-center"><a class="btn btn-blank" href="#">Оформить заказ<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a></div>
+    </div>
+    <script src="../../js/main.js"></script>
+    </div>
+</body>
+
+</html>

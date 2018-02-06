@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Components of Likee.template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../../template_styles.css" rel="stylesheet">
+    <link href="../../components.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="b-site" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+        <div class="b-orders">
+            <div class="wrapper-order-item">
+                <div class="order hidden-sm-down">
+                    <div class="part-number">
+                        <div class="number" data-toggle="collapse" data-target="#collapce1" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                        <div class="date">25 ноября 2016</div>
+                    </div>
+                    <div class="part-price">
+                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                        <div class="old-price hidden-md-down">13 500 <span class='rouble'>₽</span></div>
+                        <div class="profit hidden-md-down">Выгода:<span>500 <span class='rouble'>₽</span></span>
+                        </div>
+                    </div>
+                    <div class="part-bonus">
+                        <div class="bonus-plus"><span class="bonus">+300</span>
+                            <sapn class="bonus-label">бонусов начислено</sapn>
+                        </div>
+                        <div class="bonus-minus"><span class="bonus">-1200</span><span class="bonus-label">бонусов списано</span></div>
+                    </div>
+                    <div class="part-status">
+                        <div class="status">в работе</div>
+                    </div>
+                    <div class="return hidden-md-down">
+                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce1" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                    </div>
+                    <div class="print hidden-md-down"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                </div>
+                <div class="button-points js-buttons-points hidden-lg-up hidden-sm-down">
+                    <div class="points"><img src="../../images/orders-points.png" /></div>
+                </div>
+            </div>
+            <div class="order hidden-md-up">
+                <div class="wrapper-order">
+                    <div class="part-number">
+                        <div class="number" data-toggle="collapse" data-target="#collapce1" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                        <div class="date">25 ноября 2016</div>
+                    </div>
+                    <div class="part-price">
+                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                        <div class="old-price hidden-md-down">13 500 <span class='rouble'>₽</span></div>
+                        <div class="profit hidden-md-down">Выгода:<span>500 <span class='rouble'>₽</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="part-bonus">
+                    <div class="bonus-plus"><span class="bonus">+300</span>
+                        <sapn class="bonus-label">бонусов начислено</sapn>
+                    </div>
+                    <div class="bonus-minus"><span class="bonus">-1200</span><span class="bonus-label">бонусов списано</span></div>
+                </div>
+                <div class="part-status">
+                    <div class="status">в работе</div>
+                </div>
+                <div class="wrapper-order">
+                    <div class="return">
+                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce1" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                    </div>
+                    <div class="print"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                </div>
+            </div>
+            <div class="collapse" id="collapce1">
+                <div class="hidden-sm-down">
+                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                    </div>
+                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                            <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                        </div>
+                    </div>
+                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                            <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                </div>
+                <div class="hidden-md-up">
+                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                            <div class="ordered">
+                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                            </div>
+                        </div>
+                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                            <div class="ordered">
+                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                            </div>
+                        </div>
+                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                </div>
+            </div>
+            <div class="wrapper-order-item">
+                <div class="order hidden-sm-down">
+                    <div class="part-number">
+                        <div class="number" data-toggle="collapse" data-target="#collapce2" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                        <div class="date">25 ноября 2016</div>
+                    </div>
+                    <div class="part-price">
+                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                    </div>
+                    <div class="part-bonus">
+                        <div class="bonus-plus"><span class="bonus">+300</span>
+                            <sapn class="bonus-label">бонусов начислено</sapn>
+                        </div>
+                    </div>
+                    <div class="part-status">
+                        <div class="status">подтвержден</div>
+                    </div>
+                    <div class="return hidden-md-down">
+                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce2" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                    </div>
+                    <div class="print hidden-md-down"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                </div>
+                <div class="button-points js-buttons-points hidden-lg-up hidden-sm-down">
+                    <div class="points"><img src="../../images/orders-points.png" /></div>
+                </div>
+            </div>
+            <div class="order hidden-md-up">
+                <div class="wrapper-order">
+                    <div class="part-number">
+                        <div class="number" data-toggle="collapse" data-target="#collapce2" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                        <div class="date">25 ноября 2016</div>
+                    </div>
+                    <div class="part-price">
+                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                    </div>
+                </div>
+                <div class="part-bonus">
+                    <div class="bonus-plus"><span class="bonus">+300</span>
+                        <sapn class="bonus-label">бонусов начислено</sapn>
+                    </div>
+                </div>
+                <div class="part-status">
+                    <div class="status">подтвержден</div>
+                </div>
+                <div class="wrapper-order">
+                    <div class="return">
+                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce2" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                    </div>
+                    <div class="print"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                </div>
+            </div>
+            <div class="collapse" id="collapce2">
+                <div class="hidden-sm-down">
+                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                    </div>
+                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                            <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                        </div>
+                    </div>
+                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                            <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                </div>
+                <div class="hidden-md-up">
+                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                            <div class="ordered">
+                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                            </div>
+                        </div>
+                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                            <div class="ordered">
+                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                            </div>
+                        </div>
+                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                </div>
+            </div>
+            <div class="wrapper-order-item">
+                <div class="order hidden-sm-down">
+                    <div class="part-number">
+                        <div class="number" data-toggle="collapse" data-target="#collapce3" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                        <div class="date">25 ноября 2016</div>
+                    </div>
+                    <div class="part-price">
+                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                    </div>
+                    <div class="part-bonus"></div>
+                    <div class="part-status">
+                        <div class="status">скомплектован</div>
+                    </div>
+                    <div class="return hidden-md-down">
+                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce3" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                    </div>
+                    <div class="print hidden-md-down"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                </div>
+                <div class="button-points js-buttons-points hidden-lg-up hidden-sm-down">
+                    <div class="points"><img src="../../images/orders-points.png" /></div>
+                </div>
+            </div>
+            <div class="order hidden-md-up">
+                <div class="wrapper-order">
+                    <div class="part-number">
+                        <div class="number" data-toggle="collapse" data-target="#collapce3" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                        <div class="date">25 ноября 2016</div>
+                    </div>
+                    <div class="part-price">
+                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                    </div>
+                </div>
+                <div class="part-bonus"></div>
+                <div class="part-status">
+                    <div class="status">скомплектован</div>
+                </div>
+                <div class="wrapper-order">
+                    <div class="return">
+                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce3" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                    </div>
+                    <div class="print"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                </div>
+            </div>
+            <div class="collapse" id="collapce3">
+                <div class="hidden-sm-down">
+                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                    </div>
+                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                            <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                        </div>
+                    </div>
+                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                            <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                </div>
+                <div class="hidden-md-up">
+                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                            <div class="ordered">
+                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                            </div>
+                        </div>
+                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                            <div class="ordered">
+                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                            </div>
+                        </div>
+                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                </div>
+            </div>
+            <div class="wrapper-order-item">
+                <div class="order hidden-sm-down">
+                    <div class="part-number">
+                        <div class="number" data-toggle="collapse" data-target="#collapce4" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                        <div class="date">25 ноября 2016</div>
+                    </div>
+                    <div class="part-price">
+                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                    </div>
+                    <div class="part-bonus">
+                        <div class="bonus-minus"><span class="bonus">-1200</span><span class="bonus-label">бонусов списано</span></div>
+                    </div>
+                    <div class="part-status">
+                        <div class="status">под заказ</div>
+                    </div>
+                    <div class="return hidden-md-down">
+                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce4" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                    </div>
+                    <div class="print hidden-md-down"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                </div>
+                <div class="button-points js-buttons-points hidden-lg-up hidden-sm-down">
+                    <div class="points"><img src="../../images/orders-points.png" /></div>
+                </div>
+            </div>
+            <div class="order hidden-md-up">
+                <div class="wrapper-order">
+                    <div class="part-number">
+                        <div class="number" data-toggle="collapse" data-target="#collapce4" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                        <div class="date">25 ноября 2016</div>
+                    </div>
+                    <div class="part-price">
+                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                    </div>
+                </div>
+                <div class="part-bonus">
+                    <div class="bonus-minus"><span class="bonus">-1200</span><span class="bonus-label">бонусов списано</span></div>
+                </div>
+                <div class="part-status">
+                    <div class="status">под заказ</div>
+                </div>
+                <div class="wrapper-order">
+                    <div class="return">
+                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce4" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                    </div>
+                    <div class="print"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                </div>
+            </div>
+            <div class="collapse" id="collapce4">
+                <div class="hidden-sm-down">
+                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                    </div>
+                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                            <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                        </div>
+                    </div>
+                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                            <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                </div>
+                <div class="hidden-md-up">
+                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                            <div class="ordered">
+                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                            </div>
+                        </div>
+                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                            <div class="ordered">
+                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                            </div>
+                        </div>
+                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                            <div class="product-id">Код товара: 1239190230</div>
+                            <div class="price">
+                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/main.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>template</title>
+    <link href="template_styles.css" rel="stylesheet">
+    <link href="components.css" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body>
+    <div class="b-site" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+        <div class="container demo" style="padding-top:20px;">
+            <div class="row">
+                <div class="col-12 text-center"><a href="index.html" style="display:block;margin-bottom:20px;"><img src="images/sidebar-logo.png" width="145"></a></div>
+                <div class="col-12 col-lg-6">
+                    <h2>Страницы</h2>
+                    <ul>
+                        <li><a href="main.html">Главная страница</a></li>
+                        <li><a href="catalogue.html">Каталог</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="card.html">Карточка товара</a></li>
+                        <li><a href="advices.html">Полезные советы</a></li>
+                        <li><a href="profile.html">Профиль</a></li>
+                        <li><a href="profile.html">Список заказов</a></li>
+                        <li><a href="cart.html">Корзина и оформление заказа</a></li>
+                        <li><a href="compare.html">Сравнение</a></li>
+                        <li><a href="jobsArticle.html">Вакансия</a></li>
+                        <li><a href="jobs.html">Список вакансий</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <!--+componentsLink({'href': 'contactsSent.html','name': 'Контакты (сообщение отправлено)'})-->
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="archive.html">Cписок материалов</a></li>
+                        <li><a href="article.html">Статья</a></li>
+                        <li><a href="catalogueCategory.html">Категории каталогов</a></li>
+                        <li><a class="js-get-modal" href="#auth" data-target=".js-login-modal">Вход</a></li>
+                        <li><a class="js-get-modal" href="#" data-target=".js-active-bonus-card">Активация бонусной карты</a></li>
+                        <li><a class="js-get-modal" href="#" data-target=".js-thanks">Завершение активации</a></li>
+                        <li><a class="js-get-modal" href="#" data-target=".js-bid">Заявка на получение бонусной карты</a></li>
+                        <li><a href="profileB.html">Личный кабинет</a></li>
+                        <li><a href="feedback.html">Обратная связь</a></li>
+                        <li><a href="orders.html">Заказы</a></li>
+                        <li><a href="checkoutOk.html">Подтверждение заказов</a></li>
+                        <li><a href="search.html">Результаты поиска</a></li>
+                        <li><a href="reglament.html">Положение и регламент</a></li>
+                        <li><a href="sitemap.html">Карта сайта</a></li>
+                        <li><a href="form-password-recovery.html">Форма восстановления пароля</a></li>
+                        <li><a href="change-password.html">Форма для создания нового пароля</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2>Компоненты</h2>
+                    <ul>
+                        <li><a href="components/header/view.html">Шапка</a></li>
+                        <li><a href="components/search/view.html">Поиск</a></li>
+                        <li><a href="components/footer/view.html">Футер</a></li>
+                        <li><a href="components/slider/view.html">Слайдер</a></li>
+                        <li><a href="components/offers/view.html">Офферы</a></li>
+                        <li><a href="components/actions/view.html">Акции</a></li>
+                        <li><a href="components/carousel/view.html">Карусель</a></li>
+                        <li><a href="components/action/view.html">Акции</a></li>
+                        <li><a href="components/advices/view.html">Советы</a></li>
+                        <li><a href="components/catalog/view.html">Каталог</a></li>
+                        <li><a href="components/description/view.html">Описание</a></li>
+                        <li><a href="components/description/view.html">Фильтр</a></li>
+                        <li><a href="components/garden/view.html">Сад и досуг</a></li>
+                        <li><a href="components/history/view.html">История просмотров</a></li>
+                        <li><a href="components/history/view.html">Инсталляции</a></li>
+                        <li><a href="components/goods-list/view.html">Список товаров</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="b-modal js-login-modal" id="auth"><a class="modal-close js-modal-close" href="#"></a>
+            <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+                <h2>Вход</h2>
+                <p>Если у вас нет аккаунта, вы можете &nbsp;<a class="decorated-link js-get-modal" href="#reg" data-target=".js-registration-modal">зарегистрироваться</a></p>
+                <form class="form">
+                    <div class="form-group required"><input class="form-control" type="text" name="login" placeholder="Email"></div>
+                    <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Пароль"></div>
+                    <div class="form-group row">
+                        <div class="col-6"><input class="checkbox" type="checkbox" name="remember" id="remember"><label for="remember">Запомнить меня</label></div>
+                        <div class="col-6 text-right"><a class="decorated-link" href="#">Забыли пароль?</a></div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-8"><button class="btn btn-outline-success">Войти</button></div>
+                        <div class="col-4 text-right"><a class="social" href="#"><svg class="icon icon_modal-social-vk"><use xlink:href="./images/sprite.svg#modal-social-vk"></use></svg></a><a class="social" href="#"><svg class="icon icon_modal-social-ok"><use xlink:href="./images/sprite.svg#modal-social-ok"></use></svg></a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="b-modal js-fast-modal"><a class="modal-close js-modal-close" href="#"></a>
+            <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+                <h2>Покупка в 1 клик</h2>
+                <p>Не тратьте свое время на оформление заказа! Оставьте свой email и телефон — и наш менеджер свяжется с Вами кратчайшие сроки<span class="d-block light sure">Все поля обязательны для заполнения</span></p>
+                <form class="form">
+                    <div class="form-group required"><input class="form-control" type="text" name="name" placeholder="Имя"></div>
+                    <div class="form-group required"><input class="form-control" type="email" name="mail" placeholder="Email"></div>
+                    <div class="form-group required"><input class="form-control" type="tel" name="tel" placeholder="Телефон"></div>
+                    <div class="form-group"><button class="btn btn-block btn-outline-success">Оформить заказ</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="b-modal js-express-modal"><a class="modal-close js-modal-close" href="#"></a>
+            <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+                <h2>Экспресс-регистрация</h2>
+                <p>Если у вас есть аккаунт, <a href="" data-target=".js-login-modal" class="js-get-modal">войдите</span></p><form class="form"><div class="form-group required"><input class="form-control" type="text" name="name" placeholder="Ваше полное имя"></div><div class="form-group required"><input class="form-control" type="email" name="mail" placeholder="Email"></div><div class="form-group required"><input class="form-control js-tel" type="tel" name="tel" placeholder="Телефон"></div><div class="form-group agree"><input class="checkbox" type="checkbox" name="a_exp" id="a_exp"><label for="a_exp">Cогласен на получение информации  об акциях и спецпредложениях</label></div><div class="form-group"><button class="btn btn-block btn-outline-success">Зарегистрироваться</button></div></form></div></div><div class="b-modal big js-accessories"><a class="modal-close js-modal-close" href="#"></a>
+                    <div
+                        class="body container">
+                        <h2>Аксессуары к данному товару</h2>
+                        <div class="b-possibly">
+                            <div class="container">
+                                <div class="swiper-container js-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="item"><a class="img" href="#"><img src="images/possibly-img-1.png"/></a>
+                                                <div class="wrapper-total">
+                                                    <div class="price">12 150 <span class='rouble'>₽</span>
+                                                        <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                                    </div>
+                                                    <div class="wrapper-title">
+                                                        <div class="rating"><a class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a><a class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a>
+                                                            <a
+                                                                class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a><a class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a>
+                                                                <a
+                                                                    class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                                        <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="badge">В наличии</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_possibly-link"><use xlink:href="./images/sprite.svg#possibly-link"></use></svg></span></a>
+                                                <div class="wrapper-icons clearfix float-md-right"><a class="float-right like filled hidden-md-up hidden-sm-down" href="#"><svg class="icon icon_possibly-calc"><use xlink:href="./images/sprite.svg#possibly-calc"></use></svg></a><a class="float-right libra js-icon hidden-sm-down"
+                                                        href="#"><svg class="icon icon_catalog-libra"><use xlink:href="./images/sprite.svg#catalog-libra"></use></svg></a><a class="float-md-right like js-icon" href="#"><svg class="icon icon_catalog-like"><use xlink:href="./images/sprite.svg#catalog-like"></use></svg></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item"><a class="img" href="#"><img src="images/possibly-img-2.png"/></a>
+                                                <div class="wrapper-total">
+                                                    <div class="price">12 150 <span class='rouble'>₽</span>
+                                                        <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                                    </div>
+                                                    <div class="wrapper-title">
+                                                        <div class="rating"><a class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a><a class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a>
+                                                            <a
+                                                                class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a><a class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a>
+                                                                <a
+                                                                    class="star filled"><svg class="icon icon_catalog-rate"><use xlink:href="./images/sprite.svg#catalog-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                                        <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="badge">В наличии</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_possibly-link"><use xlink:href="./images/sprite.svg#possibly-link"></use></svg></span></a>
+                                                <div class="wrapper-icons clearfix float-md-right"><a class="float-right like filled hidden-md-up hidden-sm-down" href="#"><svg class="icon icon_possibly-calc"><use xlink:href="./images/sprite.svg#possibly-calc"></use></svg></a><a class="float-right libra js-icon hidden-sm-down"
+                                                        href="#"><svg class="icon icon_catalog-libra"><use xlink:href="./images/sprite.svg#catalog-libra"></use></svg></a><a class="float-md-right like js-icon" href="#"><svg class="icon icon_catalog-like"><use xlink:href="./images/sprite.svg#catalog-like"></use></svg></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item"><a class="img" href="#"><img src="images/possibly-img-3.png"/></a>
+                                                <div class="wrapper-total">
+                                                    <div class="price">12 150 <span class='rouble'>₽</span></div>
+                                                    <div class="wrapper-title">
+                                                        <div class="rating"></div>
+                                                        <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="order">Под заказ</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_possibly-link"><use xlink:href="./images/sprite.svg#possibly-link"></use></svg></span></a>
+                                                <div class="wrapper-icons clearfix float-md-right"><a class="float-right like filled hidden-md-up hidden-sm-down" href="#"><svg class="icon icon_possibly-calc"><use xlink:href="./images/sprite.svg#possibly-calc"></use></svg></a><a class="float-right libra js-icon hidden-sm-down"
+                                                        href="#"><svg class="icon icon_catalog-libra"><use xlink:href="./images/sprite.svg#catalog-libra"></use></svg></a><a class="float-md-right like js-icon" href="#"><svg class="icon icon_catalog-like"><use xlink:href="./images/sprite.svg#catalog-like"></use></svg></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next js-next hidden-xs-down"><svg class="icon icon_slider-arrow-right"><use xlink:href="./images/sprite.svg#slider-arrow-right"></use></svg></div>
+                                <div class="swiper-button-prev js-prev hidden-xs-down"><svg class="icon icon_slider-arrow-left"><use xlink:href="./images/sprite.svg#slider-arrow-left"></use></svg></div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <div class="b-modal big js-add-to-cart"><a class="modal-close js-modal-close" href="#"></a>
+            <div class="body container">
+                <div class="addeded-product">
+                    <div class="img"><img src="images/modal-product.png"></div>
+                    <div class="text">
+                        <h2>Товар добавлен в корзину</h2><a class="btn btn-blank" href="cart.html">Перейти в корзину<span class="move"><svg class="icon icon_catalog-link"><use xlink:href="./images/sprite.svg#catalog-link"></use></svg></span></a><a class="decorated-link"
+                            href="#">Продолжить покупки</a></div>
+                </div>
+                <div class="catalog text-left hidden-sm-down">
+                    <h4 class="regular">С данным товаром часто покупают:</h4>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="img"><img src="images/modal-product.png"></div>
+                                <div class="text">
+                                    <div class="price">12 150 <span class="rouble">₽</span><span class="old-price">13 500 <span class="rouble">₽</span></span>
+                                    </div>
+                                    <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div><a class="btn btn-blank" href="cart.html">Купить<span class="move"><svg class="icon icon_catalog-link"><use xlink:href="./images/sprite.svg#catalog-link"></use></svg></span></a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="img"><img src="images/modal-product.png"></div>
+                                <div class="text">
+                                    <div class="price">12 150 <span class="rouble">₽</span><span class="old-price">13 500 <span class="rouble">₽</span></span>
+                                    </div>
+                                    <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div><a class="btn btn-blank" href="cart.html">Купить<span class="move"><svg class="icon icon_catalog-link"><use xlink:href="./images/sprite.svg#catalog-link"></use></svg></span></a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="img"><img src="images/modal-product.png"></div>
+                                <div class="text">
+                                    <div class="price">12 150 <span class="rouble">₽</span><span class="old-price">13 500 <span class="rouble">₽</span></span>
+                                    </div>
+                                    <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div><a class="btn btn-blank" href="cart.html">Купить<span class="move"><svg class="icon icon_catalog-link"><use xlink:href="./images/sprite.svg#catalog-link"></use></svg></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-modal js-registration-modal" id="registration"><a class="modal-close js-modal-close" href="#"></a>
+            <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+                <h2>Регистрация</h2>
+                <p class="big-margin">Если у вас уже есть аккаунт, &nbsp;<a class="decorated-link js-get-modal" href="#auth" data-target=".js-login-modal">войдите в него</a></p>
+                <!--.sub-title Я обычный покупатель-->
+                <!--p.light.big-margin Простая регистрация, без подтверждения-->
+                <h4>Пожалуйста, заполните форму</h4>
+                <p class="light sure">Поля, отмеченные звёздочкой, обязательны для заполнения</p>
+                <form class="form">
+                    <div class="form-group required"><input class="form-control" type="text" placeholder="Ваше имя"></div>
+                    <div class="form-group required"><input class="form-control" type="email" placeholder="Email"></div>
+                    <div class="form-group required"><input class="form-control js-tel" type="text" placeholder="Телефон"></div>
+                    <div class="form-group agree required form-check" data-error-text="Согласие обязательно"><input class="checkbox" type="checkbox" name="a2" id="a2"><label for="a2">Согласен на получение информации об акциях и спецпредложениях</label></div>
+                    <div class="form-group text-center"><button class="btn btn-outline-success btn-reg">Зарегистрироваться</button></div>
+                    <!--.form-groupbutton(data-target=".js-registration-modal-opt").btn.btn-reg.btn-bottom.btn-block.js-get-modal ИП-->
+                    <div class="form-group"><a class="btn btn-reg btn-bottom btn-block js-get-modal" href="#reg-org" data-target=".js-registration-modal-org">Юридическое лицо</a></div>
+                    <p class="light button-caption">Оптовые скидки, подтверждение регистрации менеджером</p>
+                </form>
+            </div>
+        </div>
+        <div class="b-modal js-registration-modal-opt" id="registration-opt"><a class="modal-close js-modal-close" href="#"></a>
+            <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+                <h2>Регистрация</h2>
+                <p class="big-margin">Если у вас уже есть аккаунт, &nbsp;<a class="decorated-link js-get-modal" href="#auth" data-target=".js-login-modal">войдите в него</a></p>
+                <form class="form top-form">
+                    <div class="form-group top-form-group"><a class="btn btn-reg btn-bottom btn-block js-get-modal" href="#reg" data-target=".js-registration-modal">Я обычный покупатель</a></div>
+                    <p class="light big-margin">Простая регистрация, без подтверждения</p>
+                    <div class="sub-title">Индивидуальный преприниматель</div>
+                    <div class="form-group"><a class="btn btn-reg btn-bottom btn-block js-get-modal" href="#reg-opt" data-target=".js-registration-modal-org">Юридическое лицо</a></div>
+                    <p class="light button-caption">Оптовые скидки, подтверждение регистрации менеджером</p>
+                </form>
+                <h4>Пожалуйста, заполните форму</h4>
+                <p class="light sure">Поля, отмеченные звёздочкой, обязательны для заполнения</p>
+                <form class="form form-opt">
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Ваше полное имя"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Email"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Телефон"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Номер бонусной карты"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Серия и номер паспорта"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Фактический адрес"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Паспорт доверенного лица"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Пароль"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Повторите пароль"></div>
+                    <div class="form-group text-center"><button class="btn btn-outline-success btn-reg">Зарегистрироваться</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="b-modal js-registration-modal-org"><a class="modal-close js-modal-close" href="#"></a>
+            <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+                <h2>Регистрация</h2>
+                <p class="big-margin">Если у вас уже есть аккаунт, &nbsp;<a class="decorated-link js-get-modal" href="#" data-target=".js-login-modal">войдите в него</a></p>
+                <form class="form top-form">
+                    <div class="form-group top-form-group"><a class="btn btn-reg btn-bottom btn-block js-get-modal" href="#reg" data-target=".js-registration-modal">Я обычный покупатель</a></div>
+                    <p class="light big-margin">Простая регистрация, без подтверждения</p>
+                    <div class="sub-title">Юридическое лицо</div>
+                    <div class="form-group"><a class="long-text btn btn-reg btn-bottom btn-block js-get-modal" href="#reg-opt" data-target=".js-registration-modal-opt">Индивидуальный преприниматель</a></div>
+                    <p class="light button-caption">Оптовые скидки, подтверждение регистрации менеджером</p>
+                </form>
+                <h4>Пожалуйста, заполните форму</h4>
+                <p class="light sure">Поля, отмеченные звёздочкой, обязательны для заполнения</p>
+                <form class="form form-opt">
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Ваше полное имя"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Email"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Телефон"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Номер бонусной карты"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Серия и номер паспорта"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Фактический адрес"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Юридический адрес"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="ФИО руководителя"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="ФИО контактного лица"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Email контактного лица"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="ОГРН"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="ИНН / КПП"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Расчетный счет"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="К/с"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="БИК"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Наименование банка"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Пароль"></div>
+                    <div class="form-group"><input class="form-control input-sure" type="text" placeholder="Повторите пароль"></div>
+                    <div class="form-group text-center"><button class="btn btn-outline-success btn-reg">Зарегистрироваться</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="b-modal js-active-bonus-card"><a class="modal-close js-modal-close" href="#"></a>
+            <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+                <div class="wrapper-activation-card">
+                    <h2>Активация брнусной карты</h2>
+                    <p class="big-margin">Для завершения активации необходимо указать недостающие данные и подтвердить активацию</p>
+                    <p class="light sure">Все поля обязательны для заполнения</p>
+                    <form class="form">
+                        <div class="form-group"><input class="form-control" type="text" placeholder="Ваше имя"></div>
+                        <div class="form-group"><input class="form-control" type="text" placeholder="Email"></div>
+                        <div class="form-group"><input class="form-control" type="text" placeholder="Телефон"></div>
+                        <div class="form-group">
+                            <div class="form-caption">Дата рождения</div>
+                            <div class="wrapper-date"><input class="form-control" type="text" placeholder="ДД"><input class="form-control" type="text" placeholder="ММ"><input class="form-control" type="text" placeholder="ГГГГ"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-caption">Пол</div>
+                            <div class="d-flex"><input class="radio form-control radio gender-control" type="radio" name="gender_1" id="radio1" checked><label for="radio1">Мужской</label><input class="radio form-control radio gender-control" type="radio" name="gender_1"
+                                    id="radio2"><label for="radio2">Женский</label></div>
+                        </div>
+                        <div class="form-group agree"><input class="checkbox" type="checkbox" name="a5" id="a5"><label for="a5">Я согласен(на) на обработку моих Персональных данных и подтверждаю, что ознакомлен(а) с условиями<br><a class="blank">Бонусно накопительной программы</a></label></div>
+                        <div
+                            class="form-group agree"><input class="checkbox" type="checkbox" name="a6" id="a6"><label for="a6">Согласен(на) на получение информации об акциях и специальных предложений от компании СтройГигант</label></div>
+                <div class="form-group"><button class="btn btn-outline-success btn-reg js-get-modal" data-target=".js-thanks">Активировать карту</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="b-modal js-thanks"><a class="modal-close js-modal-close" href="#"></a>
+        <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+            <div class="wrapper-activation-card">
+                <h2>Спасибо!</h2>
+                <p class="big-margin">Ссылка на завершение активации направлена Вам на email. Не забудьте подтвердить активацию по ссылке и получить свои первые бонусы.</p>
+            </div>
+        </div>
+    </div>
+    <div class="b-modal js-bid"><a class="modal-close js-modal-close" href="#"></a>
+        <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+            <div class="wrapper-activation-card">
+                <h2>Заявка на получение бонусной карты</h2>
+                <p class="big-margin">Для получения бонусной карты необходимо указать недостающие данные и подтвердить заявку</p>
+                <p class="light sure">Все поля обязательны для заполнения</p>
+                <form class="form">
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Ваше имя"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Email"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Телефон"></div>
+                    <div class="form-group">
+                        <div class="form-caption">Дата рождения</div>
+                        <div class="wrapper-date"><input class="form-control" type="text" placeholder="ДД"><input class="form-control" type="text" placeholder="ММ"><input class="form-control" type="text" placeholder="ГГГГ"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-caption">Пол</div>
+                        <div class="d-flex"><input class="radio form-control radio gender-control" type="radio" name="gender_2" id="radio1_1" checked><label for="radio1_1">Мужской</label><input class="radio form-control radio gender-control" type="radio" name="gender_2"
+                                id="radio1_2"><label for="radio1_2">Женский</label></div>
+                    </div>
+                    <div class="form-group agree"><input class="checkbox" type="checkbox" name="a3" id="a3"><label for="a3">Я согласен(на) на обработку моих Персональных данных и подтверждаю, что ознакомлен(а) с условиями<br><a class="blank">Бонусно накопительной программы</a></label></div>
+                    <div
+                        class="form-group agree"><input class="checkbox" type="checkbox" name="a4" id="a4"><label for="a4">Согласен(на) на получение информации об акциях и специальных предложений от компании СтройГигант</label></div>
+            <div class="form-group"><button class="btn btn-outline-success btn-reg js-get-modal" data-target=".js-congratulations">Активировать карту</button></div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="b-modal js-congratulations"><a class="modal-close js-modal-close" href="#"></a>
+        <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+            <div class="wrapper-activation-card">
+                <h2>Поздравляем! Ваша бонусная карта активирована и готова к использованию.</h2>
+                <p class="big-margin">За активацию карты Вам начислено 100 поздравительных бонусов! Используйте их для покупок в нашем магазине.</p>
+                <form class="form">
+                    <div class="form-group"><button class="btn btn-outline-success btn-reg js-get-modal" data-target=".js-thanks">Перейти в каталог товаров</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="b-modal js-return-modal"><a class="modal-close js-modal-close" href="#"></a>
+        <div class="body"><a class="logo" href="index.html"><img src="images/modal-logo.png" width="145"/></a>
+            <h2>Оформление возврата
+                <!--p.big-margin Если у вас уже есть аккаунт, &nbsp;a(href="#" data-target=".js-registration-modal").decorated-link.js-get-modal войдите в него-->
+                <!--.sub-title Я обычный покупатель-->
+                <!--p.light.big-margin Простая регистрация, без подтверждения-->
+                <h4>Пожалуйста, заполните форму</h4>
+                <p class="light sure">Поля, отмеченные звёздочкой, обязательны для заполнения</p>
+                <form class="form">
+                    <div class="form-group required"><input class="form-control" type="text" placeholder="ФИО"></div>
+                    <div class="form-group required"><input class="form-control" type="text" placeholder="Адрес покупателя"></div>
+                    <div class="pasport-date">
+                        <div class="form-group required">
+                            <div class="form-caption">Паспортные данные</div><input class="form-control" type="number" placeholder="Серия"></div>
+                        <div class="form-group required"><input class="form-control" type="number" placeholder="Номер"></div>
+                        <div class="form-group required"><input class="form-control" type="text" placeholder="Кем и когда выдан"></div>
+                    </div>
+                    <div class="form-group required"><input class="form-control js-tel" type="text" placeholder="Контактный телефон"></div>
+                    <div class="form-group"><span class="form-control">Водонагреватель электрический Thermex Flat Plus IF 30V, 1шт. 12 150 ₽</span></div>
+                    <div class="form-group required"><input class="form-control" type="text" placeholder="Срок гарантии"></div>
+                    <div class="form-group required"><input class="form-control" type="number" placeholder="№ кассового чека"></div>
+                    <div class="form-group"><input class="form-control" type="date" placeholder="Дата совершения покупки" name="calendar"></div>
+                    <div class="form-group required"><textarea class="form-control" placeholder="Подробное описание причины возврата"></textarea></div>
+                    <div class="form-group form-send"><button class="btn btn-outline-success btn-reg js-get-modal" data-target=".js-thanks">Отправить</button></div>
+                    <div class="form-link text-center"><a href="#">Ознакомьтесь с условиями возврата</a></div>
+                </form>
+            </h2>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

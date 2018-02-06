@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Components of Likee.template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../../template_styles.css" rel="stylesheet">
+    <link href="../../components.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="b-site" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+        <div class="b-set">
+            <div class="container clearfix">
+                <h2>В наборе дешевле</h2>
+                <div class="item-base item">
+                    <!--img.plus(src="../../images/set-plus.png")--><a class="img" href="#"><img src="../../images/good-img-1.jpg"/></a>
+                    <div class="price">12 150 <span class='rouble'>₽</span></div>
+                    <div class="rating"><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                        <a
+                            class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                            <span
+                                class="count">5 отзывов</span>
+                    </div>
+                    <div class="title"><a href="#">Уплотнитель KIMTEC D-100 коричневый 100 м х 7,5 мм</a></div>
+                </div>
+                <!--.item.item-base.hidden-sm-up//img.plus(src="../../images/set-plus.png")
+a(href="#").img
+    img(src="../../images/good-img-1.jpg")
+
+.price 12 150 <span class='rouble'>₽</span>
+
+.rating
+    each star in [1, 2, 3, 4, 5]
+        +addStar
+    span.count 5 отзывов
+
+.title
+    a(href="#") Уплотнитель KIMTEC D-100 коричневый 100 м х 7,5 мм
+-->
+                <div class="swiper-container js-slider hidden-sm-down">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <!--img.plus(src="../../images/set-plus.png")--><a class="img" href="#"><img src="../../images/carousel-img-2.png"/><svg class="icon icon_set-icon-checkbox"><use xlink:href="./../../images/sprite.svg#set-icon-checkbox"></use></svg></a>
+                                <div class="price">12 150 <span class='rouble'>₽</span>
+                                    <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                </div>
+                                <div class="rating"><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                                    <a
+                                        class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                                        <a
+                                            class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <!--img.plus(src="../../images/set-plus.png")--><a class="img" href="#"><img src="../../images/carousel-img-3.png"/><svg class="icon icon_set-icon-checkbox"><use xlink:href="./../../images/sprite.svg#set-icon-checkbox"></use></svg></a>
+                                <div class="price">12 150 <span class='rouble'>₽</span>
+                                    <div class="old-price"></div>
+                                </div>
+                                <div class="rating"><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                                    <a
+                                        class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                                        <a
+                                            class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                <div class="not-sale">* Скидка на данный товар не действует</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container js-slider hidden-md-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <!--img.plus(src="../../images/set-plus.png")--><a class="img" href="#"><img src="../../images/carousel-img-3.png"/><svg class="icon icon_set-icon-checkbox"><use xlink:href="./../../images/sprite.svg#set-icon-checkbox"></use></svg></a>
+                                <div class="price">12 150 <span class='rouble'>₽</span>
+                                    <div class="old-price"></div>
+                                </div>
+                                <div class="rating"><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                                    <a
+                                        class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                                        <a
+                                            class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                <div class="not-sale">* Скидка на данный товар не действует</div>
+                                <div class="badge">В наличии</div>
+                            </div>
+                            <!--.badge В наличии!-->
+                            <!--a(href="#").btn.btn-blank Купитьspan.move
+    +icon('carousel-link')-->
+                            <!--a.float-right.like.filled+icon('carousel-like')
+-->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <!--img.plus(src="../../images/set-plus.png")--><a class="img" href="#"><img src="../../images/carousel-img-2.png"/><svg class="icon icon_set-icon-checkbox"><use xlink:href="./../../images/sprite.svg#set-icon-checkbox"></use></svg></a>
+                                <div class="price">12 150 <span class='rouble'>₽</span>
+                                    <div class="old-price"></div>
+                                </div>
+                                <div class="rating"><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                                    <a
+                                        class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><a class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a>
+                                        <a
+                                            class="star filled"><svg class="icon icon_set-rate"><use xlink:href="./../../images/sprite.svg#set-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                <div class="not-sale">* Скидка на данный товар не действует</div>
+                                <div class="badge">В наличии</div>
+                            </div>
+                            <!--.badge В наличии!-->
+                            <!--a(href="#").btn.btn-blank Купитьspan.move
+    +icon('carousel-link')-->
+                            <!--a.float-right.like.filled+icon('carousel-like')
+-->
+                        </div>
+                    </div>
+                </div>
+                <div class="item-set total">
+                    <!--img.plus(src="../../images/set-equally.png")--><a class="img" href="#"><svg class="icon icon_set-icon"><use xlink:href="./../../images/sprite.svg#set-icon"></use></svg><span class="cost">Стоимость комплекта</span></a>
+                    <div class="old-price">Общая сумма 13 500 <span class='rouble'>₽</span></div><span class="goods">2 товара</span>
+                    <div class="econom"><span>Экономия</span>
+                        <sapn class="econom-sum">150 <span class='rouble'>₽</span></sapn>
+                        <div class="price">Итоговая цена <br> 12 500 <span class='rouble'>₽</span></div>
+                    </div><a class="btn btn-blank" href="#">Купить набор<span class="move"><svg class="icon icon_set-link"><use xlink:href="./../../images/sprite.svg#set-link"></use></svg></span></a></div>
+                <div class="swiper-button-next js-next hidden-xs-down"><svg class="icon icon_slider-arrow-right"><use xlink:href="./../../images/sprite.svg#slider-arrow-right"></use></svg></div>
+                <div class="swiper-button-prev js-prev hidden-xs-down"><svg class="icon icon_slider-arrow-left"><use xlink:href="./../../images/sprite.svg#slider-arrow-left"></use></svg></div>
+            </div>
+        </div>
+        <script src="../../js/main.js"></script>
+    </div>
+</body>
+
+</html>

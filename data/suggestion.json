@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Двери из массива",
+    "img": "images/modal-product.png",
+    "price": "12 150",
+    "oldPrice": "13 150",
+    "text": "Водонагреватель&ensp;электрический&ensp;Thermex&ensp;Flat&ensp;Plus&ensp;IF&ensp;30V",
+    "link": "#",
+    "isNew": true
+  },
+  {
+    "name": "Двери из ДСП",
+    "img": "images/modal-product.png",
+    "price": "12 150",
+    "oldPrice": "13 150",
+    "text": "Водонагреватель&ensp;электрический&ensp;Thermex&ensp;Flat&ensp;Plus&ensp;IF&ensp;30V",
+    "link": "#"
+  }
+]

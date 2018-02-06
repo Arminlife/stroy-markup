@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Components of Likee.template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../../template_styles.css" rel="stylesheet">
+    <link href="../../components.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="b-site" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+        <div class="b-profile">
+            <div class="container">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs hidden-sm-down" role="tablist">
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-data" role="tab"><span class="tab-span">Мои данные</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-bonus" role="tab"><span class="tab-span">Бонусы</span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-order" role="tab"><span class="tab-span">Заказы</span><span class="tab-sum">2</span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-favorite" role="tab"><span class="tab-span">Избранное</span><span class="tab-sum">2</span></a></li>
+                </ul>
+                <div class="tabs-select hidden-md-up"><select class="form-control js-select js-tabs-select"><option value="#tab-data">Мои данные</option><option value="#tab-bonus">Бонусы</option><option value="#tab-order">Заказы</option><option value="#tab-favorite">Избранное</option></select></div>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                    <div class="tab-pane" id="tab-data" role="tabpanel">
+                        <form class="edit" action="#">
+                            <div class="row bordered">
+                                <div class="col-md-6 col-12">
+                                    <div class="item">
+                                        <h2>Личные данные</h2>
+                                        <div class="avatar"><img src="../../images/profile-avatar.png" /></div>
+                                        <div class="avatar"><img src="../../images/profile-avatar-demo-1.jpg" /></div>
+                                        <div class="form-group required" data-error-text="К любому form-group может быть добавлен data-error-text, содержащий текст ошибки"><label class="caption">Имя</label><input class="form-control js-required-input" type="text" value="Иванов Петр Петрович" disabled="disabled" /></div>
+                                        <div class="form-group required"><label class="caption">Email</label><input class="form-control js-required-input" type="email" value="ivanov@mail.com" disabled="disabled" /></div>
+                                        <div class="form-group required"><label class="caption">Контактный телефон</label><input class="form-control js-tel js-required-input" type="text" value="+7 905 688-00-00" disabled="disabled" /></div>
+                                        <div class="form-group required"><label class="caption">Бонусная карта</label><input class="form-control js-bonus" type="text" value="437423842" disabled="disabled" /></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 right-block col-12">
+                                    <div class="item">
+                                        <h2 class="h2-address">Адрес доставки</h2>
+                                        <div class="wrapper-address"><label class="caption">Адрес доставки 1</label>
+                                            <div class="form-group required"><label class="caption">Город</label><input class="form-control" type="text" placeholder="Заполненное неактивное поле" disabled="disabled" /></div>
+                                            <div class="form-group required"><label class="caption">Улица</label><input class="form-control" type="text" placeholder="Заполненное неактивное поле" disabled="disabled" /></div>
+                                            <div class="wrapper-form-control clearfix">
+                                                <div class="form-group float-left"><label class="caption">Дом</label><input class="form-control" type="text" value="5" disabled="disabled" /></div>
+                                                <div class="form-group float-left"><label class="caption">Корпус</label><input class="form-control" type="text" value="5" disabled="disabled" /></div>
+                                                <div class="form-group float-left"><label class="caption">Квартира</label><input class="form-control" type="text" value="5" disabled="disabled" /></div>
+                                            </div>
+                                            <div class="control-el"><a class="light js-remove-address" href="#"><svg class="icon icon_cart-remove"><use xlink:href="./../../images/sprite.svg#cart-remove"></use></svg><span>Удалить</span></a><button class="save-address" type="submit">Сохранить</button></div>
+                                        </div>
+                                        <div class="wrapper-address"><label class="caption">Адрес доставки 2</label>
+                                            <div class="form-group required"><label class="caption">Город</label><input class="form-control" type="text" placeholder="Заполненное неактивное поле" disabled="disabled" /></div>
+                                            <div class="form-group required"><label class="caption">Улица</label><input class="form-control" type="text" placeholder="Заполненное неактивное поле" disabled="disabled" /></div>
+                                            <div class="wrapper-form-control clearfix">
+                                                <div class="form-group float-left"><label class="caption">Дом</label><input class="form-control" type="text" value="5" disabled="disabled" /></div>
+                                                <div class="form-group float-left"><label class="caption">Корпус</label><input class="form-control" type="text" value="5" disabled="disabled" /></div>
+                                                <div class="form-group float-left"><label class="caption">Квартира</label><input class="form-control" type="text" value="5" disabled="disabled" /></div>
+                                            </div>
+                                            <div class="control-el"><a class="light js-remove-address" href="#"><svg class="icon icon_cart-remove"><use xlink:href="./../../images/sprite.svg#cart-remove"></use></svg><span>Удалить</span></a><button class="save-address" type="submit">Сохранить</button></div>
+                                        </div>
+                                        <div class="wrapper-address new-address control-el"><a class="decorated-link js-add-address" href="data/address.html">+ Добавить адрес</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper-btn active js-edit-wrapper"><button class="btn btn-edit btn-outline-primary js-edit-form">Редактировать</button></div>
+                            <div class="wrapper-btn js-save-wrapper"><button class="btn btn-primary">Сохранить изменения</button><button class="btn btn-outline-primary js-cancel-edit">Отмена</button></div>
+                        </form>
+                    </div>
+                    <div class="tab-pane active" id="tab-bonus" role="tabpanel">
+                        <div class="b-bonus">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <h3>Бонусная карта</h3>
+                                        <p class="light">Зарегистрирована 27 ноября 2016 г.</p>
+                                        <div class="row">
+                                            <div class="col-12 col-md-5 col-lg-7"><img src="../../images/bonus-code.png" /></div>
+                                            <div class="col-12 col-md-7 col-lg-5">
+                                                <div class="link-cont"><a class="light" href="#"><svg class="icon icon_bonus-save"><use xlink:href="./../../images/sprite.svg#bonus-save"></use></svg>Сохранить PDF</a></div>
+                                                <div class="link-cont"><a class="light" href="#"><svg class="icon icon_bonus-print"><use xlink:href="./../../images/sprite.svg#bonus-print"></use></svg>Распечатать</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="wrapper">
+                                            <h3>Баланс и процент бонусов</h3>
+                                            <div class="big">Доступно бонусов: <strong>3502</strong><br/>Процента начисляемых бонусов: <strong>15%</strong></div>
+                                            <p class="light">Для повышения накопительного процента осталось совершить покупки на сумму 500 руб.</p>
+                                            <div class="alert alert-info">Ознакомьтесь с<a href="#" class="blank"> Правилами</a> накопления, списания и использования данной карты.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-offers">
+                            <div class="container">
+                                <div class="wrapper">
+                                    <div class="item left">
+                                        <div class="inner"><img class="img inner-img" src="../../images/offers-kits.png" />
+                                            <div class="inner-text">
+                                                <h2>500 бонусов</h2><span>За отзыв о товаре</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="item right">
+                                        <div class="inner"><img class="img inner-img" src="../../images/offers-kits.png" />
+                                            <div class="inner-text">
+                                                <h2>1000 бонусов</h2><span>При заказе услуги</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrapper-refusal"><svg class="icon icon_offers-refusal"><use xlink:href="./../../images/sprite.svg#offers-refusal"></use></svg></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-order" role="tabpanel">
+                        <div class="b-orders">
+                            <div class="wrapper-order-item">
+                                <div class="order hidden-sm-down">
+                                    <div class="part-number">
+                                        <div class="number" data-toggle="collapse" data-target="#collapce1" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                                        <div class="date">25 ноября 2016</div>
+                                    </div>
+                                    <div class="part-price">
+                                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                                        <div class="old-price hidden-md-down">13 500 <span class='rouble'>₽</span></div>
+                                        <div class="profit hidden-md-down">Выгода:<span>500 <span class='rouble'>₽</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="part-bonus">
+                                        <div class="bonus-plus"><span class="bonus">+300</span>
+                                            <sapn class="bonus-label">бонусов начислено</sapn>
+                                        </div>
+                                        <div class="bonus-minus"><span class="bonus">-1200</span><span class="bonus-label">бонусов списано</span></div>
+                                    </div>
+                                    <div class="part-status">
+                                        <div class="status">в работе</div>
+                                    </div>
+                                    <div class="return hidden-md-down">
+                                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce1" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                                    </div>
+                                    <div class="print hidden-md-down"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                                </div>
+                                <div class="button-points js-buttons-points hidden-lg-up hidden-sm-down">
+                                    <div class="points"><img src="../../images/orders-points.png" /></div>
+                                </div>
+                            </div>
+                            <div class="order hidden-md-up">
+                                <div class="wrapper-order">
+                                    <div class="part-number">
+                                        <div class="number" data-toggle="collapse" data-target="#collapce1" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                                        <div class="date">25 ноября 2016</div>
+                                    </div>
+                                    <div class="part-price">
+                                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                                        <div class="old-price hidden-md-down">13 500 <span class='rouble'>₽</span></div>
+                                        <div class="profit hidden-md-down">Выгода:<span>500 <span class='rouble'>₽</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="part-bonus">
+                                    <div class="bonus-plus"><span class="bonus">+300</span>
+                                        <sapn class="bonus-label">бонусов начислено</sapn>
+                                    </div>
+                                    <div class="bonus-minus"><span class="bonus">-1200</span><span class="bonus-label">бонусов списано</span></div>
+                                </div>
+                                <div class="part-status">
+                                    <div class="status">в работе</div>
+                                </div>
+                                <div class="wrapper-order">
+                                    <div class="return">
+                                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce1" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                                    </div>
+                                    <div class="print"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapce1">
+                                <div class="hidden-sm-down">
+                                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                                    </div>
+                                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                            <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                            <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                                </div>
+                                <div class="hidden-md-up">
+                                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                                    </div>
+                                    <div class="product clearfix">
+                                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                                            <div class="ordered">
+                                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                                <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product clearfix">
+                                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                                            <div class="ordered">
+                                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                                <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                                </div>
+                            </div>
+                            <div class="wrapper-order-item">
+                                <div class="order hidden-sm-down">
+                                    <div class="part-number">
+                                        <div class="number" data-toggle="collapse" data-target="#collapce2" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                                        <div class="date">25 ноября 2016</div>
+                                    </div>
+                                    <div class="part-price">
+                                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                                    </div>
+                                    <div class="part-bonus">
+                                        <div class="bonus-plus"><span class="bonus">+300</span>
+                                            <sapn class="bonus-label">бонусов начислено</sapn>
+                                        </div>
+                                    </div>
+                                    <div class="part-status">
+                                        <div class="status">подтвержден</div>
+                                    </div>
+                                    <div class="return hidden-md-down">
+                                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce2" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                                    </div>
+                                    <div class="print hidden-md-down"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                                </div>
+                                <div class="button-points js-buttons-points hidden-lg-up hidden-sm-down">
+                                    <div class="points"><img src="../../images/orders-points.png" /></div>
+                                </div>
+                            </div>
+                            <div class="order hidden-md-up">
+                                <div class="wrapper-order">
+                                    <div class="part-number">
+                                        <div class="number" data-toggle="collapse" data-target="#collapce2" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                                        <div class="date">25 ноября 2016</div>
+                                    </div>
+                                    <div class="part-price">
+                                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                                    </div>
+                                </div>
+                                <div class="part-bonus">
+                                    <div class="bonus-plus"><span class="bonus">+300</span>
+                                        <sapn class="bonus-label">бонусов начислено</sapn>
+                                    </div>
+                                </div>
+                                <div class="part-status">
+                                    <div class="status">подтвержден</div>
+                                </div>
+                                <div class="wrapper-order">
+                                    <div class="return">
+                                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce2" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                                    </div>
+                                    <div class="print"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapce2">
+                                <div class="hidden-sm-down">
+                                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                                    </div>
+                                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                            <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                            <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                                </div>
+                                <div class="hidden-md-up">
+                                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                                    </div>
+                                    <div class="product clearfix">
+                                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                                            <div class="ordered">
+                                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                                <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product clearfix">
+                                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                                            <div class="ordered">
+                                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                                <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                                </div>
+                            </div>
+                            <div class="wrapper-order-item">
+                                <div class="order hidden-sm-down">
+                                    <div class="part-number">
+                                        <div class="number" data-toggle="collapse" data-target="#collapce3" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                                        <div class="date">25 ноября 2016</div>
+                                    </div>
+                                    <div class="part-price">
+                                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                                    </div>
+                                    <div class="part-bonus"></div>
+                                    <div class="part-status">
+                                        <div class="status">скомплектован</div>
+                                    </div>
+                                    <div class="return hidden-md-down">
+                                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce3" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                                    </div>
+                                    <div class="print hidden-md-down"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                                </div>
+                                <div class="button-points js-buttons-points hidden-lg-up hidden-sm-down">
+                                    <div class="points"><img src="../../images/orders-points.png" /></div>
+                                </div>
+                            </div>
+                            <div class="order hidden-md-up">
+                                <div class="wrapper-order">
+                                    <div class="part-number">
+                                        <div class="number" data-toggle="collapse" data-target="#collapce3" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                                        <div class="date">25 ноября 2016</div>
+                                    </div>
+                                    <div class="part-price">
+                                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                                    </div>
+                                </div>
+                                <div class="part-bonus"></div>
+                                <div class="part-status">
+                                    <div class="status">скомплектован</div>
+                                </div>
+                                <div class="wrapper-order">
+                                    <div class="return">
+                                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce3" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                                    </div>
+                                    <div class="print"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapce3">
+                                <div class="hidden-sm-down">
+                                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                                    </div>
+                                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                            <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                            <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                                </div>
+                                <div class="hidden-md-up">
+                                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                                    </div>
+                                    <div class="product clearfix">
+                                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                                            <div class="ordered">
+                                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                                <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product clearfix">
+                                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                                            <div class="ordered">
+                                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                                <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                                </div>
+                            </div>
+                            <div class="wrapper-order-item">
+                                <div class="order hidden-sm-down">
+                                    <div class="part-number">
+                                        <div class="number" data-toggle="collapse" data-target="#collapce4" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                                        <div class="date">25 ноября 2016</div>
+                                    </div>
+                                    <div class="part-price">
+                                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                                    </div>
+                                    <div class="part-bonus">
+                                        <div class="bonus-minus"><span class="bonus">-1200</span><span class="bonus-label">бонусов списано</span></div>
+                                    </div>
+                                    <div class="part-status">
+                                        <div class="status">под заказ</div>
+                                    </div>
+                                    <div class="return hidden-md-down">
+                                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce4" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                                    </div>
+                                    <div class="print hidden-md-down"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                                </div>
+                                <div class="button-points js-buttons-points hidden-lg-up hidden-sm-down">
+                                    <div class="points"><img src="../../images/orders-points.png" /></div>
+                                </div>
+                            </div>
+                            <div class="order hidden-md-up">
+                                <div class="wrapper-order">
+                                    <div class="part-number">
+                                        <div class="number" data-toggle="collapse" data-target="#collapce4" aria-expanded="false" aria-controls="collapseExample">№123456</div>
+                                        <div class="date">25 ноября 2016</div>
+                                    </div>
+                                    <div class="part-price">
+                                        <div class="current-price bold">13 500 <span class='rouble'>₽</span></div>
+                                    </div>
+                                </div>
+                                <div class="part-bonus">
+                                    <div class="bonus-minus"><span class="bonus">-1200</span><span class="bonus-label">бонусов списано</span></div>
+                                </div>
+                                <div class="part-status">
+                                    <div class="status">под заказ</div>
+                                </div>
+                                <div class="wrapper-order">
+                                    <div class="return">
+                                        <div class="wrapper-icon" data-toggle="collapse" data-target="#collapce4" aria-expanded="false" aria-controls="collapseExample"><svg class="icon icon_orders-return-icon"><use xlink:href="./../../images/sprite.svg#orders-return-icon"></use></svg><svg class="icon icon_orders-close close"><use xlink:href="./../../images/sprite.svg#orders-close"></use></svg><span>Возврат</span></div>
+                                    </div>
+                                    <div class="print"><a class="wrapper-icon" href="data/print.html" target="_blank"><svg class="icon icon_orders-print-icon"><use xlink:href="./../../images/sprite.svg#orders-print-icon"></use></svg><span>Печать</span></a></div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapce4">
+                                <div class="hidden-sm-down">
+                                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                                    </div>
+                                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                            <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="product clearfix"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ordered"><span>заказано 4шт., вернуть</span>
+                                            <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                            <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                                </div>
+                                <div class="hidden-md-up">
+                                    <div class="top-line"><span class="return-goods">Возврат товаров, получатель Иван Иванов</span>
+                                        <div class="wrapper-return-full"><a class="return-full-order" href="#">Вернуть весь заказ</a></div>
+                                    </div>
+                                    <div class="product clearfix">
+                                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-1.jpg"/></a>
+                                            <div class="ordered">
+                                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                                <div class="return-all"><a class="return-full-order" href="#">Вернуть все</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail"><a class="title" href="#">Водонагреватель электрический  Thermex Flat Plus IF 30V</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product clearfix">
+                                        <div class="wrapper-product"><a class="float-left a-img" htef="#"><img src="../../images/cart-img-2.jpg"/></a>
+                                            <div class="ordered">
+                                                <div class="span-ordered"><span>заказано 4шт., вернуть</span></div>
+                                                <div class="quantity js-col-input"><button class="btn less">&mdash;</button><input type="text" value="0" /><button class="btn plus">+</button></div>
+                                                <div class="return-all"><a class="return-full-order" href="#">вернуть все</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail"><a class="title" href="#">Шуруповерт аккумуляторный Bosch  Li-Ion GSR 1080-2-LI Professional   06019E2002</a>
+                                            <div class="product-id">Код товара: 1239190230</div>
+                                            <div class="price">
+                                                <div class="wrapper-price">49<span class="small">.90 <span class='rouble'>₽</span>/пог. м</span><span class="current-price">12 150 <span class='rouble'>₽</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-buttons"><a class="btn btn-outline-primary request js-get-modal" href="#" data-target=".js-return-modal">Запросить возврат</a></div>
+                                    <div class="wrapper-buttons"><a class="return-full-order cancel" href="#">Отменить</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane tab-favs-active" id="tab-favorite" role="tabpanel">
+                        <div class="b-favs">
+                            <div class="container"><a class="light js-remove-all" href="#"><svg class="icon icon_favs-remove"><use xlink:href="./../../images/sprite.svg#favs-remove"></use></svg>Удалить всё из избранного</a>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-1.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-2.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                    <div class="col-4 col-xl-3 hidden-md-down">
+                                        <div class="item"><a class="img" href="#"><img src="../../images/carousel-img-3.png"/></a>
+                                            <div class="price">12 150 <span class='rouble'>₽</span>
+                                                <div class="old-price">13 500 <span class='rouble'>₽</span></div>
+                                            </div>
+                                            <div class="rating"><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                <a
+                                                    class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><a class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a>
+                                                    <a
+                                                        class="star filled"><svg class="icon icon_carousel-rate"><use xlink:href="./../../images/sprite.svg#carousel-rate"></use></svg></a><span class="count">5 отзывов</span></div>
+                                            <div class="title"><a href="#">Водонагреватель электрический Thermex Flat Plus IF 30V</a></div>
+                                            <div class="badge">В наличии!</div><a class="btn btn-blank" href="#">Купить<span class="move"><svg class="icon icon_carousel-link"><use xlink:href="./../../images/sprite.svg#carousel-link"></use></svg></span></a><a class="float-right like filled js-unlike"><svg class="icon icon_carousel-like"><use xlink:href="./../../images/sprite.svg#carousel-like"></use></svg></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/main.js"></script>
+    </div>
+</body>
+
+</html>
