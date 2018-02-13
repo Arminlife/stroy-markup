@@ -2580,6 +2580,7 @@ to {
 }
 .b-carousel {
     padding: 20px 0 36px;
+    position: relative;
 }
 .b-carousel .icon_carousel-like {
     width: 18px;
@@ -4270,12 +4271,16 @@ to {
 .b-catalog .libra.filled .icon {
     fill: #e46713;
 }
-.b-catalog .dropdown,
+.count .dropdown,
+.b-carousel .dropdown,
 .b-goods-list .dropdown {
-    position: absolute;
+    position: fixed;
     width: 615px;
-    right: -163px;
-    top: 100%;
+    left: 50%;
+    left: calc(50% + 35px);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
     background-color: #fff;
     box-shadow: 0 0 27px rgba(0, 0, 0, .13);
     font-size: 13px;
@@ -4284,25 +4289,26 @@ to {
     display: none;
 }
 @media screen and (max-width:1516px) {
-    .b-catalog .dropdown,
+    .count .dropdown,
+    .b-carousel .dropdown,
     .b-goods-list .dropdown {
     width: 50vw;
     top: 50%;
     left: 50%;
     left: calc(50% + 35px);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     background-color: #fff;
     z-index: 999999;
     position: fixed;
 }
 }@media (max-width:991px) {
-    .b-catalog .dropdown,
+    .count .dropdown,
+    .b-carousel .dropdown,
     .b-goods-list .dropdown  {
     width: 80vw;
 }
 }@media (max-width:767px) {
-    .b-catalog .dropdown,
+    .count .dropdown,
+    .b-carousel .dropdown,
     .b-goods-list .dropdown  {
     position: absolute;
     left: 6px;
@@ -4310,56 +4316,67 @@ to {
     -webkit-transform: none;
     transform: none;
 }
-.b-catalog .dropdown .td-address, .b-catalog .dropdown table, .b-catalog .dropdown tbody, .b-catalog .dropdown tr,
+.count .dropdown .td-address, .count .dropdown table, .count .dropdown tbody, .count .dropdown tr,
+.b-carousel .dropdown .td-address, .b-carousel .dropdown table, .b-carousel .dropdown tbody, .b-carousel .dropdown tr,
 .b-goods-list .dropdown .td-address, .b-goods-list .dropdown table, .b-goods-list .dropdown tbody, .b-goods-list .dropdown tr {
     display: block;
 }
-.b-catalog .dropdown .td-address,
+.count .dropdown .td-address,
+.b-carousel .dropdown .td-address,
 .b-goods-list .dropdown .td-address  {
     padding-top: 21px;
 }
-.b-catalog .dropdown .td-count,
+.count .dropdown .td-count,
+.b-carousel .dropdown .td-count,
 .b-goods-list .dropdown .td-count {
     width: 40%;
     display: inline-block;
     padding-right: 0;
 }
-.b-catalog .dropdown .td-input,
+.count .dropdown .td-input,
+.b-carousel .dropdown .td-input,
 .b-goods-list .dropdown .td-input {
     display: block;
     text-align: right;
     padding-right: 20px;
 }
-.b-catalog .dropdown .td-count,
+.count .dropdown .td-count,
+.b-carousel .dropdown .td-count,
 .b-goods-list .dropdown .td-count {
     float: left;
     padding-top: 15px;
 }
-.b-catalog .dropdown .btn,
+.count .dropdown .btn,
+.b-carousel .dropdown .btn,
 .b-goods-list .dropdown .btn {
     padding: 10px 20px!important;
     margin-right: -11px!important;
 }
-.b-catalog .dropdown .quantity input,
+.count .dropdown .quantity input,
+.b-carousel .dropdown .quantity input,
 .b-goods-list .dropdown .quantity input {
     margin-right: 0;
     margin-left: 8px;
 }
 }@media (max-width:767px) and (min-width:768px) {
-    .b-catalog .dropdown .quantity input,
+    .count .dropdown .quantity input,
+    .b-carousel .dropdown .quantity input,
     .b-goods-list .dropdown .quantity input {
     height: 42px;
 }
 }@media (max-width:767px) and (max-width:767px) {
-    .b-catalog .dropdown .quantity input {
+    .count .dropdown .quantity input,
+    .b-carousel .dropdown .quantity input{
     height: 42px;
     line-height: 42px;
 }
-}.b-catalog .dropdown a.btn,
+}.count .dropdown a.btn,
+.b-carousel .dropdown a.btn,
 .b-goods-list .dropdown a.btn {
     font-size: 16px;
 }
-.b-catalog .dropdown .footer,
+.count .dropdown .footer,
+.b-carousel .dropdown .footer,
 .b-goods-list .dropdown .footer {
     padding: 20px;
     background-color: #f2f6f9;
@@ -4373,11 +4390,13 @@ to {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.b-catalog .dropdown .clear, .b-catalog .dropdown a.clear,
+.count .dropdown .clear, .count .dropdown a.clear,
+.b-carousel .dropdown .clear, .b-carousel .dropdown a.clear,
 .b-goods-list .dropdown .clear, .b-goods-list .dropdown a.clear {
     color: #bec2c2;
 }
-.b-catalog .dropdown .clear .icon_cart-remove, .b-catalog .dropdown a.clear .icon_cart-remove,
+.count .dropdown .clear .icon_cart-remove, .count .dropdown a.clear .icon_cart-remove,
+.b-carousel .dropdown .clear .icon_cart-remove, .b-carousel .dropdown a.clear .icon_cart-remove,
 .b-goods-list .dropdown .clear .icon_cart-remove, .b-goods-list .dropdown a.clear .icon_cart-remove {
     width: 10px;
     height: 10px;
@@ -4387,24 +4406,33 @@ to {
     position: relative;
     top: -1px;
 }
-.b-catalog .dropdown-table,
+.count .dropdown-table,
+.b-carousel .dropdown-table,
 .b-goods-list .dropdown-table {
     width: 100%;
     margin-bottom: 20px;
 }
-.b-catalog .dropdown-table td,
+.count .dropdown-table td,
+.b-carousel .dropdown-table td,
 .b-goods-list .dropdown-table td  {
     padding: 10px 20px 0;
 }
 @media (max-width:575px) {
-    .b-catalog .dropdown-table td {
+    .count .dropdown-table td,
+    .b-carousel .dropdown-table td {
     padding: 8px 12px 0;
 }
-}.b-catalog .active .dropdown,
+}.count.active .dropdown,
+.b-carousel.active .dropdown,
 .b-goods-list .active .dropdown {
     display: block;
 }
-.b-catalog .quantity input,
+
+.b-carousel .dropdown{
+    position: absolute !important;
+}
+.count .quantity input,
+.b-carousel .quantity input,
 .b-goods-list .quantity input{
     width: 28px;
     border: 1px solid #f2f6f9;
@@ -4413,21 +4441,39 @@ to {
     text-align: center;
     padding-bottom: 3px;
 }
-.b-catalog .quantity input:active, .b-goods-list .quantity input:active, .b-catalog .quantity input:focus, .b-goods-list .quantity input:focus, .b-good .item .quantity input:active, .b-good .item .quantity input:focus {
+.count .quantity input:active, 
+.b-goods-list .quantity input:active, 
+.count .quantity input:focus, 
+.b-goods-list .quantity input:focus, 
+.b-carousel .quantity input:focus, 
+.b-carousel .quantity input:focus, 
+.b-good .item .quantity input:active, 
+.b-good .item .quantity input:focus {
     outline: 0;
 }
-.b-catalog .quantity .less, .b-goods-list .quantity .less, .b-catalog .quantity .more, .b-goods-list .quantity .more, .b-catalog .quantity .plus, .b-goods-list .quantity .plus {
+.count .quantity .less, 
+.count .quantity .more, 
+.count .quantity .plus, 
+.b-goods-list .quantity .less,  
+.b-goods-list .quantity .more, 
+.b-goods-list .quantity .plus,
+.b-carousel .quantity .less, 
+.b-carousel .quantity .more,
+.b-carousel .quantity .plus
+{
     line-height: 20px;
     background-color: #f2f6f9;
     color: #a9c2d8;
     font-weight: 600;
 }
-.b-catalog .quantity .less,
+.count .quantity .less,
+.b-carousel .quantity .less,
 .b-goods-list .quantity .less {
     border-radius: 20px 0 0 20px;
     padding: 3px 10px;
 }
-.b-catalog .quantity .more, .b-catalog .quantity .plus,
+.count .quantity .more, .count .quantity .plus,
+.b-carousel .quantity .more, .b-carousel .quantity .plus,
 .b-goods-list .quantity .more, .b-goods-list .quantity .plus  {
     border-radius: 0 20px 20px 0;
     padding: 3px 12px;
@@ -4883,9 +4929,10 @@ to {
     border-radius: 0 20px 20px 0;
     padding: 3px 12px;
 }
-.b-good .item .quantity .plus.disable{
-	opacity: 0.5;
-	pointer-events: none;
+.item .quantity .plus.disable,
+.dropdown .quantity .plus.disable{
+    opacity: 0.5;
+    pointer-events: none;
 }
 .b-good .bordered {
     border-bottom: 1px solid #ecedee;
