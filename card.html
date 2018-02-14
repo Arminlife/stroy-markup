@@ -3000,11 +3000,41 @@ li.nav-item
                                             <div class="clearfix bordered"><a class="float-right cancel js-cancel" href="#">Отмена<svg class="icon icon_description-close"><use xlink:href="./images/sprite.svg#description-close"></use></svg></a>
                                                 <p class="float-left">Вы авторизованы как<span class="strong name">Иван Иванов</span></p>
                                             </div>
-                                            <div class="wrapper-add-review"><img class="ava" src="images/description-ava-1.png" />
+                                            <div class="wrapper-add-review"><span class="ava" style="background-color: #e46713">И</span>
                                                 <form class="add-rev">
                                                     <div class="form-group"><textarea class="form-control" placeholder="Ваш отзыв"></textarea></div>
-                                                    <div class="form-group draw-photo"><a class="hidden-sm-down" href="#">Перетяните сюда фотографии или нажмите для поиска на жестком диске</a><a class="hidden-md-up" href="#">Загрузить фото</a><input type="file" /></div>
-                                                    <div class="form-group wrapper-link-video"><input class="form-control" type="text" name="videoLink" placeholder="Ссылка на видео" /></div>
+                                                    <span class="add-photos" onclick="togglePhotos()">Добавить фото</span>
+                                                    <div class="form-group draw-photo" style="display: none;">
+
+                                                        <div class="dropzone">
+                                                          <div class="fallback">
+                                                            <input name="file" type="file"/>
+                                                          </div>
+                                                        </div>                                                
+                                                        <div class="dropzone">
+                                                          <div class="fallback">
+                                                            <input name="file" type="file"/>
+                                                          </div>
+                                                        </div>                                                        
+                                                        <div class="dropzone">
+                                                          <div class="fallback">
+                                                            <input name="file" type="file"/>
+                                                          </div>
+                                                        </div>                                                     
+                                                        <div class="dropzone">
+                                                          <div class="fallback">
+                                                            <input name="file" type="file"/>
+                                                          </div>
+                                                        </div>                                                         
+                                                    </div>
+                                                    <div class="form-group wrapper-link-video">
+                                                        <input class="form-control" type="text" id="video-link" name="videoLink" placeholder="Ссылка на видео" />
+                                                        <div id="videobox" style="display: none;">
+                                                            <div class="form-group">
+                                                                <div id="video-preview"></div>
+                                                            </div>
+                                                        </div>                                                        
+                                                    </div>
                                                     <div class="wrapper-stars">Ваша оценка
                                                         <div class="stars js-add-review"><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./images/sprite.svg#description-star"></use></svg></a><a class="star filled"><svg class="icon icon_description-star"><use xlink:href="./images/sprite.svg#description-star"></use></svg></a>
                                                             <a
@@ -3132,7 +3162,7 @@ li.nav-item
                                             </div>
                                             <div class="col-12">
                                                 <div class="reply-to-review collapse" id="collapse-answer-8476" role="tabpanel" aria-labelledby="headingOne">
-                                                    <div class="wrapper-add-answer"><img class="ava" src="images/description-ava-1.png" />
+                                                    <div class="wrapper-add-answer"><span class="ava" style="background-color: #e46713">И</span>
                                                         <form class="add-rev">
                                                             <div class="form-group"><textarea class="form-control" placeholder="Ваш отзыв"></textarea></div>
                                                             <div class="form-group"><button class="btn btn-outline-primary">Ответить на отзыв</button></div>
@@ -3141,7 +3171,7 @@ li.nav-item
                                                 </div>
                                             </div>
                                             <div class="col-lg-10 col-12">
-                                                <div class="wrapper-review-answer answer-bg clearfix"><img class="ava" src="images/description-ava-answer-1.png" />
+                                                <div class="wrapper-review-answer answer-bg clearfix"><span class="ava" style="background-color: #e46713">И</span>
                                                     <div class="auter"><span>Администрация</span></div>
                                                     <div class="wrapper-date hidden-lg-up float-right">
                                                         <div class="wrapper-flex"><span>27  ноября 2016</span>
