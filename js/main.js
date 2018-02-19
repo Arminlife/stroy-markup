@@ -23748,6 +23748,19 @@ $('.wrapper-img').each(function() {
     });
 });
 
+$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+    type: 'iframe',
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: false,
+	callbacks: {
+		beforeOpen: function() {
+		   this.st.mainClass = this.st.el.attr('data-effect');
+		}
+	}
+});
+
 // Init dropzone file upload
 function initDropzone(element) {
     element.each(function (index) {

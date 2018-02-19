@@ -1308,6 +1308,13 @@ to {
     top: 0;
     bottom: 0;
 }
+.b-sidebar.inner-sidebar{
+    padding-right: 5px;
+    overflow: hidden;
+}
+.b-sidebar.inner-sidebar.active, .b-sidebar.inner-sidebar:hover{
+    overflow: visible;
+}
 @media (max-width:767px) {
     .b-sidebar {
     overflow: auto;
@@ -3553,7 +3560,7 @@ to {
     border: 0;
     font-size: 100%;
     margin-top: 5px;
-    padding: 0 0 0 5px;
+    padding: 0 27px 0 5px;
 }
 @media (max-width:767px) {
     .b-filter .select2-container .select2-search--inline .select2-search__field {
@@ -5767,9 +5774,18 @@ to {
 .b-description .dashed {
     border-bottom: 1px dashed #004b8b;
 }
-.b-description .wrapper-img {
+.b-description .wrapper-img,
+.b-description .wrapper-video  {
     padding: 17px 0;
+    display: inline-block;
+    vertical-align: middle;
 }
+
+.b-description .wrapper-img a:focus,
+.b-description .wrapper-video a:focus{
+    outline: none;
+}
+
 .b-description .wrapper-img .img-review {
     margin-right: 10px;
     max-height: 68px;
@@ -5829,14 +5845,26 @@ to {
     height: 109px;
 }
 .b-description .wrapper-authorized .wrapper-add-review .form-control {
+    width: 100%;
+}
+.b-description .wrapper-authorized .wrapper-add-review{
     width: calc(100% - 154px);
+}
+.form-group:not(.form-check).has-error.no-label:before, .form-group:not(.form-check).required.has-error.no-label:before{
+    z-index: 10;
+}
+#tab-decs.active{
+    padding-bottom: 0 !important;
+}
+.wrapper-adress .right{
+    padding-bottom: 19px;
 }
 @media (max-width:767px) {
     .b-description .wrapper-authorized .wrapper-add-review .form-control {
     width: 100%}
 }.b-description .wrapper-authorized .wrapper-add-review .draw-photo {
     border: 1px dashed #ccdbe8;
-    width: calc(100% - 154px);
+    width: 100%;
     color: #004b8b;
     position: relative;
     overflow: hidden;
