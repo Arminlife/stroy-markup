@@ -22591,7 +22591,7 @@ $(function () {
 
             select.on('change', function () {
                 createTags();
-                $('.js-close-filter-btn:visible').text('Применить').addClass('btn-success').removeClass('btn-secondary');
+                //$('.js-close-filter-btn:visible').text('Применить').addClass('btn-success').removeClass('btn-secondary');
             });
         });
 
@@ -23748,7 +23748,7 @@ $('.wrapper-img').each(function() {
     });
 });
 
-$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+$('.popup-youtube').magnificPopup({
     type: 'iframe',
     removalDelay: 160,
     preloader: false,

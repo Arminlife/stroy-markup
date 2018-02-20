@@ -4196,7 +4196,7 @@ to {
     padding-right: 0;
 }
 }@media (min-width:992px) {
-    .b-catalog .like: before {
+    .b-catalog .like:before {
     content: 'В избранное';
     position: absolute;
     bottom: 30px;
