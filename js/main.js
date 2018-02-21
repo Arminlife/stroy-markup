@@ -22229,7 +22229,7 @@ $(function () {
                 paginationClickable: true,
                 observer: true,
                 observeParents: true,
-                loop: true,
+                //loop: true,
                 breakpoints: {
                     1280: {
                         slidesPerView: 4,
@@ -22244,10 +22244,12 @@ $(function () {
             },
             slider = new Swiper($('.js-slider', component), params);
 
-        $('.js-like', component).on('click', function (event) {
+
+        $('.js-icon', component).on('click', function (event) {
             event.preventDefault();
-            $(this).toggleClass('filled');
-        });
+            var icon = $(this);
+            icon.toggleClass('filled');
+        });        
 
         $('.js-sort', component).each(function () {
             var activeLink = $(this).find('.active'),
@@ -22306,15 +22308,22 @@ $(function () {
                 }
             }
         });
-       $('.js-count-link', component).on('click', function (event) {
-       		component.toggleClass('active');
+        $('.b-carousel .js-count-link').each(function (index) {
+            $(this).attr('data-dropdown', 'dropdown' + index);
+        });        
+        $('.b-carousel .dropdown').each(function (index) {
+            $(this).attr('id', 'dropdown' + index);
+        });
+
+       	$('.js-count-link', component).on('click', function (event) {
+       		$('.b-carousel .dropdown').removeClass('active');
+       		$('#' + $(this).attr('data-dropdown')).addClass('active');
             event.preventDefault();
             
-
         }); 
         $('.js-clear', component).on('click', function (event) {
             event.preventDefault();
-           component.removeClass('active');
+           $('.b-carousel .dropdown').removeClass('active');
         }); 
         $(document.body).on('click', function (event) {
 
@@ -22326,12 +22335,6 @@ $(function () {
 
             }       
 
-            if (calc.hasClass('active')) {
-
-                $('.count.active .js-count-link').trigger('click');
-                calc.find('.js-calc-close').trigger('click');
-            }
-            //calc.toggleClass('active')
 
         })        
     });
@@ -22814,6 +22817,36 @@ $(function () {
             icon.addClass('filled');
 
         });
+        $('.b-possibly .js-count-link').each(function (index) {
+            $(this).attr('data-dropdown', 'dropdown' + index);
+        });        
+        $('.b-possibly .dropdown').each(function (index) {
+            $(this).attr('id', 'dropdown' + index);
+        });
+
+       	$('.js-count-link', component).on('click', function (event) {
+       		$('.b-possibly .dropdown').removeClass('active');
+       		$('#' + $(this).attr('data-dropdown')).addClass('active');
+            event.preventDefault();
+            console.log('clicked');
+            
+        }); 
+        $('.js-clear', component).on('click', function (event) {
+            event.preventDefault();
+           $('.b-possibly .dropdown').removeClass('active');
+        }); 
+        $(document.body).on('click', function (event) {
+
+            if ($('.b-possibly.active').length) {
+
+                if (!$(event.target).closest('.count').length) {
+                    $('.count.active .js-count-link').trigger('click');
+                }
+
+            }       
+
+
+        })        
     });
 });
 $(function () {
@@ -22886,6 +22919,35 @@ $(function () {
             icon.addClass('filled');
 
         });
+        $('.b-history .js-count-link').each(function (index) {
+            $(this).attr('data-dropdown', 'dropdown' + index);
+        });        
+        $('.b-history .dropdown').each(function (index) {
+            $(this).attr('id', 'dropdown' + index);
+        });
+
+       	$('.js-count-link', component).on('click', function (event) {
+       		$('.b-history .dropdown').removeClass('active');
+       		$('#' + $(this).attr('data-dropdown')).addClass('active');
+            event.preventDefault();
+            
+        }); 
+        $('.js-clear', component).on('click', function (event) {
+            event.preventDefault();
+           $('.b-history .dropdown').removeClass('active');
+        }); 
+        $(document.body).on('click', function (event) {
+
+            if ($('.b-history.active').length) {
+
+                if (!$(event.target).closest('.count').length) {
+                    $('.count.active .js-count-link').trigger('click');
+                }
+
+            }       
+
+
+        })         
     });
 });
 $(function () {
@@ -23590,6 +23652,33 @@ $(function () {
                 }
             })
         });
+        $('.js-count-link', component).on('click', function (event) {
+            event.preventDefault();
+            var count = $(this).closest('.count'),
+                dropdown = count.find('.dropdown'),
+                windowWidth = $(window).width();
+            if (!count.hasClass('active') && $('.count.active').length) {
+                $('.count.active .js-count-link').trigger('click');
+            }
+            count.toggleClass('active');
+
+        }); 
+        $('.js-clear', component).on('click', function (event) {
+            event.preventDefault();
+           $(this).closest('.count').removeClass('active');
+        });
+
+        $(document.body).on('click', function (event) {
+
+            if ($('.count.active').length) {
+
+                if (!$(event.target).closest('.count').length) {
+                    $('.count.active .js-count-link').trigger('click');
+                }
+
+            }       
+
+        })               
 
     });
 });

@@ -2733,6 +2733,9 @@ to {
     text-align: left;
     padding-left: 0;
 }
+.b-carousel .order{
+    margin-bottom: 16px;
+}
 .b-carousel .btn-blank {
     border-radius: 100px;
     font-size: 16px;
@@ -4195,11 +4198,28 @@ to {
 .b-catalog .wrapper-baner {
     padding-right: 0;
 }
+
 }@media (min-width:992px) {
-    .b-catalog .like:before {
+.b-carousel .like{
+    margin-top: 13px;
+    position: relative;
+}
+.b-carousel .libra{
+    margin-top: 13px;
+    left: 5px;
+}
+.b-carousel .like .icon{
+    stroke: #000;
+}
+.b-carousel .libra .icon{
+    fill: #000;
+}
+.b-catalog .like:before,
+.b-carousel .like:before {
     content: 'В избранное';
     position: absolute;
     bottom: 30px;
+    background-color: #fff;
     padding: 9px 10px;
     width: 123px;
     text-align: center;
@@ -4210,7 +4230,8 @@ to {
     transition: all .3s linear;
     text-decoration: none;
 }
-.b-catalog .like:after {
+.b-catalog .like:after,
+.b-carousel .like:after {
     content: '';
     width: 10px;
     height: 10px;
@@ -4221,18 +4242,23 @@ to {
     transform: rotate(-45deg);
     box-shadow: 0 25px 27px rgba(0, 0, 0, .13);
 }
-.b-catalog .libra:hover:after, .b-catalog .libra:hover:before, .b-catalog .like:hover:after, .b-catalog .like:hover:before {
+.b-catalog .libra:hover:after, .b-catalog .libra:hover:before, .b-catalog .like:hover:after, .b-catalog .like:hover:before,
+.b-carousel .libra:hover:after, .b-carousel .libra:hover:before, .b-carousel .like:hover:after, .b-carousel .like:hover:before {
     opacity: 1;
+    z-index: 100;
 }
-.b-catalog .libra {
+.b-catalog .libra,
+.b-carousel .libra {
     position: relative;
 }
-.b-catalog .libra:after, .b-catalog .libra:before, .b-catalog .like:after {
+.b-catalog .libra:after, .b-catalog .libra:before, .b-catalog .like:after,
+.b-carousel .libra:after, .b-carousel .libra:before, .b-carousel .like:after  {
     position: absolute;
     transition: all .3s linear;
     opacity: 0;
 }
-.b-catalog .libra:before {
+.b-catalog .libra:before,
+.b-carousel .libra:before {
     padding: 9px 10px;
     text-align: center;
     color: #000;
@@ -4244,7 +4270,8 @@ to {
     left: -50px;
     box-shadow: 0 0 27px rgba(0, 0, 0, .13);
 }
-.b-catalog .libra:after {
+.b-catalog .libra:after,
+.b-carousel .libra:after {
     content: '';
     width: 10px;
     height: 10px;
@@ -4255,6 +4282,7 @@ to {
     transform: rotate(-45deg);
     box-shadow: 0 25px 27px rgba(0, 0, 0, .13);
 }
+
 }@media (max-width:767px) {
     .b-catalog .wrapper {
     margin-right: 0;
@@ -4280,7 +4308,9 @@ to {
 }
 .count .dropdown,
 .b-carousel .dropdown,
-.b-goods-list .dropdown {
+.b-goods-list .dropdown,
+.b-history .dropdown,
+.b-possibly .dropdown {
     position: fixed;
     width: 615px;
     left: 50%;
@@ -4298,7 +4328,9 @@ to {
 @media screen and (max-width:1516px) {
     .count .dropdown,
     .b-carousel .dropdown,
-    .b-goods-list .dropdown {
+    .b-goods-list .dropdown,
+    .b-history .dropdown,
+    .b-possibly .dropdown  {
     width: 50vw;
     top: 50%;
     left: 50%;
@@ -4310,13 +4342,17 @@ to {
 }@media (max-width:991px) {
     .count .dropdown,
     .b-carousel .dropdown,
-    .b-goods-list .dropdown  {
+    .b-goods-list .dropdown,
+    .b-history .dropdown,
+    .b-possibly .dropdown   {
     width: 80vw;
 }
 }@media (max-width:767px) {
     .count .dropdown,
     .b-carousel .dropdown,
-    .b-goods-list .dropdown  {
+    .b-goods-list .dropdown,
+    .b-history .dropdown,
+    .b-possibly .dropdown   {
     position: absolute;
     left: 6px;
     width: calc(100vw - 52px);
@@ -4325,66 +4361,88 @@ to {
 }
 .count .dropdown .td-address, .count .dropdown table, .count .dropdown tbody, .count .dropdown tr,
 .b-carousel .dropdown .td-address, .b-carousel .dropdown table, .b-carousel .dropdown tbody, .b-carousel .dropdown tr,
-.b-goods-list .dropdown .td-address, .b-goods-list .dropdown table, .b-goods-list .dropdown tbody, .b-goods-list .dropdown tr {
+.b-goods-list .dropdown .td-address, .b-goods-list .dropdown table, .b-goods-list .dropdown tbody, .b-goods-list .dropdown tr,
+.b-history .dropdown .td-address, .b-history .dropdown table, .b-history .dropdown tbody, .b-history .dropdown tr,
+.b-possibly .dropdown .td-address, .b-possibly .dropdown table, .b-possibly .dropdown tbody, .b-possibly .dropdown tr, {
     display: block;
 }
 .count .dropdown .td-address,
 .b-carousel .dropdown .td-address,
-.b-goods-list .dropdown .td-address  {
+.b-goods-list .dropdown .td-address,
+.b-history .dropdown .td-address,
+.b-possibly .dropdown .td-address  {
     padding-top: 21px;
 }
 .count .dropdown .td-count,
 .b-carousel .dropdown .td-count,
-.b-goods-list .dropdown .td-count {
+.b-goods-list .dropdown .td-count,
+.b-history .dropdown .td-count,
+.b-possibly .dropdown .td-count {
     width: 40%;
     display: inline-block;
     padding-right: 0;
 }
 .count .dropdown .td-input,
 .b-carousel .dropdown .td-input,
-.b-goods-list .dropdown .td-input {
+.b-goods-list .dropdown .td-input,
+.b-history .dropdown .td-input,
+.b-possibly .dropdown .td-input {
     display: block;
     text-align: right;
     padding-right: 20px;
 }
 .count .dropdown .td-count,
 .b-carousel .dropdown .td-count,
-.b-goods-list .dropdown .td-count {
+.b-goods-list .dropdown .td-count,
+.b-history .dropdown .td-count,
+.b-possibly .dropdown .td-count {
     float: left;
     padding-top: 15px;
 }
 .count .dropdown .btn,
 .b-carousel .dropdown .btn,
-.b-goods-list .dropdown .btn {
+.b-goods-list .dropdown .btn,
+.b-history .dropdown .btn,
+.b-possibly .dropdown .btn {
     padding: 10px 20px!important;
     margin-right: -11px!important;
 }
 .count .dropdown .quantity input,
 .b-carousel .dropdown .quantity input,
-.b-goods-list .dropdown .quantity input {
+.b-goods-list .dropdown .quantity input,
+.b-history .dropdown .quantity input,
+.b-possibly .dropdown .quantity input {
     margin-right: 0;
     margin-left: 8px;
 }
 }@media (max-width:767px) and (min-width:768px) {
     .count .dropdown .quantity input,
     .b-carousel .dropdown .quantity input,
-    .b-goods-list .dropdown .quantity input {
+    .b-goods-list .dropdown .quantity input,
+    .b-history .dropdown .quantity input,
+    .b-possibly .dropdown .quantity input{
     height: 42px;
 }
 }@media (max-width:767px) and (max-width:767px) {
     .count .dropdown .quantity input,
-    .b-carousel .dropdown .quantity input{
+    .b-carousel .dropdown .quantity input,
+    .b-history .dropdown .quantity input,
+    .b-possibly .dropdown .quantity input{    
     height: 42px;
     line-height: 42px;
 }
 }.count .dropdown a.btn,
 .b-carousel .dropdown a.btn,
-.b-goods-list .dropdown a.btn {
+.b-goods-list .dropdown a.btn,
+.b-history .dropdown a.btn,
+.b-possibly .dropdown a.btn {
     font-size: 16px;
 }
 .count .dropdown .footer,
 .b-carousel .dropdown .footer,
-.b-goods-list .dropdown .footer {
+.b-goods-list .dropdown .footer,
+.b-history .dropdown .footer,
+.b-possibly .dropdown .footer {
     padding: 20px;
     background-color: #f2f6f9;
     display: -webkit-box;
@@ -4399,12 +4457,16 @@ to {
 }
 .count .dropdown .clear, .count .dropdown a.clear,
 .b-carousel .dropdown .clear, .b-carousel .dropdown a.clear,
-.b-goods-list .dropdown .clear, .b-goods-list .dropdown a.clear {
+.b-goods-list .dropdown .clear, .b-goods-list .dropdown a.clear,
+.b-history .dropdown .clear, .b-history .dropdown a.clear,
+.b-possibly .dropdown .clear, .b-possibly .dropdown a.clear {
     color: #bec2c2;
 }
 .count .dropdown .clear .icon_cart-remove, .count .dropdown a.clear .icon_cart-remove,
 .b-carousel .dropdown .clear .icon_cart-remove, .b-carousel .dropdown a.clear .icon_cart-remove,
-.b-goods-list .dropdown .clear .icon_cart-remove, .b-goods-list .dropdown a.clear .icon_cart-remove {
+.b-goods-list .dropdown .clear .icon_cart-remove, .b-goods-list .dropdown a.clear .icon_cart-remove,
+.b-history .dropdown .clear .icon_cart-remove, .b-history .dropdown a.clear .icon_cart-remove,
+.b-possibly .dropdown .clear .icon_cart-remove, .b-possibly .dropdown a.clear .icon_cart-remove {
     width: 10px;
     height: 10px;
     display: inline-block;
@@ -4415,32 +4477,44 @@ to {
 }
 .count .dropdown-table,
 .b-carousel .dropdown-table,
-.b-goods-list .dropdown-table {
+.b-goods-list .dropdown-table,
+.b-history .dropdown-table,
+.b-possibly .dropdown-table{
     width: 100%;
     margin-bottom: 20px;
 }
 .count .dropdown-table td,
 .b-carousel .dropdown-table td,
-.b-goods-list .dropdown-table td  {
+.b-goods-list .dropdown-table td,
+.b-history .dropdown-table td,
+.b-possibly .dropdown-table td{
     padding: 10px 20px 0;
 }
 @media (max-width:575px) {
     .count .dropdown-table td,
-    .b-carousel .dropdown-table td {
+    .b-carousel .dropdown-table td,
+    .b-history .dropdown-table td,
+    .b-possibly .dropdown-table td{
     padding: 8px 12px 0;
 }
 }.count.active .dropdown,
-.b-carousel.active .dropdown,
-.b-goods-list .active .dropdown {
+.b-carousel .dropdown.active,
+.b-goods-list .active .dropdown,
+.b-history .dropdown.active,
+.b-possibly .dropdown.active {
     display: block;
 }
 
-.b-carousel .dropdown{
+.b-carousel .dropdown,
+.b-history .dropdown,
+.b-possibly .dropdown{
     position: absolute !important;
 }
 .count .quantity input,
 .b-carousel .quantity input,
-.b-goods-list .quantity input{
+.b-goods-list .quantity input,
+.b-history .quantity input,
+.b-possibly .quantity input{
     width: 28px;
     border: 1px solid #f2f6f9;
     line-height: 22px;
@@ -4455,7 +4529,11 @@ to {
 .b-carousel .quantity input:focus, 
 .b-carousel .quantity input:focus, 
 .b-good .item .quantity input:active, 
-.b-good .item .quantity input:focus {
+.b-good .item .quantity input:focus,
+.b-history .item .quantity input:active, 
+.b-history .item .quantity input:focus,
+.b-possibly .item .quantity input:active, 
+.b-possibly .item .quantity input:focus {
     outline: 0;
 }
 .count .quantity .less, 
@@ -4466,7 +4544,13 @@ to {
 .b-goods-list .quantity .plus,
 .b-carousel .quantity .less, 
 .b-carousel .quantity .more,
-.b-carousel .quantity .plus
+.b-carousel .quantity .plus,
+.b-history .quantity .less, 
+.b-history .quantity .more,
+.b-history .quantity .plus,
+.b-possibly .quantity .less, 
+.b-possibly .quantity .more,
+.b-possibly .quantity .plus
 {
     line-height: 20px;
     background-color: #f2f6f9;
@@ -4475,13 +4559,17 @@ to {
 }
 .count .quantity .less,
 .b-carousel .quantity .less,
-.b-goods-list .quantity .less {
+.b-goods-list .quantity .less,
+.b-history .quantity .less,
+.b-possibly .quantity .less {
     border-radius: 20px 0 0 20px;
     padding: 3px 10px;
 }
 .count .quantity .more, .count .quantity .plus,
 .b-carousel .quantity .more, .b-carousel .quantity .plus,
-.b-goods-list .quantity .more, .b-goods-list .quantity .plus  {
+.b-goods-list .quantity .more, .b-goods-list .quantity .plus,
+.b-history .quantity .more, .b-history .quantity .plus,
+.b-possibly .quantity .more, .b-possibly .quantity .plus  {
     border-radius: 0 20px 20px 0;
     padding: 3px 12px;
 }
@@ -5780,7 +5868,10 @@ to {
     display: inline-block;
     vertical-align: middle;
 }
-
+.b-description .wrapper-img a,
+.b-description .wrapper-video a{
+    text-decoration: none !important;
+} 
 .b-description .wrapper-img a:focus,
 .b-description .wrapper-video a:focus{
     outline: none;
@@ -8120,11 +8211,11 @@ to {
 .b-possibly .libra .icon {
     fill: #000;
 }
-.b-history .rating .star.filled .icon, .b-possibly .libra.filled .icon, .b-set .rating .star.filled .icon {
+.b-history .rating .star.filled .icon, .b-possibly .libra.filled .icon, .b-set .rating .star.filled .icon, .b-carousel .libra.filled .icon {
     fill: #e46713;
 }
 @media (min-width:992px) {
-    .b-possibly .like: before {
+    .b-possibly .like:before {
     content: 'В избранное';
     position: absolute;
     bottom: 32px;
