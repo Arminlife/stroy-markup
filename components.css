@@ -14732,3 +14732,10 @@ img.mfp-img {
 #videobox{
     margin-top: 20px;
 }
+
+label.error{
+    color: #ef4423;
+}
+input.error{
+    border-color: #ef4423;
+}
