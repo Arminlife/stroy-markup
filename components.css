@@ -7440,7 +7440,7 @@ to {
 }
 .b-delivery .form-group {
     margin-bottom: 11px;
-    margin-right: 135px;
+    padding-right: 0;
 }
 .b-delivery .form-group.time-select .chosen-container .chosen-single {
     background: #fff;

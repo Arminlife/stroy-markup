@@ -22327,6 +22327,10 @@ $(function () {
             event.preventDefault();
            $('.b-carousel .dropdown').removeClass('active');
         }); 
+        $('.js-get-modal', component).on('click', function (event) {
+           event.preventDefault();
+           $('.b-carousel .dropdown').removeClass('active');
+        });             
         $(document.body).on('click', function (event) {
 
             if ($('.b-carousel.active').length) {
@@ -22690,6 +22694,10 @@ $(function () {
             event.preventDefault();
            $(this).closest('.count').removeClass('active');
         });
+        $('.js-get-modal', component).on('click', function (event) {
+            event.preventDefault();
+           $(this).closest('.count').removeClass('active');
+        });        
 
 
 
