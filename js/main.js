@@ -22327,7 +22327,7 @@ $(function () {
             event.preventDefault();
            $('.b-carousel .dropdown').removeClass('active');
         }); 
-        $('.js-get-modal', component).on('click', function (event) {
+        $('.js-product-add-to-cart', component).on('click', function (event) {
            event.preventDefault();
            $('.b-carousel .dropdown').removeClass('active');
         });             
@@ -22694,7 +22694,7 @@ $(function () {
             event.preventDefault();
            $(this).closest('.count').removeClass('active');
         });
-        $('.js-get-modal', component).on('click', function (event) {
+        $('.js-product-add-to-cart', component).on('click', function (event) {
             event.preventDefault();
            $(this).closest('.count').removeClass('active');
         });        
