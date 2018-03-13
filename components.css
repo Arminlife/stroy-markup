@@ -14757,17 +14757,21 @@ input.error{
     position: absolute;
     top: 100%;
     margin-top: 15px;
-    left: -83px;
+    left: -35px;
     display: none;
     z-index: 1000;
+}
+.wrapper-icon{
+    position: relative;
+    display: inline-block;
 }
 .wrapper-icons >div .link-dropdown a{
     display: none;
 }
-.wrapper-icons >div.filled .link-dropdown a{
+.wrapper-icons >div .filled + .link-dropdown a{
     display: block;
 }
-.wrapper-icons >div.filled .link-dropdown span{
+.wrapper-icons >div .filled + .link-dropdown span{
     display: none;
 }
 .wrapper-icons >div .link-dropdown:before{
@@ -14790,6 +14794,11 @@ input.error{
     width: 100%;
     height: 20px;
 }
-.wrapper-icons >div:hover .link-dropdown{
+.wrapper-icons >div.dropdown-visible .link-dropdown{
     display: block;
+}
+
+.count .wrapper-icons >div .link-dropdown{
+    margin-top: 0px;
+    left: -81px;
 }

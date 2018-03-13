@@ -23997,3 +23997,24 @@ $('#registerForm').validate({
 		}
 	}
 })
+
+// Перебор всех иконок
+$('.wrapper-icon').each(function () {
+
+	$(this).hover(
+		function () {
+
+			// Убираем класс в других иконках
+			$('.wrapper-icon').removeClass('dropdown-visible');
+
+			// Добавляем класс текущей иконке
+			$(this).addClass('dropdown-visible');
+
+		},
+		function () {
+			// Убираем класс в текущей иконки
+			$(this).removeClass('dropdown-visible');
+
+		}
+	);
+})
