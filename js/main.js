@@ -24018,3 +24018,26 @@ $('.wrapper-icon').each(function () {
 		}
 	);
 })
+
+// Поле ввода бонусной карты
+$('.bonus-activate .form-control').on("change paste keyup", function() {
+   if ($(this).val().length == 7) {
+   	$(this).parent().addClass('card-valid');
+   } else{
+   	$(this).parent().removeClass('card-valid');
+   }
+});
+
+// Кастомный метод для проверки длинны поля карты
+jQuery.validator.addMethod("cardNumber", function(value, element, param) {
+ return this.optional(element) || value.length == param;
+}, $.validator.format("Карты с таким номером не существует."));
+
+$('#bonusCard').validate({
+	rules: {
+		cardValue: {
+			required: true,
+			cardNumber: 7
+		}
+	}
+})

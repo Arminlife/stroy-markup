@@ -14802,3 +14802,137 @@ input.error{
     margin-top: 0px;
     left: -81px;
 }
+
+.b-offers .wrapper-refusal{
+    color: #bec2c2;
+}
+.empty-bonus-card{
+    background-color: #fef7f3;
+    border: 1px solid #f6d2b7;
+    border-radius: 5px;
+    width: 255px;
+    height: 185px;
+    text-align: center;
+    line-height: 180px;
+}
+.empty-bonus-card{
+    font-weight: 700;
+    color: #e26a11;
+    font-size: 20px;
+}
+
+.bonus-activate {
+    margin-top: 70px;
+}
+
+.bonus-activate .form-control{
+    display: inline-block;
+    border-radius: 25px;
+    padding-right: 50px;
+    width: 300px;
+    vertical-align: middle;
+    font-weight: 600;
+}
+.bonus-activate .form-control::-webkit-inner-spin-button, 
+.bonus-activate .form-control::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.bonus-activate .form-control::-webkit-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+    font-weight: 400;
+}
+.bonus-activate .form-control::-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+    font-weight: 400;
+}
+.bonus-activate .form-control:-ms-input-placeholder {
+    color: rgba(0,0,0, 0.5);
+    font-weight: 400;
+}
+.bonus-activate .form-control:-moz-placeholder {
+    color: rgba(0,0,0, 0.5);
+    font-weight: 400;
+}
+.bonus-activate h3{
+    font-size: 16px;
+    margin-bottom: 20px !important;
+}
+.bonus-activate button{
+    display: inline-block;
+    margin-left: -50px;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: middle;
+}
+.bonus-activate .question{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: rgba(0,75,139,0.4);
+    border:1px solid rgba(0,75,139,0.4);
+    text-decoration: none !important;
+    border-radius: 100%;
+    font-size: 25px;
+    font-weight: 500;
+}
+.bonus-activate .form-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+.bonus-activate .question:hover{
+    background-color: #004b8b;
+    border-color: #004b8b;
+    color: #fff;
+}
+.bonus-activate .btn-outline-primary{
+    font-size: 16px;
+    width: 240px;
+}
+
+.bonus-activate p{
+    color: #808080;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.bonus-activate p a{
+    color: #004b8b;
+    border-bottom: 1px dashed #004b8b;
+}
+.bonus-activate p a:hover{
+    text-decoration: none;
+}
+.bonus-activate .card-bonus{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 95px;
+    top: 10px;
+    color: #808080;
+    font-size: 14px;
+}
+.bonus-activate .card-valid .card-bonus{
+    display: block;
+}
+.bonus-activate .form-group input.error{
+    color: #ef4423;
+    background-image: url(images/profile-error.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 220px center;
+}
+.bonus-activate .form-group label.error{
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #ef4423;
+}
