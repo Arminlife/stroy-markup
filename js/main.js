@@ -22068,20 +22068,6 @@ $(function () {
 
         var component = $(this);
 
-        $('#home').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-        });
-
-        $('#profile').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-        });
-
-        $('#messages').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-        });
 
         $('.js-add-review a', component).on('click', function (event) {
             event.preventDefault();

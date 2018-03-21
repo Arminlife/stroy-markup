@@ -14936,3 +14936,8 @@ input.error{
     font-size: 13px;
     color: #ef4423;
 }
+
+.b-delivery button[data-toggle="collapse"]{
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
