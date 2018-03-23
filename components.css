@@ -10089,6 +10089,10 @@ to {
 .b-orders .part-number .date {
     color: #bec2c2;
 }
+.b-orders .part-number .date span{
+    color:#000;
+    display: block;
+}
 .b-orders .part-price {
     max-width: 108px;
     min-width: 108px;
