@@ -24027,3 +24027,8 @@ $('#bonusCard').validate({
 		}
 	}
 })
+
+$('.all-filter').click(function() {
+	$(this).hide();
+	$(this).parent().find('.filter').addClass('opened');
+});

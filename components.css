@@ -14945,3 +14945,20 @@ input.error{
     margin-left: 15px;
     margin-bottom: 30px;
 }
+.filter .wrapper .col-12:nth-child(n+5){display: none;}
+.filter.opened .wrapper .col-12:nth-child(n+5){display: block;}
+.all-filter{
+    font-size: 16px;
+    line-height: 22px;
+    color: #004b8b;
+    border-bottom: 1px dashed #004b8b;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 116px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+}
