@@ -23151,7 +23151,7 @@ $(function () {
                 slidesPerView: 'auto',
                 nextButton: $('.js-next', component),
                 prevButton: $('.js-prev', component),
-                loop: true,
+                loop: false,
                 breakpoints: {
                     519: {
                         slidesPerView: 1,
