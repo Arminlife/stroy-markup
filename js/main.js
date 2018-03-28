@@ -23970,7 +23970,7 @@ $('#registerForm').validate({
 	rules: {
 		registerMail: {
 			required: true,
-			email: true
+			email: true,
 			/* 
 			remote: {
 				url: "/registration/register_email_exists",
@@ -23980,6 +23980,10 @@ $('#registerForm').validate({
 				}
 			}
 			*/
+		},
+		cardValue: {
+			required: true,
+			cardNumber: 7
 		}
 	}
 })
@@ -24031,4 +24035,12 @@ $('#bonusCard').validate({
 $('.all-filter').click(function() {
 	$(this).hide();
 	$(this).parent().find('.filter').addClass('opened');
+});
+
+$('#bonus-check').click(function() {
+	if ($(this).is( ":checked" )) {
+		$('<div class="form-group required no-label cardValue"><input type="number" class="form-control" name="cardValue" id="cardValue" placeholder="Введите номер карты" maxlength="7" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></div>').insertAfter($(this).parent());
+	} else {
+		$('.cardValue').remove();
+	}
 });

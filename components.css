@@ -14962,3 +14962,8 @@ input.error{
     font-weight: 400;
     cursor: pointer;
 }
+
+.cardValue{
+    text-align: left;
+    margin-bottom: 1rem;
+}
