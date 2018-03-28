@@ -14967,3 +14967,9 @@ input.error{
     text-align: left;
     margin-bottom: 1rem;
 }
+.b-filter .select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+    width: 100%;
+}
+.b-filter .select2-container .select2-search--inline .select2-search__field{
+    width: 100% !important;
+}

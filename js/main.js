@@ -24032,10 +24032,24 @@ $('#bonusCard').validate({
 	}
 })
 
-$('.all-filter').click(function() {
-	$(this).hide();
-	$(this).parent().find('.filter').addClass('opened');
-});
+function checkFilterLength() {
+	if ($('.filter .wrapper .col-12').length >4) {
+		$('<span class="all-filter">Ещё фильтры</span>').insertAfter($('.filter'));
+		
+		$('.all-filter').click(function() {
+			$(this).hide();
+			$(this).parent().find('.filter').addClass('opened');
+		});		
+	} else {
+		$('.all-filter').remove();
+	}
+}
+
+$(document).ready(function () {
+	checkFilterLength()
+})
+
+
 
 $('#bonus-check').click(function() {
 	if ($(this).is( ":checked" )) {
