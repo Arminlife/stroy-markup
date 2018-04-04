@@ -14973,3 +14973,21 @@ input.error{
 .b-filter .select2-container .select2-search--inline .select2-search__field{
     width: 100% !important;
 }
+
+
+.password-wrap,.sms-wrap, #login-phone-btn,.again-sms, .submit-sms{display: none;}
+.email-active .phone-wrap{display: none;}
+.email-active .form-span{display: none;}
+.email-active .password-wrap{display: block;}
+
+.phone-active .email-wrap{display: none;}
+.phone-active .form-span{display: none;}
+.phone-active .password-wrap{display: none;}
+.phone-active .btn-outline-success{display: none;}
+.phone-active #login-phone-btn{display: block;}
+
+.sms-active .form-group{display: none;}
+.sms-active .sms-wrap{display: block;}
+.sms-active .submit-sms{display: flex;text-align: center;}
+.sms-active .again-sms{display: inline-block;margin-bottom: 15px;}
+.sms-active #submit-sms-btn{display: inline-block;}

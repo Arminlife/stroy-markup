@@ -24058,3 +24058,26 @@ $('#bonus-check').click(function() {
 		$('.cardValue').remove();
 	}
 });
+
+$('#login-email').keyup(function() {
+    if($(this).val().length > 0) {
+    	$('#loginForm').addClass('email-active')
+    } else {
+        $('#loginForm').removeClass('email-active');
+    }
+});
+$('#login-phone').keyup(function() {
+    if($(this).val().length > 0) {
+    	$('#loginForm').addClass('phone-active')
+    } else {
+        $('#loginForm').removeClass('phone-active');
+    }
+});
+
+$('#login-phone-btn').click(function () {
+	$('#loginForm').addClass('sms-active');
+})
+$('.move-back').click(function (e) {
+	e.preventDefault();
+	$('#loginForm').removeClass('sms-active phone-active');
+})

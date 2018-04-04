@@ -88,14 +88,42 @@
                 <h2>Вход</h2>
                 <p>Если у вас нет аккаунта, вы можете &nbsp;<a class="decorated-link js-get-modal" href="#reg" data-target=".js-registration-modal">зарегистрироваться</a></p>
                 <form class="form" id="loginForm">
-                    <div class="form-group required"><input class="form-control" type="email" name="login" placeholder="Email" required></div>
-                    <div class="form-group required"><input class="form-control" type="password" name="password" placeholder="Пароль" required></div>
+
+                    <!-- email field -->
+                    <div class="form-group required email-wrap"><input class="form-control" type="email" id="login-email" name="login" placeholder="Email" required></div>
+
+                    <div class="text-left form-span"><label style="margin-bottom: 10px">или</label></div>
+
+                    <!-- phone field -->
+                    <div class="form-group required phone-wrap"><input class="form-control" type="text" id="login-phone" name="phone" placeholder="Телефон" required></div>
+
+                    <!-- password field -->
+                    <div class="form-group required password-wrap"><input class="form-control" type="password" name="password" placeholder="Пароль" required></div>
+
+                    <!-- sms field -->
+                    <div class="form-group sms-wrap"><input class="form-control" type="password" name="password-sms" placeholder="Код из смс" ></div>
+
                     <div class="form-group row">
                         <div class="col-6"><input class="checkbox" type="checkbox" name="remember" id="remember"><label for="remember">Запомнить меня</label></div>
                         <div class="col-6 text-right"><a class="decorated-link" href="#">Забыли пароль?</a></div>
+                        
+                    </div>
+                    <div class="form-group submit-sms row">
+                        <!-- send again field -->
+                        <div class="col-6 text-left"><a class="decorated-link move-back" href="#">Вернуться назад</a></div>
+                        <!-- send again field -->
+                        <div class="col-6 text-right"><a class="decorated-link again-sms" href="#">Отправить еще раз</a></div>
+                        <!-- submit sms -->
+                        <button class="btn btn-outline-success" id="submit-sms-btn">Подтвердить</button>    
+
                     </div>
                     <div class="form-group row">
-                        <div class="col-8"><button class="btn btn-outline-success">Войти</button></div>
+                        <div class="col-8">
+                            <!-- login with email -->
+                            <button class="btn btn-outline-success">Войти</button>
+                            <!-- login with phone -->
+                            <button class="btn btn-outline-success" id="login-phone-btn">Войти</button>                        
+                        </div>
                         <div class="col-4 text-right"><a class="social" href="#"><svg class="icon icon_modal-social-vk"><use xlink:href="./images/sprite.svg#modal-social-vk"></use></svg></a><a class="social" href="#"><svg class="icon icon_modal-social-ok"><use xlink:href="./images/sprite.svg#modal-social-ok"></use></svg></a></div>
                     </div>
                 </form>
