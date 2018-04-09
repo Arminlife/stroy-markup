@@ -24064,8 +24064,13 @@ $('#login-email').keyup(function() {
     	$('#loginForm').addClass('email-active');
     	$('.password-wrap').addClass('required');
     	$('.password-wrap input').prop('required',true);
+        $('.phone-wrap').removeClass('required has-error');
+        
+        $('#login-phone').prop('required',false);    	
     } else {
         $('#loginForm').removeClass('email-active');
+        $('#login-phone').prop('required',true);
+        $('.phone-wrap').addClass('required');    
         $('.password-wrap').removeClass('required has-error');
         $('.password-wrap input').prop('required',false);
         $('.password-wrap input').removeClass('error');
