@@ -24061,9 +24061,14 @@ $('#bonus-check').click(function() {
 
 $('#login-email').keyup(function() {
     if($(this).val().length > 0) {
-    	$('#loginForm').addClass('email-active')
+    	$('#loginForm').addClass('email-active');
+    	$('.password-wrap').addClass('required');
+    	$('.password-wrap input').prop('required',true);
     } else {
         $('#loginForm').removeClass('email-active');
+        $('.password-wrap').removeClass('required has-error');
+        $('.password-wrap input').prop('required',false);
+        $('.password-wrap input').removeClass('error');
     }
 });
 $('#login-phone').keyup(function() {
