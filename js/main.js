@@ -24073,9 +24073,13 @@ $('#login-email').keyup(function() {
 });
 $('#login-phone').keyup(function() {
     if($(this).val().length > 0) {
-    	$('#loginForm').addClass('phone-active')
+    	$('#loginForm').addClass('phone-active');
+    	$('#login-email').prop('required',false);
+    	$('.email-wrap').removeClass('required has-error');
     } else {
         $('#loginForm').removeClass('phone-active');
+        $('.email-wrap').addClass('required');
+    	$('#login-email').prop('required',true);
     }
 });
 
