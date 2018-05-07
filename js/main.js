@@ -24034,14 +24034,16 @@ $('#bonusCard').validate({
 
 function checkFilterLength() {
 	if ($('.filter .wrapper .col-12').length >4) {
-		$('<span class="all-filter">Ещё фильтры</span>').insertAfter($('.filter'));
+		$('<span class="all-filter"><i>Ещё фильтры</i></span>').insertAfter($('.filter'));
 		
-		$('.all-filter').click(function() {
-			$(this).hide();
-			$(this).parent().find('.filter').addClass('opened');
+		$('.all-filter i').click(function() {
+			$(this).text(function(i, text){
+		          return text === "Ещё фильтры" ? "Свернуть" : "Ещё фильтры";
+		      })
+			$(this).parent().parent().find('.filter').toggleClass('opened');
 		});		
 	} else {
-		$('.all-filter').remove();
+		$('.all-filter i').remove();
 	}
 }
 
