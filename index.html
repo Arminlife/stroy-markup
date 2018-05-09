@@ -58,6 +58,7 @@
                         <li><a href="sitemap.html">Карта сайта</a></li>
                         <li><a href="form-password-recovery.html">Форма восстановления пароля</a></li>
                         <li><a href="change-password.html">Форма для создания нового пароля</a></li>
+                        <li><a class="js-get-modal" href="#" data-target=".js-region">Попап региона доставки</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -465,6 +466,29 @@
             </h2>
         </div>
     </div>
+    <div class="b-modal js-region window-popup"><a class="modal-close js-modal-close" href="#"></a>
+        <div class="body">
+            <h2>Ваш регион доставки</h2>
+            <form id="regionForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Введите название населенного пункта">
+                </div>
+                <a href="#">определить автоматически</a>
+                <div class="h5">Популярные города</div>
+                <ul>
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Санкт-Петербург</a></li>
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Санкт-Петербург</a></li>
+                    <li><a href="#">Москва</a></li>
+                </ul>
+                <div class="region-buttons">
+                    <a href="#" class="back">Отменить</a>
+                    <button type="submit" class="btn btn-outline-success">Запомнить выбор</button>
+                </div>
+            </form>
+        </div>
+    </div>    
     <script src="js/main.js"></script>
     </div>
 </body>

@@ -14995,3 +14995,49 @@ input.error{
 .sms-active .submit-sms{display: flex;text-align: center;}
 .sms-active .again-sms{display: inline-block;margin-bottom: 15px;}
 .sms-active #submit-sms-btn{display: inline-block;}
+
+.window-popup{
+    background-color: rgba(0,0,0,0.5);
+}
+.window-popup .body{
+    width: 540px;
+    top:50%;
+    text-align: left;
+    padding: 30px;
+}
+.window-popup .body .h5{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #999;
+}
+.window-popup .modal-close{
+    right: 50%;
+    margin-right: -250px;
+    top:50%;
+    margin-top: 15px;
+}
+.window-popup .body h2{
+    margin-bottom: 20px;
+}
+.window-popup .body ul{
+    padding: 0;
+    margin: 0;
+}
+.window-popup .body ul li{
+    list-style-type: none;
+}
+.window-popup .body ul li a{
+    color: #000;
+    text-decoration: none;
+    margin-top: 4px;
+    display: block;
+}
+.window-popup .region-buttons{
+    border-top: 1px solid #ececec;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: right;
+}
+.window-popup .region-buttons .btn{
+    margin-left: 20px;
+}
