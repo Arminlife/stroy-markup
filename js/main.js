@@ -24097,3 +24097,6 @@ $('.move-back').click(function (e) {
 	e.preventDefault();
 	$('#loginForm').removeClass('sms-active phone-active');
 })
+$('.quick-link').click(function (e) {
+	e.preventDefault();
+})

@@ -690,7 +690,7 @@ to {
     padding: 16px 10px 0;
 }
 }.b-footer {
-    background-color: #f2f6f9;
+    background-color: #e5edf3;
     font-size: 13px;
     color: #004b8b;
     padding: 17px 5px 37px;
@@ -711,6 +711,8 @@ to {
     margin-top: -15px;
     text-align: right;
     color: #aec5da;
+    float: right;
+    width: 200px;
 }
 .b-footer .developed .air {
     padding-left: 5px;
@@ -766,6 +768,10 @@ to {
 .b-footer .payment .payment-icon {
     fill: #004b8b;
     opacity: .3;
+        transition: opacity .12s ease;
+}
+.b-footer .payment .payment-icon:hover{
+    opacity: 1;
 }
 @media (max-width:767px) {
     .b-footer {
@@ -1606,6 +1612,7 @@ to {
 }
 .b-sidebar .sale span, .b-sidebar ul li .main-item span {
     font-size: 0;
+    min-width: 1px;
 }
 }@media (max-width:767px) {
     .b-sidebar {
@@ -2339,6 +2346,7 @@ to {
 .b-actions .item .p {
     padding-bottom: 5px;
     display: block;
+    color: #000;
 }
 .b-actions .swiper-button-next, .b-actions .swiper-button-prev {
     width: 34px;
@@ -2804,10 +2812,10 @@ to {
     fill: #000;
 }
 .b-carousel .swiper-button-next {
-    right: 3px;
+    right: -9px;
 }
 .b-carousel .swiper-button-prev {
-    left: 2px;
+    left: -8px;
 }
 .b-carousel .pagination {
     display: block;
@@ -3024,8 +3032,8 @@ to {
     -webkit-animation: circle_wave 3s linear infinite;
     animation: circle_wave 3s linear infinite;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -1px;
+    top: -1px;
 }
 .b-installations .dot:after {
     -webkit-animation: circle_wave_2 3s linear infinite;
