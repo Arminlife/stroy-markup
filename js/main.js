@@ -22580,7 +22580,7 @@ $(function () {
 
                     var wrapper = $('.wrapper-selected', component);
                     if (wrapper.find('.item').length > 0) {
-                        $(template).insertAfter(wrapper.find('.item'));
+                        $(template).insertAfter(wrapper.find('.item:last-of-type'));
                     } else {
                         $(template).insertAfter('.wrapper-selected > .chose');
                     }
