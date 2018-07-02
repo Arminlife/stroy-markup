@@ -22282,11 +22282,13 @@ $(function () {
             } else {
 
                 slides.hide();
+                slides.addClass('hidden');
 
                 slides.each(function () {
 
                     if ($(this).data('type') === target) {
                         $(this).show();
+                        $(this).removeClass('hidden');
                     }
 
                 }).promise().done(function () {
@@ -22313,11 +22315,13 @@ $(function () {
                 } else {
 
                     slides.hide();
+                    slides.addClass('hidden');
 
                     slides.each(function () {
 
                         if ($(this).data('type') === target) {
                             $(this).show();
+                            $(this).removeClass('hidden');
                         }
 
                     }).promise().done(function () {
@@ -23194,6 +23198,11 @@ $(function () {
         $('.js-remove', component).on('click', function (event) {
             event.preventDefault();
             $(this).closest('.swiper-slide').remove();
+            if (component.find('.swiper-slide').length ===1) {
+            	component.find('.flex-cont').remove();
+            	component.find('.container >.h2').text('В сравнении 0 товаров');
+            } else {}
+            console.log(component.find('.swiper-slide').length);
         });
 
         $('.js-remove-all', component).on('click', function (event) {
@@ -23849,6 +23858,23 @@ $('#delivery-type input').click(function() {
 	}
 });
 
+
+$('.js-total-value em').each(function () {
+	var component = $(this);
+
+	$('.js-update-total-price').on('change', function () {
+		var valueText = component.text(),
+			valueNumber = parseInt(valueText),
+			valuePrice = 500;
+
+		if ($(this).is(':checked')) {
+			component.text(valueNumber - valuePrice);
+		} else {
+			component.text(valueNumber + valuePrice);
+		}
+	});
+})
+
 $('.wrapper-img').each(function() {
     $(this).magnificPopup({
         delegate: 'a',
@@ -23940,6 +23966,9 @@ $(document).ready(function () {
 	$('.nav-tabs a').on('shown.bs.tab', function (e) {
 	    window.location.hash = e.target.hash;
 	})
+	$('.nav-tabs li a').click(function (e) {
+	    e.preventDefault();
+	});
 })
   jQuery.extend(jQuery.validator.messages, {
           required: "Заполните поле",

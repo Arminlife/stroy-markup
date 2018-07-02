@@ -1900,6 +1900,12 @@ to {
     margin-top: -3px;
     margin-bottom: 3px;
 }
+@media (max-width: 992px){
+    .b-slider .swiper-slide .wrapper-text h2{
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
 .b-slider .swiper-slide .wrapper-text .more, .b-slider .swiper-slide .wrapper-text .plus {
     background: 0 0;
     border: 1px solid #fff;
@@ -2297,12 +2303,16 @@ to {
     display: block;
     transition: all .3s ease;
     background-color: #fff;
+    min-height: 360px;
 }
 .b-actions .item:hover>.container-img {
     height: 135px;
     margin-top: -10px;
 }
 @media (max-width:767px) {
+    .b-actions .item{
+        min-height: 1px;
+    }
     .b-actions .item: hover>.container-img {
     height: 125px;
     margin-top: 0;
@@ -2485,6 +2495,7 @@ to {
     right: 0;
     z-index: 2;
     padding: 0 27px;
+    line-height: 44px;
     bottom: 0;
     border-radius: 100px;
     cursor: pointer;
@@ -2762,7 +2773,8 @@ to {
     position: relative;
 }
 .b-carousel .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px)
+}
 .b-carousel .btn-blank .move {
     width: 50px;
     height: 37px;
@@ -2773,7 +2785,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: 0;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-carousel .btn-blank .move .icon {
@@ -2823,6 +2835,17 @@ to {
 }
 .b-carousel .swiper-button-prev {
     left: -8px;
+}
+@media (min-width: 1200px){
+    .b-actions .swiper-button-next{
+        right: -30px;
+    }
+    .b-actions .swiper-button-prev{
+        left: -33px;
+    }
+}
+.swiper-slide.hidden{
+    display: none !important;
 }
 .b-carousel .pagination {
     display: block;
@@ -3951,7 +3974,8 @@ to {
     position: relative;
 }
 .b-catalog .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px);
+}
 .b-catalog .btn-blank .move {
     width: 50px;
     height: 40px;
@@ -3962,7 +3986,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: -1px;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-catalog .btn-blank .move .icon {
@@ -4017,7 +4041,7 @@ to {
 .b-catalog .bottom .code {
     color: #bec2c2;
 }
-.b-catalog .action, .b-catalog .sale {
+.item .action, .item .sale {
     position: absolute;
     left: 23px;
     top: 159px;
@@ -4028,10 +4052,10 @@ to {
     border-radius: 20px;
     line-height: 22px;
 }
-.b-catalog .action {
+.item .action {
     background-color: #ff904c;
 }
-.b-catalog .sale {
+.item .sale {
     background-color: #ff7a71;
 }
 .b-catalog .b-baner img {
@@ -4041,20 +4065,20 @@ to {
     .b-catalog .wrapper-icons {
     margin: 0 -15px 0 0;
 }
-.b-catalog .wrapper-icons .like {
+.wrapper-icons .like {
     margin: 13px 7px;
 }
-.b-catalog .wrapper-icons .libra {
+.wrapper-icons .libra {
     margin: 13px 0;
 }
-.b-catalog .wrapper-icons .calc {
+.wrapper-icons .calc {
     margin-top: 12px;
 }
-.b-catalog .wrapper-icons .calc .icon {
+.wrapper-icons .calc .icon {
     fill: #000;
 }
 }@media (min-width:768px) and (max-width:991px) {
-    .b-catalog .wrapper-icons {
+    .wrapper-icons {
     margin-right: 0;
 }
 }.b-catalog .select-2-container {
@@ -5140,7 +5164,8 @@ to {
     margin-bottom: 14px;
 }
 .b-good .wrapper-pack .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px);
+}
 .b-good .wrapper-pack .move {
     width: 50px;
     height: 40px;
@@ -5151,7 +5176,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: -1px;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-good .wrapper-pack .move .icon {
@@ -5579,10 +5604,21 @@ to {
     padding-right: 0;
     padding-left: 0;
 }
-}@media (max-width:767px) and (max-width:767px) {
+}@media (max-width:767px) {
     .b-good .item-discount {
-    padding: 15px 10px;
-}
+        padding: 15px 10px;
+    }
+    .b-good .socials{
+        justify-content: center;
+    }
+    .b-good .share .socials-icon{
+        width:55px;
+        height: 40px;
+    }
+    .b-good .share .socials-icon svg{
+        width: 35px;
+        height: 35px;
+    }
 }@media (min-width:992px) {
     .b-good .wrapper-rating {
     width: 160px;
@@ -5646,6 +5682,11 @@ to {
 }
 .b-description .nav-tabs .nav-link.active {
     color: #333;
+}
+.b-description .nav-tabs .nav-link.active span{
+    color: #000;
+    font-weight: 500;
+    border-bottom: none;
 }
 .b-description .tab-pane {
     padding: 20px 2px 26px;
@@ -5893,6 +5934,10 @@ to {
 .b-description .wrapper-video a{
     text-decoration: none !important;
 } 
+.b-description .wrapper-video a img{
+    width: 55px;
+    height: 55px;
+}
 .b-description .wrapper-img a:focus,
 .b-description .wrapper-video a:focus{
     outline: none;
@@ -6151,6 +6196,7 @@ to {
 }
 .b-description #tab-review, .b-description .tab-pane {
     padding-top: 0;
+    padding-bottom: 0 !important;
     margin-left: -5px;
 }
 .b-description .collapse.show {
@@ -7292,6 +7338,9 @@ to {
     margin-left: auto;
     padding-right: 87px;
 }
+.b-action .container .total-value em{
+    font-style: normal;
+}
 @media (max-width:991px) {
     .b-action .container .total-value {
     padding-right: 0;
@@ -7351,6 +7400,10 @@ to {
     z-index: 2;
     border-bottom: none;
     padding-top: 34px;
+}
+.b-delivery .section.colored .read-more{
+    margin-top: 30px;
+    margin-left: 0;
 }
 @media (max-width:767px) {
     .b-delivery .section.colored .right-block {
@@ -7552,6 +7605,12 @@ to {
     width: 100%;
     padding-right: 0;
 }
+.b-delivery .custom-group label.custom-margin{
+    margin-right: 0;
+}
+.b-delivery .wrapper-custom{
+    padding-right: 0;
+}
 }.b-delivery .form-group-custom-top .chosen-container {
     margin-bottom: 5px;
 }
@@ -7612,7 +7671,8 @@ to {
 }
 }.b-delivery .quick-link {
     position: absolute;
-    top: 24px;
+    top: 50%;
+    margin-top: -20px;
     left: 21px;
     width: 40px;
     height: 40px;
@@ -8034,7 +8094,8 @@ to {
     margin-left: -3px;
 }
 .b-possibly .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px)
+}
 .b-possibly .btn-blank .move {
     width: 50px;
     height: 40px;
@@ -8045,7 +8106,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: -1px;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-possibly .btn-blank .move .icon {
@@ -8481,7 +8542,8 @@ to {
     position: relative;
 }
 .b-set .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px)
+}
 .b-set .btn-blank .move {
     width: 50px;
     height: 40px;
@@ -8492,7 +8554,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: -1px;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-set .btn-blank .move .icon {
@@ -8903,7 +8965,8 @@ to {
     position: relative;
 }
 .b-history .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px)
+}
 .b-history .btn-blank .move {
     width: 50px;
     height: 40px;
@@ -8914,7 +8977,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: -1px;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-history .btn-blank .move .icon {
@@ -9108,7 +9171,7 @@ to {
 }
 .b-history .libra.filled .icon {
     fill: #e46713;
-}
+}/*
 @media (min-width:992px) {
     .b-history .like: before {
     content: 'В избранное';
@@ -9171,7 +9234,7 @@ to {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-shadow: 0 25px 27px rgba(0, 0, 0, .13);
-}
+}*/
 }@media (min-width:768px) and (max-width:991px) {
     .card-wrapper.b-history .swiper-button-next, .card-wrapper.b-history .swiper-button-prev {
     margin-top: -54px;
@@ -9555,7 +9618,8 @@ to {
     position: relative;
 }
 .b-compare .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px)
+}
 .b-compare .btn-blank .move {
     width: 50px;
     height: 40px;
@@ -9566,7 +9630,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: 0;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-compare .btn-blank .move .icon {
@@ -11719,6 +11783,20 @@ to {
     top: 0;
     left: -90px;
 }
+.b-goods-list .like .icon {
+    fill: #fff;
+    stroke: #000;
+}
+.b-goods-list .like.filled .icon {
+    fill: #e46713;
+    stroke: #e46713;
+}
+.b-goods-list .libra .icon {
+    fill: #000;
+}
+.b-goods-list .libra.filled .icon {
+    fill: #e46713;
+}
 @media (max-width:767px) {
     .b-goods-list .sort .type span {
     position: static;
@@ -11858,7 +11936,8 @@ to {
     position: relative;
 }
 .b-goods-list .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px)
+}
 .b-goods-list .btn-blank .move {
     width: 50px;
     height: 40px;
@@ -11869,7 +11948,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: -1px;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-goods-list .btn-blank .move .icon {
@@ -12466,7 +12545,8 @@ to {
     fill: #e46713;
 }
 .b-favs .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px)
+}
 .b-favs .btn-blank .move {
     width: 50px;
     height: 39px;
@@ -12477,7 +12557,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: 0;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-favs .btn-blank .move .icon {
@@ -13360,6 +13440,9 @@ to {
     .b-modal .addeded-product .text {
     margin-left: 0;
     width: 100%}
+    .b-modal .addeded-product .text .decorated-link{
+        margin-top: 15px;
+    }
 }.b-modal .addeded-product .text .h2, .b-modal .addeded-product .text h2 {
     margin-bottom: 20px;
 }
@@ -13380,7 +13463,8 @@ to {
     position: relative;
 }
 .b-modal .btn-blank:hover .move {
-    width: 100%}
+    width: calc(100% + 2px)
+}
 .b-modal .btn-blank .move {
     width: 50px;
     height: 40px;
@@ -13391,7 +13475,7 @@ to {
     border-radius: 100px;
     text-align: center;
     top: -1px;
-    left: 0;
+    left: -1px;
     transition: all .2s ease;
 }
 .b-modal .btn-blank .move .icon {
@@ -14787,19 +14871,24 @@ input.error{
     left: -35px;
     display: none;
     z-index: 1000;
+    box-sizing: border-box;
 }
 .wrapper-icon{
     position: relative;
     display: inline-block;
 }
 .wrapper-icons >div .link-dropdown a{
-    display: none;
+    display: none !important;
 }
 .wrapper-icons >div .filled + .link-dropdown a{
-    display: block;
+    display: block !important;
 }
 .wrapper-icons >div .filled + .link-dropdown span{
-    display: none;
+    display: none !important;
+}
+.wrapper-icon .compare,
+.wrapper-icon .like{
+    cursor: pointer;
 }
 .wrapper-icons >div .link-dropdown:before{
     width: 0;
@@ -14826,7 +14915,7 @@ input.error{
 }
 
 .count .wrapper-icons >div .link-dropdown{
-    margin-top: 0px;
+    margin-top: -5px;
     left: -81px;
 }
 
@@ -15231,11 +15320,22 @@ input.error{
         padding-left: 30px;
     }
 }
-.content table{
-    border: 1px solid #e6e6e6;
-    margin-bottom: 20px;
-}
-.content table tr td{
+
+.content table tr .td_main{
     border-color: #e6e6e6;
     padding: 10px 15px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .b-carousel .btn-blank .move{
+        top: -1px;
+        height: 38px;
+        line-height: 38px;
+    }
+    .b-actions .item img{
+        bottom: 0;
+        top:auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
