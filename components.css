@@ -1763,8 +1763,34 @@ to {
 }.b-sidebar li.hover .dropdown-sidebar{
     z-index: 100;
 }
+.b-sidebar ul:after{
+    display: none;
+}
+.b-header .wrapper-icons{
+    margin-top: 8px;
+    border-top: none;
+    padding-top: 0;
+}
 }.b-sidebar li.hover .dropdown-sidebar{
     display: block;
+}
+@media (min-width: 767px){
+    .b-sidebar li:hover .dropdown-sidebar {
+        z-index: 100;
+    }
+    .b-sidebar li:hover .dropdown-sidebar {
+        display: block;
+    }
+    .b-sidebar li:hover>.dropdown-sidebar{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        z-index: -1;
+        opacity: 1;
+    }
+    .b-sidebar li:hover>.dropdown-sidebar .dropdown-sidebar{
+        transition: -webkit-transform 0s;
+        transition: transform 0s;
+    }
 }
 .b-sidebar .dropdown-sidebar {
     position: absolute;
