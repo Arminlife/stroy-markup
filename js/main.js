@@ -22185,7 +22185,7 @@ $(function () {
             component.stop(true, true).slideUp(240);
         });
 
-        component.find('li').on('touchstart', function (e) {
+        component.find('li').on('click', function (e) {
             if ($(e.target).closest('.js-sidebar-close').length > 0)
                 return;
 
@@ -22201,13 +22201,13 @@ $(function () {
             }
         });
 
-        component.on('touchstart', '.js-sidebar-close', function (e) {
+        component.on('click', '.js-sidebar-close', function (e) {
             e.preventDefault();
             $(this).closest('.hover').removeClass('hover').find('.hover').removeClass('hover');
         });
 
 
-        $(document).on('touchstart', function (e) {
+        $(document).on('click', function (e) {
             if ($(e.target).closest('.b-sidebar').length === 0) {
                 component.find('.hover').removeClass('hover');
             }
@@ -22339,8 +22339,10 @@ $(function () {
         });
 
        	$('.js-count-link', component).on('click', function (event) {
+       		var $this = $(this);
        		$('.b-carousel .dropdown').removeClass('active');
-       		$('#' + $(this).attr('data-dropdown')).addClass('active');
+       		$('#' + $this.attr('data-dropdown')).addClass('active');
+
             event.preventDefault();
             
         }); 
@@ -22348,22 +22350,19 @@ $(function () {
             event.preventDefault();
            $('.b-carousel .dropdown').removeClass('active');
         }); 
+        
         $('.js-product-add-to-cart', component).on('click', function (event) {
            event.preventDefault();
            $('.b-carousel .dropdown').removeClass('active');
-        });             
-        $(document.body).on('click', function (event) {
-
-            if ($('.b-carousel.active').length) {
-
-                if (!$(event.target).closest('.count').length) {
-                    $('.count.active .js-count-link').trigger('click');
+        });  
+		$(document.body).on('click', function (event) {
+            if ($('.b-carousel .dropdown.active').length) {
+                if (  (!$(event.target).closest('.js-count-link').length) &&  (!$(event.target).closest('.dropdown.active').length) ) {
+                    $('.b-carousel .dropdown').removeClass('active');
                 }
-
             }       
-
-
-        })        
+        })            
+       
     });
 });
 $(function () {
@@ -22727,18 +22726,60 @@ $(function () {
             $('.catalog-tab').addClass('active').show();
             $(this).closest('.catalog-tab').removeClass('active').hide();
         });
+        // Перебор всех иконок
+		function iconsHover() {
+			$('.wrapper-icon').each(function () {
+				$(this).hover(
+					function () {
 
+						// Убираем класс в других иконках
+						$('.wrapper-icon').removeClass('dropdown-visible');
+
+						// Добавляем класс текущей иконке
+						$(this).addClass('dropdown-visible');
+
+					},
+					function () {
+						// Убираем класс в текущей иконки
+						$(this).removeClass('dropdown-visible');
+
+					}
+				);
+			})
+		}
+		iconsHover()
+		function runCalc() {
+			    $('.js-get-calc').on('click', function (event) {
+		        event.preventDefault();
+
+		        var clickedLink = $(this),
+		            target = clickedLink.data('target');
+
+
+		        $(target).trigger('show').offset({
+		            left: clickedLink.offset().left - $(target).width() + 300,
+		            top: clickedLink.offset().top - 7
+		        });
+		    });	
+		}
         $('.js-load-more', component).each(function () {
             var loader = $(this);
 
             $(document).on('scroll', function () {
-                if ($(this).scrollTop() > loader.offset().top) {
+                if ($(this).scrollTop() > loader.offset().top - $(window).height()) {
                     setTimeout(function () {
                         $.ajax({
                             url: loader.data('url'),
                             context: document.body
                         }).done(function (data) {
                             $(data).insertBefore(loader);
+                            iconsHover()
+                            runCalc()
+                            $('.js-icon', component).on('click', function (event) {
+					            event.preventDefault();
+					            var icon = $(this);
+					            icon.toggleClass('filled');				            
+					        });					        
                         });
                     }, 200);
                 }
@@ -22866,18 +22907,13 @@ $(function () {
             event.preventDefault();
            $('.b-possibly .dropdown').removeClass('active');
         }); 
-        $(document.body).on('click', function (event) {
-
-            if ($('.b-possibly.active').length) {
-
-                if (!$(event.target).closest('.count').length) {
-                    $('.count.active .js-count-link').trigger('click');
+		$(document.body).on('click', function (event) {
+            if ($('.b-possibly .dropdown.active').length) {
+                if (  (!$(event.target).closest('.js-count-link').length) &&  (!$(event.target).closest('.dropdown.active').length) ) {
+                    $('.b-possibly .dropdown').removeClass('active');
                 }
-
             }       
-
-
-        })        
+        })          
     });
 });
 $(function () {
@@ -22967,18 +23003,13 @@ $(function () {
             event.preventDefault();
            $('.b-history .dropdown').removeClass('active');
         }); 
-        $(document.body).on('click', function (event) {
-
-            if ($('.b-history.active').length) {
-
-                if (!$(event.target).closest('.count').length) {
-                    $('.count.active .js-count-link').trigger('click');
+		$(document.body).on('click', function (event) {
+            if ($('.b-history .dropdown.active').length) {
+                if (  (!$(event.target).closest('.js-count-link').length) &&  (!$(event.target).closest('.dropdown.active').length) ) {
+                    $('.b-history .dropdown').removeClass('active');
                 }
-
             }       
-
-
-        })         
+        })           
     });
 });
 $(function () {
@@ -23281,7 +23312,7 @@ $(function () {
             var loader = $(this);
 
             $(document).on('scroll', function () {
-                if ($(this).scrollTop() > loader.offset().top) {
+                if ($(this).scrollTop() > loader.offset().top - $(window).height()) {
                     setTimeout(function () {
                         $.ajax({
                             url: loader.data('url'),
@@ -23565,6 +23596,11 @@ $(function () {
 
             icon.toggleClass('filled');
 
+        });
+        $('.black-link.js-add-to-compare', component).on('click', function (event) {
+            event.preventDefault();
+            $(this).find('span').html('<a href="#">Перейти к сравнению</a>');
+            $(this).addClass('filled');
         });
 
         $('.js-remove', component).on('click', function (event) {
@@ -24048,26 +24084,6 @@ $('#registerForm').validate({
 	}
 })
 
-// Перебор всех иконок
-$('.wrapper-icon').each(function () {
-
-	$(this).hover(
-		function () {
-
-			// Убираем класс в других иконках
-			$('.wrapper-icon').removeClass('dropdown-visible');
-
-			// Добавляем класс текущей иконке
-			$(this).addClass('dropdown-visible');
-
-		},
-		function () {
-			// Убираем класс в текущей иконки
-			$(this).removeClass('dropdown-visible');
-
-		}
-	);
-})
 
 // Поле ввода бонусной карты
 $('.bonus-activate .form-control').on("change paste keyup", function() {

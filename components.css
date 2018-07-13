@@ -820,7 +820,7 @@ to {
     letter-spacing: 0;
 }
 .b-footer .container {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .b-footer .socials {
     padding-bottom: 7px;
@@ -956,11 +956,12 @@ to {
 .b-header .item.have-dropdown {
     cursor: default;
     margin-right: 44px;
+    padding-right: 10px;
 }
 .b-header .item.have-dropdown:before {
     position: absolute;
     top: 50%;
-    right: -10px;
+    right: 0;
     margin-top: -2px;
     content: '';
     width: 6px;
@@ -1721,7 +1722,7 @@ to {
 .b-sidebar li>a {
     z-index: 10;
     white-space: nowrap;
-    display: block;
+    display: inline-block;
     position: relative;
 }
 .b-sidebar li>a:after {
@@ -1741,28 +1742,28 @@ to {
 .b-sidebar li .dropdown-sidebar{
     height: 100vh;
 }
-}.b-sidebar li.hover>.dropdown-sidebar, .b-sidebar li:hover>.dropdown-sidebar {
+}.b-sidebar li.hover>.dropdown-sidebar{
     -webkit-transform: translateX(0);
     transform: translateX(0);
     z-index: -1;
     opacity: 1;
 }
-.b-sidebar li.hover>.dropdown-sidebar .dropdown-sidebar, .b-sidebar li:hover>.dropdown-sidebar .dropdown-sidebar {
+.b-sidebar li.hover>.dropdown-sidebar .dropdown-sidebar{
     transition: -webkit-transform 0s;
     transition: transform 0s;
 }
 @media (max-width:767px) {
-    .b-sidebar li.hover>.dropdown-sidebar, .b-sidebar li: hover>.dropdown-sidebar {
+    .b-sidebar li.hover>.dropdown-sidebar{
     left: 0;
     z-index: 100000;
     position: fixed;
     background-color: #fff;
     overflow: scroll;
     top: 0;
-}.b-sidebar li.hover .dropdown-sidebar, .b-sidebar li:hover .dropdown-sidebar {
+}.b-sidebar li.hover .dropdown-sidebar{
     z-index: 100;
 }
-}.b-sidebar li.hover .dropdown-sidebar, .b-sidebar li:hover .dropdown-sidebar {
+}.b-sidebar li.hover .dropdown-sidebar{
     display: block;
 }
 .b-sidebar .dropdown-sidebar {
@@ -1990,14 +1991,27 @@ to {
 }
 }@media (max-width:767px) {
     .b-slider .swiper-container {
-    height: 212px;
+    height: 350px;
     padding-bottom: 32px;
+}
+.b-slider .swiper-slide .wrapper-img{
+    height: auto;
+    width: 100%;
+}
+.b-slider .swiper-slide .wrapper-text{
+    position: static;
+    width: 100%;
+}
+.b-slider .swiper-button-next, .b-slider .swiper-button-prev{
+    margin-top: -125px;
 }
 .b-slider .swiper-slide .wrapper-text .text {
     top: 33px;
     left: 15px;
     padding-right: 5px;
     font-size: 13px;
+    position: static;
+    padding: 20px;
 }
 .b-slider .swiper-slide .wrapper-text .text h2 {
     font-size: 20px;
@@ -2675,7 +2689,7 @@ to {
     color: #000;
 }
 .b-carousel .item {
-    padding: 0 22px 40px;
+    padding: 0 18px 40px;
     border: 1px solid #ecedee;
     border-left: none;
 }
@@ -2767,7 +2781,8 @@ to {
     font-size: 16px;
     font-weight: 700;
     border: 1px solid #004b8b;
-    padding: 0 17px 0 63px;
+        padding: 0 5px 0 52px;
+    margin-left: -5px;
     height: 37px;
     line-height: 38px;
     position: relative;
@@ -2835,6 +2850,23 @@ to {
 }
 .b-carousel .swiper-button-prev {
     left: -8px;
+}
+.b-carousel .b-calc{
+    left: 50%!important;
+    top: 50%!important;
+    -webkit-transform: translateX(-50%) translateY(-50%)!important;
+    transform: translateX(-50%) translateY(-50%)!important;
+    z-index: 9999;
+}
+.b-carousel .wrapper-icons >div .link-dropdown{
+    margin-top: -10px;
+    left: -80px;
+}
+.b-carousel .wrapper-icons .compare + .link-dropdown{
+    display: none !important;
+}
+.b-carousel .wrapper-icons >div .link-dropdown:after{
+    top: -9px;
 }
 @media (min-width: 1200px){
     .b-actions .swiper-button-next{
@@ -3422,9 +3454,7 @@ to {
 }
 }@media (min-width:768px) and (max-width:991px) {
     .b-bread-crumbs .wrapper-crumbs {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
 }
 }.b-bread-crumbs, .b-filter {
     padding-bottom: 10px;
@@ -3863,7 +3893,7 @@ to {
 }
 .b-catalog .item:hover {
     border-color: #fff;
-    box-shadow: 0 -5px 32px rgba(0, 0, 0, .12);
+    box-shadow: 0 20px 32px rgba(0, 0, 0, .12);
     z-index: 2;
 }
 @media (max-width:767px) {
@@ -3962,6 +3992,7 @@ to {
     font-weight: 400;
     display: block;
     text-align: left;
+    padding: .25em .4em;
 }
 .b-catalog .btn-blank {
     border-radius: 100px;
@@ -4062,9 +4093,7 @@ to {
     height: 90px;
 }
 @media (min-width:768px) {
-    .b-catalog .wrapper-icons {
-    margin: 0 -15px 0 0;
-}
+
 .wrapper-icons .like {
     margin: 13px 7px;
 }
@@ -4156,7 +4185,7 @@ to {
     line-height: 30px;
 }
 .b-catalog .item {
-    padding: 0 8px 0 14px;
+    padding: 0 8px 0 8px;
 }
 .b-catalog .img {
     line-height: 145px;
@@ -4188,11 +4217,19 @@ to {
     padding-left: 0;
     margin-bottom: 10px;
 }
-.b-catalog .calc, .b-catalog .libra, .b-catalog .like {
+.wrapper-icons{
+    border-top:1px solid #ecedee;
+    padding-top: 0 !important;
+    margin-top: 15px !important;
+}
+.b-catalog .calc, .wrapper-icon {
     width: 33.33%;
     text-align: center;
     padding-bottom: 17px;
     padding-top: 10px;
+}
+.wrapper-icon .link-dropdown{
+    display: none !important;
 }
 .b-catalog .calc .icon, .b-catalog .libra .icon, .b-catalog .like .icon {
     fill: #000;
@@ -4200,9 +4237,13 @@ to {
 .b-catalog .like {
     margin-right: 0;
 }
-.b-catalog .libra {
+.b-catalog .wrapper-icon {
     border-right: 1px solid #ecedee;
     border-left: 1px solid #ecedee;
+    text-align: center;
+}
+.b-catalog .wrapper-icon:last-child{
+    border:none;
 }
 .b-catalog .wrapper-icons {
     padding-top: 18px;
@@ -4245,7 +4286,6 @@ to {
 }
 .b-carousel .libra{
     margin-top: 13px;
-    left: 5px;
 }
 .b-carousel .like .icon{
     stroke: #000;
@@ -5410,7 +5450,7 @@ to {
     margin-left: 5px;
 }
 .b-good .wrapper-price {
-    padding-right: 4px;
+    padding-right: 15px;
 }
 .b-good .wrapper-pack .pack .question {
     top: -4px;
@@ -5449,7 +5489,7 @@ to {
 .b-good h2 {
     padding-right: 0;
     font-size: 20px;
-    margin: 0 -5px;
+    margin: 0;
 }
 .b-good .wrapper-def {
     padding-left: 0;
@@ -5458,8 +5498,8 @@ to {
     width: 100%;
     padding-bottom: 30px;
 }
-.b-good .item .wrapper-price {
-    width: 115px;
+.b-good .wrapper-pack .pack{
+    order: 3;
 }
 .b-good .wrapper-brand {
     padding-bottom: 10px;
@@ -5561,6 +5601,16 @@ to {
     margin: 0 -19px;
     padding-top: 20px;
     padding-left: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
+}
+.b-good .wrapper-pack .basket{
+    order:2;
+}
+.b-good .wrapper-pack .right{
+    order:1;
 }
 .b-good .wrapper-pack .prices {
     color: #9c9f9f;
@@ -6892,6 +6942,15 @@ to {
     text-align: center;
     padding-top: 9px;
 }
+.b-cart .product .control.wrapper-icons >div .link-dropdown{
+    left: auto;
+    right: -90px;
+    margin-top: 0px;
+}
+.b-cart .product .control.wrapper-icons >div .link-dropdown a{
+    color: #004b8b;
+    margin-bottom: 0;
+}
 @media (max-width:991px) {
     .b-cart .product .control {
     padding-top: 0;
@@ -6963,12 +7022,16 @@ to {
 @media (max-width:991px) {
     .b-cart .count {
     margin-left: -10px;
-    min-width: 80px;
-    max-width: 80px;
+    min-width: 65px;
+    max-width: 65px;
     margin-top: -4px;
+    position: relative;
 }
 .b-cart .count:before {
     right: 20px;
+}
+.b-cart .count .decorated-link:before{
+    right: 10px;
 }
 }@media (max-width:767px) {
     .b-cart .count {
@@ -7068,8 +7131,9 @@ to {
 @media (max-width:991px) {
     .b-cart .dropdown {
     width: 80vw;
-    right: -120px;
-    top: 30px;
+    right: auto;
+    left: 50%;
+    top: 60px;
 }
 }@media (max-width:767px) {
     .b-cart .dropdown {
@@ -7189,6 +7253,10 @@ to {
     margin-left: -14px;
     display: block;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+.b-cart .mobile-content .black-link.filled svg{
+    fill: #e46713;
 }
 .b-cart .mobile-content .black-link span, .b-cart .mobile-content .black-link svg {
     display: inline-block;
@@ -7252,8 +7320,11 @@ to {
     padding: 15px 0 15px 75px;
 }
 @media (min-width:992px) {
-    .b-action {
-    margin-left: 0;
+    .b-action,
+    .b-info-panel {
+    margin-left: 70px;
+    padding-left: 0;
+    z-index: 10000;
 }
 }@media (max-width:991px) {
     .b-action {
@@ -9526,6 +9597,7 @@ to {
     overflow: hidden;
     max-width: 185px;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .b-compare .compare-table.light td {
     color: rgba(0, 75, 139, .5);
@@ -9607,6 +9679,9 @@ to {
     display: block;
     text-align: left;
 }
+.b-compare .order{
+    margin-bottom: 10px;
+}
 .b-compare .btn-blank {
     border-radius: 100px;
     font-size: 16px;
@@ -9656,7 +9731,7 @@ to {
     top: 254px;
     background-image: none;
     background-color: transparent;
-    z-index: 99999;
+    z-index: 99;
     text-align: center;
     line-height: 100px;
     transition: all .2s ease;
@@ -9681,9 +9756,7 @@ to {
     left: 225px;
 }
 @media (max-width:991px) {
-    .b-compare .swiper-slide .compare-table td {
-    padding-left: 50px;
-}
+
 .b-compare .slider {
     width: calc(100% - 131px);
 }
@@ -10090,6 +10163,7 @@ to {
 }
 .b-profile .wrapper-btn {
     padding-bottom: 29px;
+    margin-left: 0;
 }
 }.b-profile .icon_cart-remove {
     width: 9px;
@@ -11995,7 +12069,7 @@ to {
 .b-goods-list .sale {
     position: absolute;
     left: 11px;
-    top: 111px;
+    top: 130px;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 500;
@@ -12012,7 +12086,7 @@ to {
 }.b-goods-list .action {
     position: absolute;
     left: 11px;
-    top: 111px;
+    top: 130px;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 500;
@@ -12534,6 +12608,8 @@ to {
 	display: block;
 	text-align: left;
 	padding: .25em .4em;
+    padding-top: 6px;
+    line-height: 1;
 }
 .b-favs .libra{
 	margin-top: 13px;
@@ -13513,7 +13589,7 @@ to {
     color: #fff;
     position: fixed;
     bottom: 0;
-    left: 75px;
+    left: 145px;
     right: 0;
     height: 50px;
     line-height: 50px;
@@ -13522,12 +13598,16 @@ to {
     display: none;
     font-size: 16px;
 }
+.b-sidebar.inner-sidebar + .content .b-info-panel{
+    left: 70px;
+    margin-left: 0;
+}
 .b-info-panel .text {
     margin-bottom: 0;
 }
 @media (max-width:767px) {
     .b-info-panel {
-    left: 0;
+    left: 0 !important;
 }
 .b-info-panel .text {
     width: calc(100% - 135px);
@@ -14903,7 +14983,7 @@ input.error{
 }
 .wrapper-icons >div .link-dropdown:after{
     position: absolute;
-    top: -20px;
+    top: -8px;
     background-color: transparent;
     content: '';
     left: 0;
@@ -14915,8 +14995,8 @@ input.error{
 }
 
 .count .wrapper-icons >div .link-dropdown{
-    margin-top: -5px;
-    left: -81px;
+    margin-top: -10px;
+    left: -80px;
 }
 
 .b-offers .wrapper-refusal{
