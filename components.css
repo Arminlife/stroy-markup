@@ -1775,10 +1775,10 @@ to {
     display: block;
 }
 @media (min-width: 767px){
-    .b-sidebar li:hover .dropdown-sidebar {
+    .b-sidebar li:hover >.dropdown-sidebar {
         z-index: 100;
     }
-    .b-sidebar li:hover .dropdown-sidebar {
+    .b-sidebar li:hover >.dropdown-sidebar {
         display: block;
     }
     .b-sidebar li:hover>.dropdown-sidebar{
