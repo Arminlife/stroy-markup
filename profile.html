@@ -2731,7 +2731,7 @@
                                                     <div class="col-12 col-md-5 col-lg-7"><img src="images/bonus-code.png" /></div>
                                                     <div class="col-12 col-md-7 col-lg-5">
                                                         <div class="link-cont"><a class="light" href="#"><svg class="icon icon_bonus-save"><use xlink:href="./images/sprite.svg#bonus-save"></use></svg>Сохранить PDF</a></div>
-                                                        <div class="link-cont"><a class="light" href="#"><svg class="icon icon_bonus-print"><use xlink:href="./images/sprite.svg#bonus-print"></use></svg>Распечатать</a></div>
+                                                        <div class="link-cont"><a class="light" href="#" onclick="window.print();"><svg class="icon icon_bonus-print"><use xlink:href="./images/sprite.svg#bonus-print"></use></svg>Распечатать</a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5242,6 +5242,23 @@
     </div>
     <script src="js/main.js"></script>
     </div>
+    <style>
+        @media print{
+            .b-footer,
+            .b-sidebar, 
+            .b-header.fixed,
+            .b-bread-crumbs,
+            .b-search,
+            .b-bonus .alert, 
+            .b-offers,
+            .b-profile .nav-tabs, 
+            .link-cont,
+            .b-profile .tabs-select,
+            .b-header .right{
+                display: none;
+            }
+        }
+    </style>
 </body>
 
 </html>
