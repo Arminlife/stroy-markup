@@ -9875,6 +9875,7 @@ to {
 .b-profile .nav-link {
     padding: 8px 20px;
     margin-top: -5px;
+    cursor: pointer;
 }
 .b-profile .nav-link .tab-sum {
     color: #bec2c2;
