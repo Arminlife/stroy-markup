@@ -3731,7 +3731,7 @@ to {
     padding-bottom: 20px;
 }
 .b-filter .filtres {
-    padding: 9px 106px;
+    padding: 9px 90px;
     font-size: 16px;
     font-weight: 600;
     border-radius: 30px;
@@ -10112,6 +10112,7 @@ to {
 @media (max-width:767px) {
     .b-profile .wrapper-business {
     margin-right: 0;
+    margin-left: 0;
 }
 }.b-profile .wrapper-business .chosen-container {
     font-size: 16px;
@@ -10180,7 +10181,7 @@ to {
     width: auto;
 }
 .b-profile form.edit {
-    padding: 0 10px 0 20px;
+    padding: 0;
 }
 .b-profile h2 {
     padding-top: 23px;
@@ -10192,7 +10193,7 @@ to {
     padding-bottom: 0;
 }
 .b-profile .btn-edit {
-    padding: 0 82px;
+    padding: 0 76px;
 }
 .b-profile .wrapper-form-control .form-group {
     width: 89px;
@@ -15455,10 +15456,21 @@ input.error{
         max-width: 100%;
         max-height: 100%;
     }
+    .b-place .figure object-fit:not(:first-child){
+        display: none;
+    }
 }
 @media (max-width: 480px){
     .count .dropdown, .b-carousel .dropdown, .b-goods-list .dropdown, .b-history .dropdown, .b-possibly .dropdown{
         width: auto;
         right: 6px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 992px){
+    .b-header .item.tell .number{
+        font-size: 17px;
+    }
+    .b-header .item.have-dropdown{
+        margin-right: 30px;
     }
 }
