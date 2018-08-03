@@ -22646,9 +22646,10 @@ $(function () {
 
         $('.js-clear', component).on('click', function (e) {
             e.preventDefault();
-
+			
             $('.js-selected', component).hide();
             $('.js-remove-tag', component).trigger('click');
+            
 
             component.find('option').prop('selected', function () {
                 return this.defaultSelected;
@@ -23427,7 +23428,12 @@ $(function () {
 
             if (window.history && (component.attr('id') || '').length > 0 && window.location.hash !== '#' + component.attr('id'))
                 history.pushState('', document.title, '#' + component.attr('id'));
-
+			$(function () {
+			    var isIE = window.ActiveXObject || "ActiveXObject" in window;
+			    if (isIE) {
+			        $('.b-modal').removeClass('fade');
+			    }
+			});
         }).on('hide', function (e, show_next) {
             $(document.body).removeClass('fixed');
             $('.modal-backdrop').remove();

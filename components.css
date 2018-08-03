@@ -3923,7 +3923,7 @@ to {
     border: 1px solid #ecedee;
     border-left: none;
     margin: 0 -19px;
-    position: relative;
+    /*position: relative;*/
     border-top: none;
 }
 .b-catalog .item:hover {
@@ -5234,7 +5234,7 @@ to {
     border: 1px solid #004b8b;
     padding: 0 30px 0 65px;
     height: 40px;
-    line-height: 40px;
+    line-height: 38px;
     position: relative;
     margin-top: -5px;
     margin-bottom: 14px;
@@ -12071,6 +12071,13 @@ to {
 .b-goods-list .libra {
     margin-top: 13px;
 }
+.b-goods-list .wrapper-icon .link-dropdown{
+    margin-top: 0;
+}
+.b-goods-list .wrapper-icon .link-dropdown a{
+    padding-left: 0;
+    line-height: inherit;
+}
 @media (max-width:767px) {
     .b-goods-list .libra {
     margin-top: 0;
@@ -15473,4 +15480,11 @@ input.error{
     .b-header .item.have-dropdown{
         margin-right: 30px;
     }
+}
+.equal-height.recovery-password>.content{
+    width: 100%;
+    margin-left: 0;
+}
+.equal-height.recovery-password + .b-footer{
+    margin-left: 0 !important;
 }
