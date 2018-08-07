@@ -23910,9 +23910,9 @@ $('.js-total-value em').each(function () {
 			valuePrice = 500;
 
 		if ($(this).is(':checked')) {
-			component.text(valueNumber - valuePrice);
-		} else {
 			component.text(valueNumber + valuePrice);
+		} else {
+			component.text(valueNumber - valuePrice);
 		}
 	});
 })

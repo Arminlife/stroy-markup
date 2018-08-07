@@ -933,7 +933,7 @@ to {
     margin-top: 8px;
 }
 .b-header .wrapper-icons .item {
-    margin-right: 29px;
+    margin-right: 29px !important;
     display: inline-block;
 }
 .b-header .wrapper-icons .item:hover .icon {
@@ -2540,6 +2540,9 @@ to {
     border-radius: 100px;
     cursor: pointer;
 }
+.active-top .b-search .btn{
+    line-height: 36px;
+}
 .b-search .tt-menu {
     background-color: #fff;
     left: 10px!important;
@@ -2800,7 +2803,7 @@ to {
     padding-left: 0;
 }
 .b-carousel .order{
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 .b-carousel .btn-blank {
     border-radius: 100px;
@@ -4079,6 +4082,7 @@ to {
     display: block;
     text-align: left;
     padding: .25em .4em;
+    line-height: 1;
 }
 .b-catalog .wrapper-bottom {
     position: relative;
@@ -5314,6 +5318,7 @@ to {
     position: absolute;
     top: 0;
     left: 0;
+    width: 20px;
 }
 .b-good .wrapper-icons .compare, .b-good .wrapper-icons .favorites {
     position: relative;
@@ -5765,6 +5770,7 @@ to {
 }
 .b-description .nav-link span {
     color: #c2c6c6;
+    cursor: pointer;
 }
 .b-description .nav-tabs .nav-link.active {
     color: #333;
@@ -6911,6 +6917,14 @@ to {
     min-width: 330px;
     max-width: 330px;
 }
+@media (max-width: 1200px){
+    .b-cart .product .detail{
+        min-width: 320px;
+    }
+    .b-cart .product .part-price{
+        min-width: 270px;
+    }
+}
 @media (max-width:991px) {
     .b-cart .product .detail {
     margin-top: -3px;
@@ -6940,6 +6954,7 @@ to {
     font-size: 13px;
     line-height: 18px;
 }
+
 }.b-cart .product .control a:hover, .b-cart .product .detail .title:hover {
     color: #004b8b;
 }
@@ -7373,6 +7388,9 @@ to {
     position: static;
     margin: 22px 0 0;
 }
+.b-action .i-table tr td:first-child{
+    width: 120px;
+}
 }.b-action, .b-action .i-table {
     width: 100%}
 .b-action .i-table tr td:first-child {
@@ -7386,7 +7404,8 @@ to {
 }
 }@media (max-width:767px) {
     .b-action .i-table td {
-    vertical-align: top;
+    vertical-align: middle;
+    padding-bottom: 0 !important;
 }
 .b-action .i-table tr:first-child td {
     padding-bottom: 20px;
@@ -7791,6 +7810,7 @@ to {
     text-decoration: none;
     font-weight: 500;
     font-size: 25px;
+    letter-spacing: -1px;
 }
 .b-delivery .quick-link.ib {
     display: inline-block;
@@ -15487,4 +15507,7 @@ input.error{
 }
 .equal-height.recovery-password + .b-footer{
     margin-left: 0 !important;
+}
+input::-ms-clear {
+    display: none !important;
 }
