@@ -22962,7 +22962,7 @@ $(function () {
                 pagination: pagination,
                 paginationClickable: true,
                 //autoplay: 8500,
-                loop: component.find('.swiper-slide').length > 4,
+                loop: false,
                 autoHeight: true,
                 slidesPerView: 4,
                 breakpoints: {
@@ -23431,7 +23431,7 @@ $(function () {
 			$(function () {
 			    var isIE = window.ActiveXObject || "ActiveXObject" in window;
 			    if (isIE) {
-			        $('.b-modal').removeClass('fade');
+			        $('.b-modal').addClass('fade');
 			    }
 			});
         }).on('hide', function (e, show_next) {
@@ -24184,4 +24184,8 @@ $('.move-back').click(function (e) {
 })
 $('.quick-link').click(function (e) {
 	e.preventDefault();
+})
+
+$(document).on('click', 'a.auth', function () {
+	$('.js-login-modal').fadeIn();
 })

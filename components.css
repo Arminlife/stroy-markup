@@ -1443,7 +1443,7 @@ to {
     display: block;
     padding-bottom: 4px;
     padding-left: 25px;
-    padding-top: 4px;
+    padding-top: 5px;
     cursor: pointer;
 }
 @media (max-width:767px) {
@@ -1459,6 +1459,7 @@ to {
 .b-sidebar ul li .main-item .icon {
     position: absolute;
     left: 24px;
+    max-height: 24px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -8249,7 +8250,7 @@ to {
 }
 .b-possibly .like {
     margin-top: 15px;
-    margin-right: 20px;
+    margin-right: 13px;
     position: relative;
 }
 .b-possibly .wrapper-title {
@@ -10232,12 +10233,19 @@ to {
     color: #bec2c2;
     font-size: 13px;
 }
+.b-profile a.light{
+    display: none;
+    margin-right: 20px;
+}
+
 .b-profile .save-address {
     background: 0 0;
     border: 0;
     color: #000;
-    margin-left: 20px;
     outline: 0;
+}
+.b-profile form.edit.editable a.light{
+    display: inline-block;
 }
 .b-article-inner .wrapper-doc .item a:hover, .b-profile .save-address:hover {
     color: #004b8b;
@@ -15483,10 +15491,25 @@ input.error{
         max-width: 100%;
         max-height: 100%;
     }
-    .b-place .figure object-fit:not(:first-child){
+    .b-place .figure object-fit:not(:first-of-type){
         display: none;
     }
+    .icon_modal-social-ok,
+    .icon_delivery-ok{
+        fill: rgb(240, 149, 98) !important;
+    }
+    .b-form-password-recovery .form-group{
+        vertical-align: top;
+    }
+    .radio + label::before{
+        width: 23px;
+        height: 23px;
+    }
+    :checked.radio + label::before{
+        background-position: 6px 5px;
+    }
 }
+    
 @media (max-width: 480px){
     .count .dropdown, .b-carousel .dropdown, .b-goods-list .dropdown, .b-history .dropdown, .b-possibly .dropdown{
         width: auto;
@@ -15510,4 +15533,10 @@ input.error{
 }
 input::-ms-clear {
     display: none !important;
+}
+.b-orders-history.checkout .count .decorated-link{
+    border-bottom: none !important;
+}
+.b-orders-history.checkout .count .decorated-link:before{
+    display: none;
 }
