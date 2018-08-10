@@ -2541,7 +2541,7 @@ to {
     border-radius: 100px;
     cursor: pointer;
 }
-.active-top .b-search .btn{
+.b-header.fixed .b-search .btn{
     line-height: 36px;
 }
 .b-search .tt-menu {
@@ -15482,8 +15482,8 @@ input.error{
     /* IE10+ CSS styles go here */
     .b-carousel .btn-blank .move{
         top: -1px;
-        height: 38px;
-        line-height: 38px;
+        height: 39px;
+        line-height: 39px;
     }
     .b-actions .item img{
         bottom: 0;
