@@ -22269,7 +22269,28 @@ $(function () {
             var icon = $(this);
             icon.toggleClass('filled');
         });        
+        // Перебор всех иконок
+		function iconsHover() {
+			$('.wrapper-icon').each(function () {
+				$(this).hover(
+					function () {
 
+						// Убираем класс в других иконках
+						$('.wrapper-icon').removeClass('dropdown-visible');
+
+						// Добавляем класс текущей иконке
+						$(this).addClass('dropdown-visible');
+
+					},
+					function () {
+						// Убираем класс в текущей иконки
+						$(this).removeClass('dropdown-visible');
+
+					}
+				);
+			})
+		}
+		iconsHover()
         $('.js-sort', component).each(function () {
             var activeLink = $(this).find('.active'),
                 target = activeLink.data('target'),
@@ -22890,6 +22911,28 @@ $(function () {
             icon.addClass('filled');
 
         });
+        // Перебор всех иконок
+		function iconsHover() {
+			$('.wrapper-icon').each(function () {
+				$(this).hover(
+					function () {
+
+						// Убираем класс в других иконках
+						$('.wrapper-icon').removeClass('dropdown-visible');
+
+						// Добавляем класс текущей иконке
+						$(this).addClass('dropdown-visible');
+
+					},
+					function () {
+						// Убираем класс в текущей иконки
+						$(this).removeClass('dropdown-visible');
+
+					}
+				);
+			})
+		}
+		iconsHover()        
         $('.b-possibly .js-count-link').each(function (index) {
             $(this).attr('data-dropdown', 'dropdown' + index);
         });        
@@ -22987,6 +23030,28 @@ $(function () {
             icon.addClass('filled');
 
         });
+        // Перебор всех иконок
+		function iconsHover() {
+			$('.wrapper-icon').each(function () {
+				$(this).hover(
+					function () {
+
+						// Убираем класс в других иконках
+						$('.wrapper-icon').removeClass('dropdown-visible');
+
+						// Добавляем класс текущей иконке
+						$(this).addClass('dropdown-visible');
+
+					},
+					function () {
+						// Убираем класс в текущей иконки
+						$(this).removeClass('dropdown-visible');
+
+					}
+				);
+			})
+		}
+		iconsHover()        
         $('.b-history .js-count-link').each(function (index) {
             $(this).attr('data-dropdown', 'dropdown' + index);
         });        

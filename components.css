@@ -2892,9 +2892,7 @@ to {
     margin-top: -10px;
     left: -80px;
 }
-.b-carousel .wrapper-icons .compare + .link-dropdown{
-    display: none !important;
-}
+
 .b-carousel .wrapper-icons >div .link-dropdown:after{
     top: -9px;
 }
