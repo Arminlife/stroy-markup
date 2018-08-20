@@ -22996,28 +22996,31 @@ $(function () {
 
     $('.b-history').each(function () {
         var component = $(this),
-            pagination = $('.js-pagination', component),
-            aboutSlider = new Swiper($('.js-slider', component), {
-                speed: 400,
-                spaceBetween: 0,
-                nextButton: $('.js-next', component),
-                prevButton: $('.js-prev', component),
-                pagination: pagination,
-                paginationClickable: true,
-                //autoplay: 8500,
-                loop: false,
-                autoHeight: true,
-                slidesPerView: 4,
-                breakpoints: {
-                    520: {
-                        slidesPerView: 2,
-                        //spaceBetween: 10
-                    },
-                    1200: {
-                        slidesPerView: 3,
-                    }
-                }
-            });
+			pagination = $(".js-pagination", component),
+			aboutSlider = new Swiper($(".js-slider", component), {
+				speed: 400,
+				spaceBetween: 0,
+				nextButton: $(".js-next", component),
+				prevButton: $(".js-prev", component),
+				pagination: pagination,
+				paginationClickable: true,
+				//autoplay: 8500,
+				loop: false,
+				autoHeight: true,
+				slidesPerView: 4,
+				loopedSlides: 0,
+				breakpoints: {
+					520: {
+						slidesPerView: 2,
+						//spaceBetween: 10
+						loop: false
+					},
+					1200: {
+						slidesPerView: 3,
+						loop: false
+					}
+				}
+			});
 
         $('.js-icon', component).on('click', function (event) {
 
