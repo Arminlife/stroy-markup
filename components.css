@@ -869,6 +869,14 @@
     padding-top: 8px;
 }
 
+/* font size h4 mobile */
+.b-footer nav ul li h4 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+
 .b-footer nav.right {
     margin-left: -15px;
 }
