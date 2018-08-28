@@ -869,6 +869,14 @@
     padding-top: 8px;
 }
 
+/* font size h4 mobile */
+.b-footer nav ul li h4 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+
 .b-footer nav.right {
     margin-left: -15px;
 }
@@ -18328,4 +18336,11 @@ input::-ms-clear {
 }
 .b-orders-history.checkout .count .decorated-link:before {
     display: none;
+}
+
+
+@media(max-height: 560px) and (min-width: 769px) {
+    .dropdown-sidebar .inner-list .item a {
+        padding: 0px 20px;
+    }
 }
