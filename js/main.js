@@ -2,8 +2,8 @@
 $(function () {
    
 
-    //$('.js-tel').inputmask('+7 999 999-99-99');
-    $('.js-tel').mask("+7 000 000-00-00");
+    $('.js-tel').inputmask('+7 999 999-99-99');
+    $('.js-tel-new').mask("+7 000 000-00-00");
 
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -2621,8 +2621,8 @@ function sharePlugin() {
     });
 }
 $(document).on('click', '.bonus-card-form .keyboard-phone [data-number]', function () {
-  if($(".bonus-card-form .js-tel").val().length < 16){
-    var phoneNumber = $(".bonus-card-form .js-tel").val() + $(this).data("number");
+  if($(".bonus-card-form .js-tel-new").val().length < 16){
+    var phoneNumber = $(".bonus-card-form .js-tel-new").val() + $(this).data("number");
 
     var SPMaskBehavior = function (val) {
       return val.replace(/\D/g, '').length === 16 ? '+7 000 000-00-00' : '+7 000 000-00-09';
@@ -2632,8 +2632,8 @@ $(document).on('click', '.bonus-card-form .keyboard-phone [data-number]', functi
           field.mask(SPMaskBehavior.apply({}, arguments), options);
         }
     };
-    $(".bonus-card-form .js-tel").val(phoneNumber);
-    $('.bonus-card-form .js-tel').mask(SPMaskBehavior, spOptions);
+    $(".bonus-card-form .js-tel-new").val(phoneNumber);
+    $('.bonus-card-form .js-tel-new').mask(SPMaskBehavior, spOptions);
   }
 })
 $(document).on('click', '.bonus-card-form .keyboard-sms [data-number]', function () {
@@ -2644,9 +2644,9 @@ $(document).on('click', '.bonus-card-form .keyboard-sms [data-number]', function
 })
 function bonusCardKeyboard() {
     $(".bonus-card-form .delete").on('click',function(){
-      var phoneNumber = $(".bonus-card-form .js-tel").val().slice(0,-1);
-      $(".bonus-card-form .js-tel").val("");
-      $(".bonus-card-form .js-tel").val(phoneNumber);
+      var phoneNumber = $(".bonus-card-form .js-tel-new").val().slice(0,-1);
+      $(".bonus-card-form .js-tel-new").val("");
+      $(".bonus-card-form .js-tel-new").val(phoneNumber);
     });
 }
 bonusCardKeyboard()
