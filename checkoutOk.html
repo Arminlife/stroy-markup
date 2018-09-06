@@ -2669,14 +2669,14 @@
                             <div class="active tab-pane" id="tab-order" role="tabpanel">
                                 <div class="b-orders-history checkout">
                                     <div class="container">
-                                        <h1 class="h2">Подтверждение заказа № 123123132</h1><a class="light print" href="data/print.html" target="_blank"><svg class="icon icon_orders-history-print"><use xlink:href="./images/sprite.svg#orders-history-print"></use></svg>Распечатать бланк заказа</a>
+                                        <h1 class="h2">Подтверждение заказа № 123123132</h1><span class="light print" onclick="window.print();" ><svg class="icon icon_orders-history-print"><use xlink:href="./images/sprite.svg#orders-history-print"></use></svg>Распечатать бланк заказа</span>
                                         <div
                                             class="alert alert-info">Поздравляем! Ваш заказ успешно оформлен и размещен. Вам отправлено письмо с подтверждением. Наш менджер свяжется с Вами в ближайшее время</div>
                                     <div class="colored">
                                         <div class="row">
                                             <div class="col-12 col-md-6">
                                                 <h3>Доставка курьером</h3>
-                                                <div class="sub-section">
+                                                <div class="sub-section hidden-print">
                                                     <div class="light">Ознакомьтесь с<a class="blank" href="#">регламентом доставки</a></div>
                                                 </div>
                                                 <div class="sub-section">15 февраля с 15:00 до 19:00</div>
@@ -2698,8 +2698,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 right-block">
-                                                <h3>Оплата онлайн на сайте</h3>
-                                                <div class="sub-section"><img src="images/orders-history-pay.png" /></div>
+                                                <h3 class="hidden-print">Оплата онлайн на сайте</h3>
+                                                <div class="sub-section hidden-print"><img src="images/orders-history-pay.png" /></div>
                                                 <table class="full-table">
                                                     <tr>
                                                         <td class="long">Товаров на сумму:</td>
@@ -3235,6 +3235,43 @@
             </h2>
         </div>
     </div>
+    <style>
+        @media print{
+            .b-footer,
+            .b-sidebar, 
+            .b-header.fixed,
+            .b-bread-crumbs,
+            .b-search,
+            .b-bonus .alert, 
+            .b-offers,
+            .b-profile .nav-tabs, 
+            .link-cont,
+            .b-profile .tabs-select,
+            .b-header .right,
+            .b-orders-history .print,
+            .b-orders-history.checkout .alert-info,
+            .b-cart .mobile-content .row,
+            .hidden-print,
+            .b-cart{
+                display: none;
+            }
+            .b-orders-history.checkout .colored{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-validation.min.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/input-mask.js"></script>
+    <script src="js/perfect-scrollbar.js"></script>
+    <script src="js/typeahead.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/chosen.js"></script>
+    <script src="js/svg4everybody.js"></script>
     <script src="js/main.js"></script>
     </div>
 </body>
