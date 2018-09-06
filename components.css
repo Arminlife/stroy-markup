@@ -18044,6 +18044,9 @@ input.error {
 .submit-sms {
     display: none;
 }
+.submit-sms .decorated-link{
+    margin-bottom: 15px;
+}
 .email-active .phone-wrap {
     display: none;
 }
@@ -18557,4 +18560,26 @@ input::-ms-clear {
 }
 .bonus-card-form .keyboard .number span:active i.delete:active img {
   transform: translateY(2px);
+}
+.discount-label{
+    position: absolute;
+    display: block;
+    left: 10px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #584380;
+    color: #fff;
+    font-size: 9px;
+    line-height: 12px;
+    padding-top: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.discount-label b{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 3px;
+    display: inline-block;
 }
