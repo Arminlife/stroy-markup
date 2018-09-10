@@ -3438,6 +3438,8 @@
 
 .b-carousel .order {
     margin-bottom: 15px;
+    line-height: 1;
+    padding: .25em .4em;
 }
 
 .b-carousel .btn-blank {
@@ -11808,8 +11810,14 @@
     margin-bottom: 23px;
     padding-top: 15px;
 }
-.b-compare .compare-col {
-    width: 225px!important;
+
+@media (min-width: 992px){
+   .b-compare .compare-col {
+        width: 225px!important;
+    } 
+    .b-compare .height-cont{
+        margin-right: -1px;
+    }
 }
 .b-compare .slider {
     width: calc(100% - 235px);
@@ -11818,8 +11826,8 @@
 .b-compare .height-cont {
     height: 466px;
     border: 1px solid #ecedee;
-    border-right: none;
 }
+.b-compare .height-cont
 .b-compare .height-cont.transparent {
     border-color: #fff;
     border-bottom: 1px solid #ecedee;
@@ -14716,6 +14724,7 @@
     border: 1px solid #ecedee;
     border-bottom: none;
     padding-bottom: 10px;
+    position: relative;
 }
 @media (max-width:767px) {
     .b-goods-list .item {
@@ -15241,9 +15250,19 @@
 }
 
 .b-favs .like.filled .icon,
-.b-favs .like .filled .icon {
+.b-favs .like .filled.js-unlike .icon {
     fill: #e46713;
     stroke: #e46713;
+}
+.tab-favs-active .wrapper-icons .like + .link-dropdown span{
+    font-size: 0;
+}
+.tab-favs-active .wrapper-icons .like + .link-dropdown{
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.tab-favs-active .wrapper-icons .like + .link-dropdown span:before{
+    content:"Удалить из избранного";
 }
 .b-favs .btn-blank:hover .move {
     width: calc(100% + 2px)
@@ -15267,10 +15286,7 @@
     vertical-align: middle;
 }
 
-.b-favs .like .icon {
-    fill: #fff;
-    stroke: #b3b3b3;
-}
+
 .b-favs .like.filled .icon {
     fill: #e46713;
     stroke: #e46713;
@@ -18440,6 +18456,10 @@ input::-ms-clear {
 }
 .bonus-card-form label{
     font-size: 30px;
+}
+.bonus-card-form label.error{
+    font-size: 18px;
+    position: absolute;
 }
 .bonus-card-form input.form-control{
     font-size: 30px;

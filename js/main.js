@@ -1982,6 +1982,11 @@ $(function () {
             event.preventDefault();
            $(this).closest('.count').removeClass('active');
         });
+        $('.js-icon', component).on('click', function (event) {
+            event.preventDefault();
+            var icon = $(this);
+            icon.toggleClass('filled');
+        });   
         function iconsHover() {
             $('.wrapper-icon').each(function () {
                 $(this).hover(
@@ -2492,22 +2497,50 @@ $('#login-phone').keyup(function() {
 
 $('#login-phone-btn').click(function () {
 	$('#loginForm').addClass('sms-active');
+})
+// Инит таймера только при первом клике на сабмит
+$("#login-phone-btn").one("click", function () {
     $(function() {
         $( '.timer' ).timer(function() {
             $( '.timer' ).hide();
             $('.again-sms').show();
         });
     });
-})
+});
 $('.js-bonus-phone').click(function () {
-    $(this).parents('form').addClass('sms-active');
-    $(function() {
-        $( '.timer' ).timer(function() {
-            $( '.timer' ).hide();
-            $('.bonus-again-sms').show();
-        });
+    $(this).parents('form').validate({
+        highlight: function (element) {
+            $(element).parent().addClass("has-error");
+            $(element).parent().removeClass("has-success");
+        },
+        unhighlight: function (element) {
+            $(element).removeClass("error");
+            $(element).parent().removeClass("has-error");
+            $(element).parent().addClass("has-success");
+        }
     });
+    if ($(this).parents('form').valid()) {
+        $(this).parents('form').addClass('sms-active');
+
+    } else {
+        return false
+    }
 })
+
+// Инит таймера только при первом клике на сабмит
+$(".js-bonus-phone").one("click", function () {
+    if ($(this).parents('form').valid()) {
+        $(function() {
+            $( '.timer' ).timer(function() {
+                $( '.timer' ).hide();
+                $('.bonus-again-sms').show();
+            });
+        });
+    } else {
+        return false
+    }
+});
+
 $('.js-show-card').click(function () {
     $(this).parents('form').addClass('card-active');
 })
